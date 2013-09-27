@@ -1,13 +1,12 @@
-
-# CernVM is defined by platform, SL upstream, edition, version
 # Result is a Meta RPM and its dependencies mirrored in the cernvm-os repository
+
+include config.mk
 
 PLATFORM = x86_64
 #COMPAT_PLATFORM not used currently
 COMPAT_PLATFORM = i686
 SL_UPSTREAM = 6
 EDITION = system
-VERSION = 2.9.163
 
 TOP = $(shell pwd)
 STRONG_VERSION=$(EDITION)-$(VERSION)-$(PLATFORM)
@@ -39,7 +38,7 @@ $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 #  CernVM Edition Definitions  #
 ################################
 
-artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TESTGROUP _TESTEXTRA
+artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TESTGROUP _TESTEXTRA release
 	cat groups/bits/minimal groups/bits/base groups/bits/misc groups/bits/perl groups/bits/python \
 	  groups/bits/batch groups/bits/head groups/bits/copilot groups/bits/hep-oslibs \
           groups/bits/cernvm | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
