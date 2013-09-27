@@ -1,0 +1,126 @@
+acl		# setfacl getfacl
+alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
+atk		# Interfaces for accessibility support, to desktop?
+atk-devel
+attr
+audit		# /sbin/audi... tools
+avahi-compat-howl
+avahi-compat-howl-devel
+avahi-compat-libdns_sd
+avahi-compat-libdns_sd-devel
+avahi-devel
+avahi-glib
+avahi-glib-devel
+acpid		# ACPI Event Daemon
+authconfig	# Command line tool for setting up authentication from network services
+beecrypt	# An open source cryptography library
+bison		# A GNU general-purpose parser generator.
+blas		# The BLAS (Basic Linear Algebra Subprograms) library.
+blas-devel
+btrfs-progs
+byacc		# A public domain Yacc parser generator.
+compat-openldap
+ctags		# A C programming language indexing and/or cross-reference tool.
+createrepo
+cups		# To desktop?
+cyrus-sasl-plain
+diffstat	# A utility which provides statistics based on the output of diff.
+dosfstools
+ejabberd	# For CoPilot
+euca2ools
+fipscheck-devel # A library for integrity verification of FIPS validated modules
+flex		# A tool for creating scanners (text pattern recognizers).
+gd		# A graphics library for quick creation of PNG or JPEG images
+gd-devel
+giflib
+giflib-devel
+glib		# glib2 already present
+glib-devel
+glpk-utils
+gdbm-devel	# A GNU set of database routines which use extensible hashing.
+gnupg2
+gnutls
+gpm		# A mouse server for the Linux console, to desktop?
+gpm-devel	
+gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
+gtk2-devel
+hdparm		# A utility for displaying and/or setting hard disk parameters.
+hwloc
+indent		# A GNU program for formatting C code.
+intltool
+irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
+keyutils	# for /bin/keyctl
+lapack		# The LAPACK libraries for numerical linear algebra
+lapack-devel
+libattr-devel
+libdaemon-devel # Used with avahi
+libdnet-devel
+libdrm-devel	# libdrm Direct Rendering Manager development package
+libfontenc-devel # X.Org X11 libfontenc library
+libgcrypt-devel
+libgpg-error-devel # This is a library that defines common error values for all GnuPG
+libICE-devel	# X.Org X11 libICE development package
+libnotify	# libnotify is an implementation of the freedesktop.org desktop notification specification, to desktop?
+libSM-devel	# X.Org X11 libSM development package
+libutempter-devel # A privileged helper for utmp/wtmp updates
+libXcomposite
+libXcomposite-devel
+libXdamage
+libXdamage-devel
+libXScrnSaver
+libXScrnSaver-devel
+libXtst-devel
+libXxf86vm-devel
+libxslt		# Library providing the Gnome XSLT engine
+libxslt-devel
+libxslt-python
+lockdev		# A library for locking devices.
+lockdev-devel
+lvm2
+mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
+mesa-libGLU-devel
+mod_dnssd	# For cernvm-appliance-agent
+mod_ssl		# For cernvm-appliance-agent
+mpich2
+mpich2-devel
+netpbm		# A library for handling different graphics file formats
+netpbm-devel
+netpbm-progs
+net-snmp	# A collection of SNMP protocol tools and libraries.
+net-snmp-libs
+mc		# Midnight commander, User-friendly text console file manager and visual shell
+mdadm		# Linux software RAID
+newt		# A development library for text mode user interfaces (requires slang)
+openldap-clients # Client programs for OpenLDAP.
+openmotif22
+openmotif
+openmotif-devel
+pam-devel
+pango		# System for layout and rendering of internationalized text, to desktop?
+patchutils	# That's not patch itself
+php-ldap
+php-mysql
+prelink
+psacct		# Utilities for monitoring process activities.
+psutils		# This archive contains some utilities for manipulating PostScript documents.
+qemu-img
+quota		# System administration tools for monitoring users' disk usage
+rcs		# Revision Control System (RCS) file version management tools
+redis		# For CoPilot
+rdate
+rng-tools	# for /sbin/rngd
+rpm-build
+rpm-devel
+setuptool	# A text mode system configuration tool.
+sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
+slang		# The shared library for the S-Lang extension language (for newt?)
+subversion-devel
+symlinks	# for /usr/bin/symlinks
+sysfsutils	# Utilities for interfacing with sysfs
+syslinux
+usbutils	# This package contains utilities for inspecting devices connected to a USB bus (lsusb) 
+tcpdump
+tree
+tk		# Graphical interface for tcl, to desktop?
+util-linux-ng	# contains setarch
+yum-utils

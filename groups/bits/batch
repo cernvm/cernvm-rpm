@@ -1,0 +1,10 @@
+condor
+ganglia-gmond
+java-1.6.0-openjdk
+java-1.6.0-openjdk-devel
+mod_python
+numactl
+ruby
+ruby-devel
+ruby-libs
+ruby-tcltk

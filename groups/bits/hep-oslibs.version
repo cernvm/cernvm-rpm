@@ -1,0 +1,2 @@
+HEP_OSlibs_SL6-0:1.0.9-0.el6.x86_64
+repoquery --requires HEP_OSlibs_SL6 | grep x86-64 | cut -d '(' -f1 > cernvm-rpm/groups/bits/hep-oslibs

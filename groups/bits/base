@@ -1,0 +1,112 @@
+autofs
+automake
+avahi
+bind-utils
+binutils-devel 
+boost
+boost-devel
+bzip2-devel
+clang
+clang-devel
+clang-doc
+cloud-init
+cloud-utils
+cmake
+compat-gcc-34
+compat-gcc-34-c++
+compat-gcc-34-g77
+compat-glibc
+compat-glibc-headers
+compat-libf2c-34
+compat-libstdc++-33
+curl
+cvs
+db4
+db4-devel
+db4-utils
+dbus-devel
+dbus-glib-devel
+doxygen
+elfutils	# strip, nm, ld, ...
+environment-modules
+fontconfig-devel	# for ROOT
+fuse-devel		# for cvmfs
+fuse-sshfs
+gcc
+gcc-c++
+gcc-gfortran
+gdb		# for ROOT
+genisoimage
+git
+glibc-devel
+glibc-static
+gmp-devel
+iptables
+krb5-workstation # single sign on ssh, scp, ...
+ksh
+libaio		# asynchronous I/O
+libaio-devel
+libcurl-devel
+libicu-devel
+libidn-devel
+libjpeg-turbo        # turbo flavor required by gtk2
+libjpeg-turbo-devel
+libpng
+libpng-devel
+libstdc++-devel
+libtar
+libtiff
+libtiff-devel
+libXfont-devel
+libxml2-devel
+llvm
+llvm-devel
+llvm-doc
+logwatch
+lsof
+ltrace		# library tracing
+mlocate		# locate utility
+mysql-devel
+nano
+ncurses-devel
+nfs-utils
+nscd
+ntp
+dhclient
+openssh-clients
+openssh-server
+openssl-devel
+parted
+pkgconfig
+readahead	# speed up boot
+readline-devel
+rootfiles	# /root/.bashrc etc.
+rsync
+samba-client
+screen
+sqlite-devel
+strace
+subversion
+sudo
+swig			# Connects C/C++/Objective C to some high-level programming languages
+tcl		# The TCL language
+tcsh		# C Shell
+telnet
+tig
+tmpwatch
+unzip
+usermode	# poweroff, halt, reboot commands
+vim-enhanced
+vim-minimal
+wget
+which
+xml-common	# Common XML catalog and DTD files (small package)
+xorg-x11-proto-devel
+xorg-x11-xauth	# for ssh -X
+xrootd-client
+xz
+xz-devel
+yum
+zip
+zlib-devel
+zsh		# Z Shell

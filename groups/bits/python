@@ -1,0 +1,16 @@
+python
+python-iniparse
+mx		# A collection of Python software tools.
+pygobject2-doc
+pygtk2 		# to desktop?
+pygtk2-devel
+Pyrex		# A compiler/language for writing Python extension modules.
+python-ldap
+python-numeric
+python-setuptools
+pyxf86config
+python-boto
+python-glanceclient
+python-keystoneclient
+python-novaclient
+python-urlgrabber

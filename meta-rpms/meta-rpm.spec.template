@@ -1,0 +1,35 @@
+# Variables: cernvm_edition cernvm_version, cernvm_sl_upstream TODO: cernvm_arch
+
+%define _use_internal_dependency_generator 0
+
+Summary: CernVM %{cernvm_edition} meta package
+Name: cernvm-%{cernvm_edition}
+Version: %{cernvm_version}
+Release: 1%{cernvm_sl_upstream}
+License: Unknown
+Group: CernVM
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+# __DEPENDENCIES__
+
+%description
+CernVM Meta Package (Edition: %{cernvm_edition})
+
+%prep
+
+%build
+
+%clean
+
+%install
+
+%post
+# __POSTSCRIPT__
+/sbin/ldconfig
+
+%postun
+/sbin/ldconfig
+
+%files
+
+%changelog
