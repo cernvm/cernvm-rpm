@@ -28,7 +28,7 @@ steps:
 
 ## Versioning
 
-The cernvm-system version scheme is <major>.<minor>.<build>.<security fix>.
+The cernvm-system version scheme is MAJOR.MINOR.BUILD.SECURITY-FIX.
 The major version number is 3, as long as the repository is based on SL6.
 The minor version number is the next release that is currently being worked on.
 Every build increases the build counter.
