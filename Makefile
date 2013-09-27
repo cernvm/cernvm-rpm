@@ -7,8 +7,7 @@ PLATFORM = x86_64
 COMPAT_PLATFORM = i686
 SL_UPSTREAM = 6
 EDITION = system
-VERSION = 2.9.161
-RENEGADE_DIR = $(shell pwd)/../renegade
+VERSION = 2.9.163
 
 TOP = $(shell pwd)
 STRONG_VERSION=$(EDITION)-$(VERSION)-$(PLATFORM)
@@ -36,12 +35,6 @@ $(OS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(OS_RPM_DIR)/*.rpm)
 $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 	createrepo -d -s sha $(META_RPM_DIR) --workers=12
 
-# Extras repository must be taken care of upfront / done by renegade
-renegade-ready:
-	$(MAKE) -C $(RENEGADE_DIR)
-	touch renegade-ready
-
-
 ################################
 #  CernVM Edition Definitions  #
 ################################
@@ -64,7 +57,7 @@ artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 #  Complete, strongly versioned package list including upstream URLs  #
 #######################################################################
 
-artifacts/repodata-$(STRONG_PLATFORM): renegade-ready meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl
+artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)~
 	mkdir artifacts/repodata-$(STRONG_PLATFORM)~
 	[ -d artifacts/repodata-$(STRONG_PLATFORM) ] && cp --preserve artifacts/repodata-$(STRONG_PLATFORM)/* artifacts/repodata-$(STRONG_PLATFORM)~ || true

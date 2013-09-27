@@ -17,7 +17,8 @@ fi
 echo "Version is $VERSION"
 sed -i -e "s/^VERSION = .*/VERSION = $VERSION/" Makefile
 
-rm -f renegade-ready
+#rm -f renegade-ready
+make -C ../renegade
 make
 sudo cvmfs_server transaction $REPO
 sudo yum --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta-devel --enablerepo=cernvm-os --enablerepo=cernvm-extras --installroot $ROOT clean all
