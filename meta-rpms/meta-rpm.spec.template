@@ -22,6 +22,7 @@ CernVM Meta Package (Edition: %{cernvm_edition})
 %clean
 
 %install
+touch %{buildroot}/.installed_%{name}-%{version}-%{release}
 
 %post
 # __POSTSCRIPT__
@@ -31,5 +32,7 @@ CernVM Meta Package (Edition: %{cernvm_edition})
 /sbin/ldconfig
 
 %files
+%defattr(-,root,root,-)
+/.installed_%{name}-%{version}-%{release}
 
 %changelog
