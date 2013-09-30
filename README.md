@@ -34,3 +34,10 @@ The minor version number is the next release that is currently being worked on.
 Every build increases the build counter.
 Already published releases might be updated with security fixes,
 indicated by the forth version number.
+
+## How to
+
+  * Make a new build in cernvm-devel.cern.ch: run ./next_build.sh (push to git)
+  * Install a build into another repository: 
+    make -f install.mk VERSION=2.9.166.0 DEST_REPOSITORY=cernvm-testing.cern.ch
+  * Create a security hotfix:
