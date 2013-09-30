@@ -41,3 +41,12 @@ indicated by the forth version number.
   * Install a build into another repository: 
     make -f install.mk VERSION=2.9.166.0 DEST_REPOSITORY=cernvm-testing.cern.ch
   * Create a security hotfix:
+    - Create a normal build with fixed upstream version to stage them into cernvm-os
+    - in security-fix: ./extract-spec.sh 2.9.164.0
+    - make modifications to spec file in vulnerabilities directory, change version
+    - ./stage_fixed.sh 2.9.164.0
+    - back in root dir: make hotfix HOTFIX_VERSION=2.9.164.1
+    - make -f archive.mk VERSION=2.9.164.1
+    - make -f install.mk VERSION=2.9.164.1 DEST_REPOSITORY=cernvm-prod.cern.ch 
+
+If anything fails: abort the cvmfs transaction on the corresponding repository

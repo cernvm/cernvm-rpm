@@ -10,6 +10,7 @@ EDITION = system
 
 TOP = $(shell pwd)
 STRONG_VERSION=$(EDITION)-$(VERSION)-$(PLATFORM)
+STRONG_HOTFIX_VERSION=$(EDITION)-$(HOTFIX_VERSION)-$(PLATFORM)
 STRONG_PLATFORM=$(SL_UPSTREAM)-$(PLATFORM)
 CERNVM_REPO_BASE = /var/www/yum/cernvm
 CERNVM_META_REPOTYPE = 
@@ -17,9 +18,23 @@ CERNVM_META_REPOTYPE =
 OS_RPM_DIR = $(CERNVM_REPO_BASE)/os/$(SL_UPSTREAM)/$(PLATFORM)
 META_RPM_DIR = $(CERNVM_REPO_BASE)/meta$(CERNVM_META_REPOTYPE)/$(SL_UPSTREAM)/$(PLATFORM)
 META_RPM_NAME = cernvm-$(EDITION)-$(VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
+META_RPM_HOTFIX_NAME = cernvm-$(EDITION)-$(HOTFIX_VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
 META_RPM = $(META_RPM_DIR)/$(META_RPM_NAME)
+META_RPM_HOTFIX = $(META_RPM_DIR)/$(META_RPM_HOTFIX_NAME)
 
 all: $(META_RPM)
+	$(MAKE) repos
+
+clean-meta-rpm:
+	rm -f $(META_RPM)
+
+hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
+	rpmbuild --define "%_topdir $(TOP)/artifacts/rpmbuild-$(STRONG_HOTFIX_VERSION)" \
+	  --define "%_tmppath $(TOP)/artifacts/rpmbuild-$(STRONG_HOTFIX_VERSION)/TMP" \
+          -ba --target $(PLATFORM) \
+          artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
+	mv artifacts/rpmbuild-$(STRONG_HOTFIX_VERSION)/RPMS/$(PLATFORM)/$(META_RPM_HOTFIX_NAME) artifacts/
+	cp artifacts/$(META_RPM_HOTFIX_NAME) $(META_RPM_HOTFIX)	
 	$(MAKE) repos
 
 #############################
@@ -56,7 +71,7 @@ artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 #  Complete, strongly versioned package list including upstream URLs  #
 #######################################################################
 
-artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno
+artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)~
 	mkdir artifacts/repodata-$(STRONG_PLATFORM)~
 	[ -d artifacts/repodata-$(STRONG_PLATFORM) ] && cp --preserve artifacts/repodata-$(STRONG_PLATFORM)/* artifacts/repodata-$(STRONG_PLATFORM)~ || true
