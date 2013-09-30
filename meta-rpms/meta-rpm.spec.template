@@ -22,7 +22,7 @@ CernVM Meta Package (Edition: %{cernvm_edition})
 %clean
 
 %install
-touch %{buildroot}/.installed_%{name}-%{version}-%{release}
+touch %{buildroot}/.installed_%{name}-%{version}
 
 %post
 # __POSTSCRIPT__
@@ -33,6 +33,6 @@ touch %{buildroot}/.installed_%{name}-%{version}-%{release}
 
 %files
 %defattr(-,root,root,-)
-/.installed_%{name}-%{version}-%{release}
+/.installed_%{name}-%{version}
 
 %changelog
