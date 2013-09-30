@@ -7,7 +7,7 @@ DEST_PATH = /cvm3
 DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
 YUM_OPTIONS = -y --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta --enablerepo=cernvm-os --enablerepo=cernvm-extras --installroot $(DEST_ROOT)
 
-all: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
+all: rolling_tag
 	
 /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION): meta-rpms/verify-metarpm.sh
 	echo "chroot install of cernvm-system-$(VERSION)"
@@ -20,4 +20,7 @@ all: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
 	fi
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
 	sudo cvmfs_server publish -r cernvm-system-$(VERSION) -a cernvm-system-$(VERSION) $(DEST_REPOSITORY)
-	cvmfs_server check $(DEST_REPOSITORY)	
+	cvmfs_server check $(DEST_REPOSITORY)
+
+rolling_tag: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
+	./set_rolling_tag.sh $(DEST_REPOSITORY) $(VERSION)		
