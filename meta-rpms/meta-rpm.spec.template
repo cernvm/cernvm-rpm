@@ -22,7 +22,7 @@ CernVM Meta Package (Edition: %{cernvm_edition})
 %clean
 
 %install
-touch %{buildroot}/.installed_%{name}-%{version}
+echo "CERN Virtual Machine %{version}" > %{buildroot}/.installed_%{name}-%{version}
 
 %post
 # __POSTSCRIPT__
