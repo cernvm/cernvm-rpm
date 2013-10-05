@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+OSDIR=$1
+DESTDIR=$2
+
 OSDIR=${OSDIR:=/cvmfs/cernvm-devel.cern.ch/cvm3}
 DESTDIR=${DESTDIR:=/cvmfs/cernvm-devel.cern.ch/update-packs/cvm3}
 

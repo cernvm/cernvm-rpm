@@ -23,6 +23,7 @@ all: rolling_tag
 	fi
 	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d; done
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
+	sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs/$(DEST_PATH)
 	sudo cvmfs_server publish -r cernvm-system-$(VERSION) -a cernvm-system-$(VERSION) $(DEST_REPOSITORY)
 	cvmfs_server check $(DEST_REPOSITORY)
 
