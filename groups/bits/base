@@ -81,9 +81,11 @@ pkgconfig
 readahead	# speed up boot
 readline-devel
 rootfiles	# /root/.bashrc etc.
+rpmrebuild
 rsync
 samba-client
 screen
+ssmtp
 sqlite-devel
 strace
 subversion
