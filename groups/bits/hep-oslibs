@@ -1,5 +1,7 @@
 alsa-lib
 audit-libs
+autoconf
+automake
 bzip2-devel
 bzip2-libs
 compat-db
@@ -24,6 +26,7 @@ fontconfig
 freetype
 freetype-devel
 gamin
+gcc-c++
 gdbm
 giflib
 glib2
@@ -110,5 +113,7 @@ sqlite
 tcl
 tcsh
 tk
+xorg-x11-proto-devel
 zlib
+zlib-devel
 zsh
