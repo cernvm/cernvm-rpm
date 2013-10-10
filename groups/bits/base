@@ -80,6 +80,7 @@ parted
 pkgconfig
 readahead	# speed up boot
 readline-devel
+redhat-rpm-config
 rootfiles	# /root/.bashrc etc.
 rpmrebuild
 rsync

@@ -22,6 +22,7 @@ byacc		# A public domain Yacc parser generator.
 compat-openldap
 ctags		# A C programming language indexing and/or cross-reference tool.
 createrepo
+cscope
 cups		# To desktop?
 cyrus-sasl-plain
 diffstat	# A utility which provides statistics based on the output of diff.
