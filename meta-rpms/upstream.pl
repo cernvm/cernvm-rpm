@@ -2,6 +2,10 @@
 
 'sl' => {
   'baseurl' => {
+    'el4' => {
+      'x86_64' => 'http://localhost/yum/sl4/os/x86_64/RPMS', 
+      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/SL/RPMS',
+    },
     'el5' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/SL',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/SL',
@@ -16,6 +20,10 @@
 },
 'fastbugs' => {
   'baseurl' => {
+    'el4' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/x86_64/errata/fastbugs/RPMS',
+      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/errata/fastbugs/RPMS',
+    },
     'el5' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/fastbugs',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/fastbugs',
@@ -30,6 +38,10 @@
 },
 'security' => {
   'baseurl' => {
+    'el4' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/x86_64/errata/SL/RPMS',
+      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/errata/SL/RPMS',
+    }, 
     'el5' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/security',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/security',
@@ -54,7 +66,7 @@
     }
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'rhcommon' => {
   'baseurl' => {
@@ -63,7 +75,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slc_os' => {
   'baseurl' => {
@@ -105,7 +117,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'cvmfs' => {
   'baseurl' => {
@@ -119,7 +131,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'xrootd' => {
   'baseurl' => {
@@ -161,5 +173,5 @@
     },
   },
   'extras' => 1,
-  'active' => 1,
+  'active' => 0,
 },

@@ -1,5 +1,6 @@
+mkdir -p /etc/cernvm
 echo %{name} > /etc/cernvm/metarpm
-/etc/cernvm/postinstall generic x86_64
+#/etc/cernvm/postinstall generic x86_64
 
 # can be a regular file due to chroot install
 rm -f /dev/null

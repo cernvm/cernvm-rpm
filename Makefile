@@ -5,7 +5,7 @@ include config.mk
 PLATFORM = x86_64
 #COMPAT_PLATFORM not used currently
 COMPAT_PLATFORM = i686
-SL_UPSTREAM = 6
+SL_UPSTREAM = 4
 EDITION = system
 
 TOP = $(shell pwd)
@@ -54,14 +54,12 @@ $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 ################################
 
 artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TESTGROUP _TESTEXTRA release
-	cat groups/bits/minimal groups/bits/base groups/bits/misc groups/bits/perl groups/bits/python \
-	  groups/bits/batch groups/bits/head groups/bits/copilot groups/bits/hep-oslibs \
-          groups/bits/atlas groups/bits/32bit groups/bits/cernvm | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
+	cat groups/bits/minimal groups/bits/slc4 | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
 	[ -s _TESTGROUP ] && cat _TESTGROUP > artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 	[ -s _TESTEXTRA ] && cat _TESTEXTRA >> artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 
 artifacts/packages-system-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) artifacts/packages-basic-$(VERSION)-$(PLATFORM)
-	cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) groups/bits/gui groups/bits/xfce | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
+	cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
 
 artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 	cat groups/bits/postscript > artifacts/postscript-$(STRONG_VERSION)
