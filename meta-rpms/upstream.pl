@@ -163,6 +163,10 @@
 },
 'cvmextras' => {
   'baseurl' => {
+    'el4' => {
+      'x86_64' => 'htp://cernvm002.cern.ch/yum/cernvm/extras/4/x86_64',
+      'i386' => 'http://cernvm002.cern.ch/yum/cernvm/extras/4/i386',
+    },
     'el5' => {
       'x86_64' => 'http://cernvm002.cern.ch/yum/cernvm/extras/5/x86_64',
       'i386' => 'http://cernvm002.cern.ch/yum/cernvm/extras/5/i386',
