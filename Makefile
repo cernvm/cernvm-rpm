@@ -2,7 +2,7 @@
 
 include config.mk
 
-PLATFORM = x86_64
+PLATFORM = i386
 #COMPAT_PLATFORM not used currently
 COMPAT_PLATFORM = i686
 SL_UPSTREAM = 4
@@ -82,7 +82,7 @@ artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) 
 	cut -d" " -f2 artifacts/requires-$(STRONG_VERSION) | meta-rpms/create-sourcelist.sh > artifacts/Makefile.rpms-$(STRONG_VERSION)
 
 artifacts/pkgilp-$(STRONG_VERSION): artifacts/packages-$(STRONG_VERSION) meta-rpms/resolve.pl meta-rpms/upstream.pl artifacts/repodata-$(STRONG_PLATFORM)
-	meta-rpms/resolve.pl -r artifacts/repodata-$(STRONG_PLATFORM) -u el$(SL_UPSTREAM) -a $(PLATFORM) \
+	meta-rpms/resolve.pl -r artifacts/repodata-$(STRONG_PLATFORM) -u el$(SL_UPSTREAM) -a $(PLATFORM) -b $(COMPAT_PLATFORM) \
 	  -p artifacts/packages-$(STRONG_VERSION) \
 	  -o artifacts/pkgilp-$(STRONG_VERSION) -d artifacts/deplist-$(STRONG_VERSION) \
 	  -k artifacts/rpmlist-$(STRONG_VERSION)

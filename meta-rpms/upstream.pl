@@ -4,7 +4,7 @@
   'baseurl' => {
     'el4' => {
       'x86_64' => 'http://localhost/yum/sl4/os/x86_64/RPMS', 
-      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/SL/RPMS',
+      'i386' => 'http://localhost/yum/sl4/os/i386/RPMS',
     },
     'el5' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/SL',
@@ -52,7 +52,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slcx' => {
   'baseurl' => {
@@ -107,6 +107,10 @@
 },
 'epel' => {
   'baseurl' => {
+    'el4' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/epel/4/x86_64',
+      'i386' => 'http://linuxsoft.cern.ch/epel/4/i386',
+    },
     'el5' => {
       'x86_64' => 'http://linuxsoft.cern.ch/epel/5/x86_64',
       'i386' => 'http://linuxsoft.cern.ch/epel/5/i386',
@@ -117,7 +121,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
+  'active' => 1,
 },
 'cvmfs' => {
   'baseurl' => {
