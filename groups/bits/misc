@@ -36,11 +36,14 @@ gd-devel
 ghc
 giflib
 giflib-devel
+gitstats
+gfalFS
 glib		# glib2 already present
 glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
 gnupg2
+gnuplot
 gnutls
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
@@ -125,4 +128,5 @@ tcpdump
 tree
 tk		# Graphical interface for tcl, to desktop?
 util-linux-ng	# contains setarch
+xrdp
 yum-utils
