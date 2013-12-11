@@ -108,8 +108,7 @@
 'epel' => {
   'baseurl' => {
     'el4' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/epel/4/x86_64',
-      'i386' => 'http://linuxsoft.cern.ch/epel/4/i386',
+      'i386' => 'http://cernvm002.cern.ch/yum/sl4/epel/i386',
     },
     'el5' => {
       'x86_64' => 'http://linuxsoft.cern.ch/epel/5/x86_64',
@@ -181,5 +180,5 @@
     },
   },
   'extras' => 1,
-  'active' => 0,
+  'active' => 1,
 },
