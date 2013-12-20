@@ -37,11 +37,11 @@ ghc
 giflib
 giflib-devel
 gitstats
-gfalFS
 glib		# glib2 already present
 glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
+gfalFS
 gnupg2
 gnuplot
 gnutls
@@ -119,6 +119,7 @@ rpm-devel
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 slang		# The shared library for the S-Lang extension language (for newt?)
+sssd
 subversion-devel
 symlinks	# for /usr/bin/symlinks
 sysfsutils	# Utilities for interfacing with sysfs
