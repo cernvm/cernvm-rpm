@@ -25,6 +25,7 @@ createrepo
 cscope
 cups		# To desktop?
 cyrus-sasl-plain
+davix
 diffstat	# A utility which provides statistics based on the output of diff.
 dosfstools
 ejabberd	# For CoPilot
@@ -45,6 +46,7 @@ gfalFS
 gnupg2
 gnuplot
 gnutls
+golang
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
@@ -110,6 +112,7 @@ psacct		# Utilities for monitoring process activities.
 psutils		# This archive contains some utilities for manipulating PostScript documents.
 qemu-img
 quota		# System administration tools for monitoring users' disk usage
+R
 rcs		# Revision Control System (RCS) file version management tools
 redis		# For CoPilot
 rdate

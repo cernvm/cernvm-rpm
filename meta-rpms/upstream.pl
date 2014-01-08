@@ -169,4 +169,6 @@
       'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.1/rhel6/x86_64',
     },
   },
+  'extras' => 1,
+  'active' => 0,
 },
