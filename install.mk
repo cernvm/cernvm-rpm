@@ -14,7 +14,9 @@ all: rolling_tag
 /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION): meta-rpms/verify-metarpm.sh
 	echo "chroot install of cernvm-system-$(VERSION)"
 	sudo cvmfs_server transaction $(DEST_REPOSITORY)
-	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d && sudo ln -s /dev/$$d $(DEST_ROOT)/dev/$$d; done
+	if [ -d $(DEST_ROOT)/dev ]; then \
+	  for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d && sudo ln -s /dev/$$d $(DEST_ROOT)/dev/$$d; done \
+	fi
 	if rpm --root $(DEST_ROOT) -q cernvm-system >/dev/null 2>&1; then \
 	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) update cernvm-system-$(VERSION); \
