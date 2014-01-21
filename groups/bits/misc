@@ -26,6 +26,8 @@ cscope
 cups		# To desktop?
 cyrus-sasl-plain
 davix
+devtoolset-2-toolchain  # New compilers
+devtoolset-2-valgrind
 diffstat	# A utility which provides statistics based on the output of diff.
 dosfstools
 ejabberd	# For CoPilot
@@ -55,6 +57,7 @@ hdparm		# A utility for displaying and/or setting hard disk parameters.
 hwloc
 indent		# A GNU program for formatting C code.
 intltool
+iperf
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
 keyutils	# for /bin/keyctl
 lapack		# The LAPACK libraries for numerical linear algebra

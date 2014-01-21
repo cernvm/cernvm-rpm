@@ -172,3 +172,12 @@
   'extras' => 1,
   'active' => 0,
 },
+'devtools' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/external_products/devtoolset/x86_64/2.0',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+}
