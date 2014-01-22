@@ -49,6 +49,7 @@ gnupg2
 gnuplot
 gnutls
 golang
+gperftools
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
