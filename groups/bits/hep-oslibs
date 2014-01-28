@@ -38,6 +38,7 @@ gmp
 kernel-headers
 keyutils-libs
 krb5-libs
+krb5-devel
 libICE
 libSM
 libX11
@@ -54,12 +55,14 @@ libXext-devel
 libXfixes
 libXfixes-devel
 libXft
+libXft-devel
 libXi
 libXinerama
 libxslt
 libXmu
 libXp
 libXpm
+libXpm-devel
 libXrandr
 libXrender
 libXt
