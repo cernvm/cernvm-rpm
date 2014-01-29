@@ -114,6 +114,7 @@ php-mysql
 prelink
 psacct		# Utilities for monitoring process activities.
 psutils		# This archive contains some utilities for manipulating PostScript documents.
+puppet
 qemu-img
 quota		# System administration tools for monitoring users' disk usage
 R
