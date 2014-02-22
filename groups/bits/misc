@@ -25,6 +25,7 @@ createrepo
 cscope
 cups		# To desktop?
 cyrus-sasl-plain
+expect		# contains mkpasswd
 davix
 devtoolset-2-toolchain  # New compilers
 devtoolset-2-valgrind
@@ -49,6 +50,7 @@ gnupg2
 gnuplot
 gnutls
 golang
+golang-godoc
 gperftools
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
@@ -59,6 +61,7 @@ hwloc
 indent		# A GNU program for formatting C code.
 intltool
 iperf
+iperf3
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
 keyutils	# for /bin/keyctl
 lapack		# The LAPACK libraries for numerical linear algebra
@@ -92,6 +95,7 @@ mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collisio
 mesa-libGLU-devel
 mod_dnssd	# For cernvm-appliance-agent
 mod_ssl		# For cernvm-appliance-agent
+monit		# Monitoring utility
 mpich2
 mpich2-devel
 netpbm		# A library for handling different graphics file formats
@@ -118,6 +122,7 @@ puppet
 qemu-img
 quota		# System administration tools for monitoring users' disk usage
 R
+rabbitmq-server # Required for shoal
 rcs		# Revision Control System (RCS) file version management tools
 redis		# For CoPilot
 rdate
@@ -134,8 +139,11 @@ sysfsutils	# Utilities for interfacing with sysfs
 syslinux
 usbutils	# This package contains utilities for inspecting devices connected to a USB bus (lsusb) 
 tcpdump
+tigervnc-server
+tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
 util-linux-ng	# contains setarch
+x11vnc
 xrdp
 yum-utils

@@ -8,12 +8,14 @@ CERN-CA-certs
 cern-cloudinit-modules
 cernvm-appliance-agent
 cernvm-config
+cernvm-gce
 cernvm-online-guest
 cernvm-pam
 cernvm-patches
 cernvm-release
 cernvm-theme
 cernvm-update
+cloud-scheduler
 cvmfs
 cvmfs-devel
 cvmfs-init-scripts
@@ -22,7 +24,8 @@ cpan2rpm
 ec2-api-tools
 ec2-ami-tools
 eos-fuse
-gcutil
+google-cloud-sdk
+nimbus-cloud-client
 openafs-client
 openafs-kpasswd
 openafs-krb5
@@ -37,3 +40,4 @@ perl-Text-Table
 perl-XML-Encoding
 slim
 vboxguest
+VBoxManage
