@@ -12,9 +12,6 @@ python-setuptools
 pyxf86config
 python-boto
 python-lxml    # Prerequisite for cloudscheduler
-python-glanceclient
-python-keystoneclient
-python-novaclient
 python-pip      # Installer for packages
 python-suds     # Prerequisite for cloudscheduler
 python-urlgrabber

@@ -7,7 +7,7 @@ audiofile
 dbus-x11
 emacs
 emacs-common
-esound-tools
+esound
 expat
 expat-devel
 firefox
@@ -22,7 +22,6 @@ gnome-system-monitor
 gnome-themes
 gnome-vfs2
 gtk2-engines
-gvfs	# for Trash icon
 hal
 hal-devel
 hicolor-icon-theme
@@ -76,7 +75,7 @@ xorg-x11-fonts-ISO8859-1-75dpi
 xorg-x11-fonts-Type1
 xorg-x11-fonts-misc
 xorg-x11-server-Xorg
-xorg-x11-server-devel
+xorg-x11-server-sdk
 xorg-x11-server-Xvfb
 xorg-x11-server-utils
 xorg-x11-util-macros

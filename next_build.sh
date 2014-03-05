@@ -1,10 +1,10 @@
 #!/bin/sh
 set -e
 
-RENEGADE_PATH=../renegade
-DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-devel.cern.ch}
+#RENEGADE_PATH=../renegade
+DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-slc5.cern.ch}
 
-make -C "$RENEGADE_PATH"
+#make -C "$RENEGADE_PATH"
 touch _refetch_repometadata
 make
 make -f install.mk DEST_REPOSITORY="$DEST_REPOSITORY"

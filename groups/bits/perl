@@ -5,13 +5,11 @@ perl-Archive-Zip
 perl-Compress-Zlib
 perl-Config-General
 perl-Convert-ASN1
-perl-CPAN
 perl-Crypt-SSLeay
-perl-Date-Manip
+perl-DateManip
 perl-DBD-SQLite
 perl-IO-Compress-Base
 perl-IO-Compress-Bzip2
-perl-IO-Compress-Zlib
 perl-DBD-MySQL
 perl-Digest-HMAC
 perl-Digest-SHA1
@@ -30,7 +28,6 @@ perl-SGMLSpm
 perl-String-CRC32
 perl-TermReadKey
 perl-Test-Exception
-perl-Test-Simple
 perl-TimeDate
 perl-Tk			# to desktop?
 perl-XML-DOM

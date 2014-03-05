@@ -6,10 +6,7 @@ binutils-devel
 boost
 boost-devel
 bzip2-devel
-clang
-clang-devel
 cloud-init
-cloud-utils
 cmake
 compat-gcc-34
 compat-gcc-34-c++
@@ -19,6 +16,7 @@ compat-glibc-headers
 compat-libf2c-34
 compat-libstdc++-33
 curl
+curl-devel
 cvs
 db4
 db4-devel
@@ -35,21 +33,18 @@ gcc
 gcc-c++
 gcc-gfortran
 gdb		# for ROOT
-genisoimage
 git
 glibc-devel
-glibc-static
 gmp-devel
 iptables
 krb5-workstation # single sign on ssh, scp, ...
 ksh
 libaio		# asynchronous I/O
 libaio-devel
-libcurl-devel
 libicu-devel
 libidn-devel
-libjpeg-turbo        # turbo flavor required by gtk2
-libjpeg-turbo-devel
+libjpeg        # turbo flavor required by gtk2
+libjpeg-devel
 libpng
 libpng-devel
 libstdc++-devel
@@ -58,13 +53,11 @@ libtiff
 libtiff-devel
 libXfont-devel
 libxml2-devel
-llvm
-llvm-devel
-llvm-doc
 logwatch
 lsof
 ltrace		# library tracing
 mlocate		# locate utility
+mkisofs
 mysql-devel
 nano
 ncurses-devel

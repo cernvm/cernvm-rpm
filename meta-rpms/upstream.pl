@@ -63,7 +63,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slc_os' => {
   'baseurl' => {
@@ -165,6 +165,9 @@
 },
 'afs' => {
   'baseurl' => {
+    'el5' => {
+      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.1/rhel5/x86_64',
+    }, 
     'el6' => {
       'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.1/rhel6/x86_64',
     },
@@ -174,10 +177,13 @@
 },
 'devtools' => {
   'baseurl' => {
+    'el5' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/cern/devtoolset/slc5X/x86_64/yum/devtoolset',
+    },
     'el6' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/external_products/devtoolset/x86_64/2.0',
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 }
