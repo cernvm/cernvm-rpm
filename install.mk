@@ -26,6 +26,7 @@ all: rolling_tag
 	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d; done
 	./migration_fixes.sh $(DEST_ROOT) "$(YUM_OPTIONS)"
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
+	for dbfile in `find $(DEST_ROOT)/var/lib/rpm/ -type f -name "[A-Z]*"`; do sudo db_dump -f `dirname $$dbfile`/dump.`basename $$dbfile` $$dbfile; done
 	sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs/$(DEST_PATH)
 	sudo cvmfs_server publish -r cernvm-system-$(VERSION) -a cernvm-system-$(VERSION) $(DEST_REPOSITORY)
 	cvmfs_server check $(DEST_REPOSITORY)
