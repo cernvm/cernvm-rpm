@@ -23,6 +23,7 @@ cvmfs-server
 cpan2rpm
 ec2-api-tools
 ec2-ami-tools
+elastiq
 eos-fuse
 google-cloud-sdk
 nimbus-cloud-client
@@ -39,5 +40,8 @@ perl-Text-EasyTemplate
 perl-Text-Table
 perl-XML-Encoding
 slim
-vboxguest
+uriparser
+vaf-client
+vboxguest  # for unity
 VBoxManage
+vmware-tools-plugins-unity

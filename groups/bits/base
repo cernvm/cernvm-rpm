@@ -75,6 +75,7 @@ dhclient
 openssh-clients
 openssh-server
 openssl-devel
+openssl-perl
 parted
 pkgconfig
 readahead	# speed up boot
