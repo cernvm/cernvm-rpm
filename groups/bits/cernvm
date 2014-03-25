@@ -8,6 +8,7 @@ cernvm-config
 cernvm-gce
 cernvm-online-guest
 cernvm-pam
+cernvm-patches
 cernvm-release
 cernvm-theme
 cernvm-update
