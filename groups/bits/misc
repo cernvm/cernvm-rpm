@@ -25,6 +25,7 @@ createrepo
 cscope
 cups		# To desktop?
 cyrus-sasl-plain
+erlang-rebar
 expect		# contains mkpasswd
 davix
 devtoolset-2-toolchain  # New compilers
@@ -146,4 +147,6 @@ tk		# Graphical interface for tcl, to desktop?
 util-linux-ng	# contains setarch
 x11vnc
 xrdp
+yaws
+yaws-devel
 yum-utils

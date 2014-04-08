@@ -19,6 +19,7 @@ cloud-scheduler
 cvmfs
 cvmfs-devel
 cvmfs-init-scripts
+cvmfs-auto-setup
 cvmfs-server
 cpan2rpm
 ec2-api-tools
@@ -39,6 +40,7 @@ perl-Text-Aligner
 perl-Text-EasyTemplate
 perl-Text-Table
 perl-XML-Encoding
+shoal-client
 slim
 uriparser
 vaf-client
