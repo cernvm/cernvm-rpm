@@ -145,6 +145,7 @@ tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
 util-linux-ng	# contains setarch
+valgrind
 x11vnc
 xrdp
 yaws
