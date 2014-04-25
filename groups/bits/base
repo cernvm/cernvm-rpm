@@ -8,7 +8,6 @@ boost-devel
 bzip2-devel
 clang
 clang-devel
-clang-doc
 cloud-init
 cloud-utils
 cmake
@@ -76,6 +75,7 @@ dhclient
 openssh-clients
 openssh-server
 openssl-devel
+openssl-perl
 parted
 pkgconfig
 readahead	# speed up boot

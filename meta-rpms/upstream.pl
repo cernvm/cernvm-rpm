@@ -56,6 +56,20 @@
   'extras' => 0,
   'active' => 1,
 },
+'oslibs' => {
+  'baseurl' => {
+    'el5' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/wlcg/sl5/x86_64',
+      'i386' => 'http://linuxsoft.cern.ch/wlcg/sl5/i386',
+    },
+    'el6' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/wlcg/sl6/x86_64',
+      'i386' => 'http://linuxsoft.cern.ch/wlcg/sl6/i386',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'rhcommon' => {
   'baseurl' => {
     'el6' => {
@@ -170,5 +184,23 @@
     },
   },
   'extras' => 1,
+  'active' => 0,
+},
+'devtools' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/external_products/devtoolset/x86_64/2',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
+'shoal' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://shoal.heprc.uvic.ca/repo/prod/sl/6X/x86_64',
+    },
+  },
+  'extras' => 0,
   'active' => 0,
 },
