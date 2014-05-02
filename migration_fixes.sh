@@ -5,9 +5,9 @@ YUM_OPTIONS="$2"
 
 sudo package-cleanup $YUM_OPTIONS --oldkernels --count=1
 
-#if rpm --root "$DEST_ROOT" -q gcutil; then
-#  sudo yum $YUM_OPTIONS erase gcutil
-#fi
+if rpm --root "$DEST_ROOT" -q gcutil; then
+  sudo yum $YUM_OPTIONS erase gcutil
+fi
 
 if rpm --root "$DEST_ROOT" -q gsutil; then
   sudo yum $YUM_OPTIONS erase gsutil

@@ -29,7 +29,6 @@ eos-fuse
 google-cloud-sdk
 nimbus-cloud-client
 openafs-client
-openafs-kpasswd
 openafs-krb5
 open-vm-tools
 perl-Amazon-EC2

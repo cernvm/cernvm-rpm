@@ -180,11 +180,11 @@
 'afs' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.1/rhel6/x86_64',
+      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.2/rhel6/x86_64',
     },
   },
-  'extras' => 1,
-  'active' => 0,
+  'extras' => 0,
+  'active' => 1,
 },
 'devtools' => {
   'baseurl' => {
