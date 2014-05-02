@@ -17,6 +17,7 @@ all: rolling_tag
 	if [ -d $(DEST_ROOT)/dev ]; then \
 	  for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d && sudo ln -s /dev/$$d $(DEST_ROOT)/dev/$$d; done \
 	fi
+	./pre_migration_fixes.sh $(DEST_ROOT) "$(YUM_OPTIONS)"
 	if rpm --root $(DEST_ROOT) -q cernvm-system >/dev/null 2>&1; then \
 	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) update cernvm-system-$(VERSION); \
