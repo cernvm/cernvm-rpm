@@ -38,9 +38,11 @@ fipscheck-devel # A library for integrity verification of FIPS validated modules
 flex		# A tool for creating scanners (text pattern recognizers).
 gd		# A graphics library for quick creation of PNG or JPEG images
 gd-devel
+geany           # Lightweight text editor / IDE
 ghc
 giflib
 giflib-devel
+gimp            # Image manipulation
 gitstats
 glib		# glib2 already present
 glib-devel
