@@ -18,6 +18,7 @@ CernVM Meta Package (Edition: %{cernvm_edition})
 %prep
 
 %build
+mkdir -p %{buildroot}
 
 %clean
 
