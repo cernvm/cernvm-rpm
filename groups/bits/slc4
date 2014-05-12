@@ -1,3 +1,8 @@
+cvmfs
+cvmfs-auto-setup
+cvmfs-devel
+tcsh
+zsh
 nfs-utils
 paw
 xterm

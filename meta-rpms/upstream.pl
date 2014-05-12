@@ -21,8 +21,8 @@
 'fastbugs' => {
   'baseurl' => {
     'el4' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/x86_64/errata/fastbugs/RPMS',
-      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/errata/fastbugs/RPMS',
+      'x86_64' => 'http://cvm-storage00/yum/sl4/fastbugs/x86_64',
+      'i386' => 'http://cvm-storage00/yum/sl4/fastbugs/i386',
     },
     'el5' => {
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/fastbugs',
@@ -34,76 +34,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
-},
-'security' => {
-  'baseurl' => {
-    'el4' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/x86_64/errata/SL/RPMS',
-      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/obsolete/4x/i386/errata/SL/RPMS',
-    }, 
-    'el5' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/security',
-      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/security',
-    },
-    'el6' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/security',
-      'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/updates/security',
-    },
-  },
-  'extras' => 0,
-  'active' => 0,
-},
-'slcx' => {
-  'baseurl' => {
-    'el5' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc5X/x86_64/yum/extras',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc5X/i386/yum/extras',
-    },
-    'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc6X/x86_64/yum/extras',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc6X/i386/yum/extras'
-    }
-  },
-  'extras' => 0,
-  'active' => 0,
-},
-'rhcommon' => {
-  'baseurl' => {
-    'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/rhcommon/slc6X/x86_64/yum/rhcommon',
-    },
-  },
-  'extras' => 0,
-  'active' => 0,
-},
-'slc_os' => {
-  'baseurl' => {
-    'el5' => { 
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc5X/x86_64/yum/os',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc5X/i386/yum/os',
-    },
-    'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc6X/x86_64/yum/os',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc6X/i386/yum/os'
-    }
-  },
-  'extras' => 0,
-  'active' => 0,
-},
-'slc_updates' => {
-  'baseurl' => {
-    'el5' => { 
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc5X/x86_64/yum/updates',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc5X/i386/yum/updates',
-    },
-    'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/cern/slc6X/x86_64/yum/updates',
-      'i386' => 'http://linuxsoft.cern.ch/cern/slc6X/i386/yum/updates'
-    }
-  },
-  'extras' => 0,
-  'active' => 0,
+  'active' => 1,
 },
 'epel' => {
   'baseurl' => {
@@ -124,6 +55,9 @@
 },
 'cvmfs' => {
   'baseurl' => {
+    'el4' => {
+      'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/4/i386',
+    },
     'el5' => {
       'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/5/x86_64',
       'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/5/i386',
@@ -134,35 +68,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
-},
-'xrootd' => {
-  'baseurl' => {
-    'el5' => {   
-      'x86_64' => 'http://xrootd.org/binaries/stable/slc/5/x86_64',
-      'i386' => 'http://xrootd.org/binaries/stable/slc/5/i386',
-    },
-    'el6' => {
-      'x86_64' => 'http://xrootd.org/binaries/stable/slc/6/x86_64',
-      'i386' => 'http://xrootd.org/binaries/stable/slc/6/i386',
-    },
-  },
-  'extras' => 0,
-  'active' => 0,  # no SQlite meta data
-},
-'eos' => {
-  'baseurl' => {
-    'el5' => {
-      'x86_64' => 'http://eos.cern.ch/rpms/eos-0.2/slc-5-x86_64',
-      'i386' => 'http://eos.cern.ch/rpms/eos-0.2/slc-5-i386',
-    },
-    'el6' => {
-      'x86_64' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-x86_64',
-      'i386' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-i386',
-    },
-  },
-  'extras' => 0,
-  'active' => 0, # no SQlite meta data
+  'active' => 1,
 },
 'cvmextras' => {
   'baseurl' => {
