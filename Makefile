@@ -44,7 +44,7 @@ hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
 $(OS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(OS_RPM_DIR)/*.rpm)
-	createrepo -d -s sha $(OS_RPM_DIR) --workers=12
+	createrepo -d --update -s sha $(OS_RPM_DIR) --workers=12
 
 $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 	createrepo --no-database -s sha $(META_RPM_DIR) --workers=12
