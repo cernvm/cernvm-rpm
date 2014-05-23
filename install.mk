@@ -4,7 +4,7 @@ include config.mk
 DEST_REPOSITORY = cernvm-slc4.cern.ch
 DEST_PATH = /cvm3
 
-DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
+DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)
 YUM_OPTIONS = -y --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta-sl4compat --enablerepo=cernvm-os-sl4compat --enablerepo=cernvm-extras-sl4compat --installroot $(DEST_ROOT)
 
 DEVICES = stdout stderr random urandom
@@ -26,7 +26,7 @@ all: rolling_tag
 	sudo killall -9 minilogd || true
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
 	for dbfile in `find $(DEST_ROOT)/var/lib/rpm/ -type f -name "[A-Z]*"`; do sudo db_dump -f `dirname $$dbfile`/dump.`basename $$dbfile` $$dbfile; done
-	#sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs/$(DEST_PATH)
+	#sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs$(DEST_PATH)
 	sudo cvmfs_server publish -r cernvm-system-$(VERSION) -a cernvm-system-$(VERSION) $(DEST_REPOSITORY)
 	cvmfs_server check $(DEST_REPOSITORY)
 
