@@ -166,12 +166,12 @@
 'cvmextras' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://cernvm002.cern.ch/yum/cernvm/extras/5/x86_64',
-      'i386' => 'http://cernvm002.cern.ch/yum/cernvm/extras/5/i386',
+      'x86_64' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/5/x86_64',
+      'i386' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/5/i386',
     },
     'el6' => {
-      'x86_64' => 'http://cernvm002.cern.ch/yum/cernvm/extras/6/x86_64',
-      'i386' => 'http://cernvm002.cern.ch/yum/cernvm/extras/6/i386',
+      'x86_64' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/6/x86_64',
+      'i386' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/6/i386',
     },
   },
   'extras' => 1,

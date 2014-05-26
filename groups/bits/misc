@@ -20,8 +20,12 @@ blas-devel
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
 compat-openldap
+cppunit
+cppunit-devel
 ctags		# A C programming language indexing and/or cross-reference tool.
 createrepo
+cryptopp
+cryptopp-devel
 cscope
 cups		# To desktop?
 cyrus-sasl-plain
@@ -38,9 +42,11 @@ fipscheck-devel # A library for integrity verification of FIPS validated modules
 flex		# A tool for creating scanners (text pattern recognizers).
 gd		# A graphics library for quick creation of PNG or JPEG images
 gd-devel
+geany           # Lightweight text editor / IDE
 ghc
 giflib
 giflib-devel
+gimp            # Image manipulation
 gitstats
 glib		# glib2 already present
 glib-devel
@@ -117,6 +123,8 @@ patchutils	# That's not patch itself
 php-ldap
 php-mysql
 prelink
+protobuf
+protobuf-devel
 psacct		# Utilities for monitoring process activities.
 psutils		# This archive contains some utilities for manipulating PostScript documents.
 puppet
@@ -130,6 +138,7 @@ rdate
 rng-tools	# for /sbin/rngd
 rpm-build
 rpm-devel
+scons
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 slang		# The shared library for the S-Lang extension language (for newt?)
@@ -144,6 +153,7 @@ tigervnc-server
 tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
+tmux		# like screen
 util-linux-ng	# contains setarch
 valgrind
 x11vnc

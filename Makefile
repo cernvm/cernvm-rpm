@@ -12,7 +12,7 @@ TOP = $(shell pwd)
 STRONG_VERSION=$(EDITION)-$(VERSION)-$(PLATFORM)
 STRONG_HOTFIX_VERSION=$(EDITION)-$(HOTFIX_VERSION)-$(PLATFORM)
 STRONG_PLATFORM=$(SL_UPSTREAM)-$(PLATFORM)
-CERNVM_REPO_BASE = /var/www/yum/cernvm
+CERNVM_REPO_BASE = /data/yum/cernvm
 CERNVM_META_REPOTYPE = 
 
 OS_RPM_DIR = $(CERNVM_REPO_BASE)/os/$(SL_UPSTREAM)/$(PLATFORM)
@@ -44,10 +44,10 @@ hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
 $(OS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(OS_RPM_DIR)/*.rpm)
-	createrepo -d -s sha $(OS_RPM_DIR) --workers=12
+	createrepo -d --update -s sha $(OS_RPM_DIR) --workers=12
 
 $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
-	createrepo -d -s sha $(META_RPM_DIR) --workers=12
+	createrepo --no-database -s sha $(META_RPM_DIR) --workers=12
 
 ################################
 #  CernVM Edition Definitions  #
