@@ -113,6 +113,8 @@ net-snmp-libs
 mc		# Midnight commander, User-friendly text console file manager and visual shell
 mdadm		# Linux software RAID
 newt		# A development library for text mode user interfaces (requires slang)
+octave
+octave-devel
 openldap-clients # Client programs for OpenLDAP.
 openmotif22
 openmotif
