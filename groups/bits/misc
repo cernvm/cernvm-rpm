@@ -1,5 +1,6 @@
 acl		# setfacl getfacl
 alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
+ansible		# SSH based cluster management
 atk		# Interfaces for accessibility support, to desktop?
 atk-devel
 attr
