@@ -64,6 +64,7 @@ llvm-doc
 logwatch
 lsof
 ltrace		# library tracing
+man-pages
 mlocate		# locate utility
 mysql-devel
 nano

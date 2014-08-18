@@ -82,8 +82,12 @@ libfontenc-devel # X.Org X11 libfontenc library
 libgcrypt-devel
 libgpg-error-devel # This is a library that defines common error values for all GnuPG
 libICE-devel	# X.Org X11 libICE development package
+liblinear
+liblinear-devel # Machine learning
 libnotify	# libnotify is an implementation of the freedesktop.org desktop notification specification, to desktop?
 libSM-devel	# X.Org X11 libSM development package
+libsvm          # Support vector machines
+libsvm-devel
 libutempter-devel # A privileged helper for utmp/wtmp updates
 libXcomposite
 libXcomposite-devel
