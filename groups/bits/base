@@ -5,6 +5,7 @@ bind-utils
 binutils-devel 
 boost
 boost-devel
+bridge-utils
 bzip2-devel
 clang
 clang-devel
@@ -98,6 +99,7 @@ tcsh		# C Shell
 telnet
 tig
 tmpwatch
+tunctl
 unzip
 usermode	# poweroff, halt, reboot commands
 vim-enhanced
