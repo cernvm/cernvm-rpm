@@ -36,6 +36,7 @@ davix
 devtoolset-2-toolchain  # New compilers
 devtoolset-2-valgrind
 diffstat	# A utility which provides statistics based on the output of diff.
+distcc
 dosfstools
 ejabberd	# For CoPilot
 euca2ools
@@ -110,6 +111,7 @@ mod_ssl		# For cernvm-appliance-agent
 monit		# Monitoring utility
 mpich2
 mpich2-devel
+nedit
 netpbm		# A library for handling different graphics file formats
 netpbm-devel
 netpbm-progs

@@ -121,6 +121,15 @@
   'extras' => 0,
   'active' => 1,
 },
+'openstack' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/rdo/rdo-x86_64-stable/RPMS.openstack-rdo-icehouse-epel-6',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'cvmfs' => {
   'baseurl' => {
     'el5' => {
