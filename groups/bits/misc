@@ -66,6 +66,7 @@ gpm-devel
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
+htop		# Better top utility
 hwloc
 indent		# A GNU program for formatting C code.
 intltool
@@ -120,6 +121,8 @@ net-snmp-libs
 mc		# Midnight commander, User-friendly text console file manager and visual shell
 mdadm		# Linux software RAID
 newt		# A development library for text mode user interfaces (requires slang)
+ntfs-3g
+ntfsprogs
 octave
 octave-devel
 openldap-clients # Client programs for OpenLDAP.
@@ -163,6 +166,7 @@ tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
 tmux		# like screen
+tuned		# tuned-adm, set kernel parameters optimal for VM
 util-linux-ng	# contains setarch
 valgrind
 x11vnc
