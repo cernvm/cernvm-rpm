@@ -55,6 +55,7 @@ glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
 gfalFS
+glusterfs
 gnupg2
 gnuplot
 gnutls
