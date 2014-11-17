@@ -160,6 +160,7 @@ subversion-devel
 symlinks	# for /usr/bin/symlinks
 sysfsutils	# Utilities for interfacing with sysfs
 syslinux
+sysstat		# sar and iostat
 usbutils	# This package contains utilities for inspecting devices connected to a USB bus (lsusb) 
 tcpdump
 tigervnc-server
