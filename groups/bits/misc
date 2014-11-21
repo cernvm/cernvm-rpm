@@ -110,6 +110,7 @@ mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collisio
 mesa-libGLU-devel
 mod_dnssd	# For cernvm-appliance-agent
 mod_ssl		# For cernvm-appliance-agent
+mod_wsgi	# For cvmfs server
 monit		# Monitoring utility
 mpich2
 mpich2-devel
