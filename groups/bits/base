@@ -102,6 +102,7 @@ xrootd-client
 xz
 xz-devel
 yum
+yum-conf
 zip
 zlib-devel
 zsh		# Z Shell
