@@ -58,6 +58,7 @@ if (defined($opt_d)) {
 sub prepare_repository {
   my ($name, $sqlite, $repo_hash_ref) = (shift, shift, shift);
 
+  print STDERR "Prepare database $sqlite ($name)\n";
   my $dbh = DBI->connect("dbi:SQLite:dbname=$sqlite", "", "", { RaiseError => 1 })
               or die $DBI::errstr;
   # Finds all providing packages for a specific capability (including files)

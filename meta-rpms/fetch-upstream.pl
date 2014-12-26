@@ -39,14 +39,22 @@ foreach my $repo (keys %repo_config) {
   if (!defined($specific_repo) or $repo eq $specific_repo) {
     my $url = $repo_config{$repo}->{'baseurl'}->{$upstream_version}->{$arch};
     print "Fetching meta data of $repo ($url)\n";
+    my $decompressor = "bunzip2";
     my $primary = `curl $url/repodata/repomd.xml 2>/dev/null | grep primary.sqlite.bz2`;
+    if ($primary eq "") {
+      $primary = `curl $url/repodata/repomd.xml 2>/dev/null | grep primary.sqlite.xz`;
+      $decompressor = "xzdec";
+    }
+    if ($primary eq "") {
+      next;
+    }
     chomp $primary;
     $primary =~ s|^[^/]*/([a-z0-9\.\-]*).*|$1|;
 
     system("curl -I -R -o timestamp $url/repodata/$primary 2>/dev/null");
     if ( (! -e "$repodata_dir/$repo.sqlite") || ((stat('timestamp'))[9] > (stat("$repodata_dir/$repo.sqlite"))[9]) ) {
       print "Downloading $url/repodata/$primary\n";
-      system("curl $url/repodata/$primary 2>/dev/null | bunzip2 -c > $repodata_dir/$repo.sqlite");
+      system("curl $url/repodata/$primary 2>/dev/null | $decompressor -c > $repodata_dir/$repo.sqlite");
     }
     unlink 'timestamp';
   }

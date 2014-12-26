@@ -10,6 +10,9 @@
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/os',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/os',
     },
+    'el7' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/7x/x86_64/os',
+    }
   },
   'extras' => 0,
   'active' => 1,
@@ -24,9 +27,12 @@
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/fastbugs',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/updates/fastbugs',
     },
+    'el7' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/7x/x86_64/updates/fastbugs'
+    },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'security' => {
   'baseurl' => {
@@ -38,9 +44,12 @@
       'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/security',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/updates/security',
     },
+    'el7' => {
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/7x/x86_64/updates/security',
+    },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slcx' => {
   'baseurl' => {
@@ -54,7 +63,7 @@
     }
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'oslibs' => {
   'baseurl' => {
@@ -65,6 +74,9 @@
     'el6' => {
       'x86_64' => 'http://linuxsoft.cern.ch/wlcg/sl6/x86_64',
       'i386' => 'http://linuxsoft.cern.ch/wlcg/sl6/i386',
+    },
+    'el7' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/wlcg/centos7/x86_64',
     },
   },
   'extras' => 0,
@@ -77,7 +89,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slc_os' => {
   'baseurl' => {
@@ -117,15 +129,21 @@
       'x86_64' => 'http://linuxsoft.cern.ch/epel/6/x86_64',
       'i386' => 'http://linuxsoft.cern.ch/epel/6/i386',
     },
+    'el7' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/epel/7/x86_64',
+    },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'openstack' => {
   'baseurl' => {
     'el6' => {
       'x86_64' => 'http://linuxsoft.cern.ch/rdo/rdo-x86_64-stable/RPMS.openstack-rdo-icehouse-epel-6',
     },
+    'el7' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/rdo/rdo-x86_64-stable/RPMS.openstack-rdo-icehouse-epel-7'
+    }
   },
   'extras' => 0,
   'active' => 1,
@@ -139,6 +157,9 @@
     'el6' => {
       'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/x86_64',
       'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/i386',
+    },
+    'el7' => {
+      'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/7/x86_64',
     },
   },
   'extras' => 0,
@@ -182,6 +203,9 @@
       'x86_64' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/6/x86_64',
       'i386' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/6/i386',
     },
+    'el7' => {
+      'x86_64' => 'http://cvm-storage00.cern.ch/yum/cernvm/extras/7/x86_64',
+    }
   },
   'extras' => 1,
   'active' => 1,
@@ -193,7 +217,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'devtools' => {
   'baseurl' => {
@@ -202,7 +226,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'shoal' => {
   'baseurl' => {
