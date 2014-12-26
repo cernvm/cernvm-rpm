@@ -22,6 +22,7 @@ cvmfs-init-scripts
 cvmfs-auto-setup
 cvmfs-server
 cpan2rpm
+docker-cernvm
 ec2-api-tools
 ec2-ami-tools
 elastiq
