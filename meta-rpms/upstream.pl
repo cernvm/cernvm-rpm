@@ -32,7 +32,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
+  'active' => 1,
 },
 'security' => {
   'baseurl' => {
@@ -49,7 +49,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
+  'active' => 1,
 },
 'slcx' => {
   'baseurl' => {

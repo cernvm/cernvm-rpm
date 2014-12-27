@@ -290,6 +290,7 @@ sub find_providers {
 
   # Through all repos to search for providers
   my @candidates;
+  my @candidates_obsoleted;
   my %seen = ();
   foreach my $repo_provides (keys %$repo_hash_ref) {
     my $st_provides = @{$all_repos{$repo_provides}}[1];
@@ -324,13 +325,18 @@ sub find_providers {
       #print STDERR "provider for $cap_name $provider_pkg (@$row_provides[4]) passed version\n";
 
       $seen{$provider_pkg} = "";
+      my $extra_info = (@$row_provides[11] == 2) ? " [obsoleted]" : "";
       print DEBUG "    Provider ($repo_provides): @$row_provides[0]-" .
         "@$row_provides[1]:@$row_provides[2]-@$row_provides[3] " .
-        "(@$row_provides[4]) / $provider_pkg\n";
+        "(@$row_provides[4]) / $provider_pkg$extra_info\n";
       # no self-dependency
       # return ("SELF") if ("$provider_pkg" eq "$origin_pkg");
       #print STDERR "provider for $cap_name $provider_pkg (@$row_provides[4]) passed self-dep test\n";
-      push (@candidates, "$provider_pkg");
+      if (@$row_provides[11] == 2) {
+        push (@candidates_obsoleted, "$provider_pkg");
+      } else {
+        push (@candidates, "$provider_pkg");
+      }
     }
     $st_provides->finish();
   }
@@ -339,6 +345,9 @@ sub find_providers {
   #  print STDERR " ($cap_flag $cap_epoch:$cap_version-$cap_release)" if defined($cap_flag);
   #  print STDERR " / $origin_pkg\n";
   #}
+  if (scalar(@candidates) == 0) {
+    @candidates = @candidates_obsoleted;
+  }
   return @candidates;
 }
 
@@ -560,7 +569,7 @@ for my $name_arch (keys %names2versions) {
   $ilp_select_version .= '0 dummy1';
   foreach my $p (@$version_list_ref) {
     $ilp_minimize .= " + $version_weight $p->{'key'}\n";
-    $version_weight += 10;
+    $version_weight += 100;
 
     $ilp_select_version .= " + $p->{'key'}";
     #print "Name: $p->{'name'}\n";
