@@ -3,11 +3,9 @@
 DEST_ROOT="$1"
 YUM_OPTIONS="$2"
 
-if rpm --root "$DEST_ROOT" -q xorg-x11-drv-void; then
-  sudo yum $YUM_OPTIONS erase xorg-x11-drv-void
-fi
-
-if rpm --root "$DEST_ROOT" -q openafs-kpasswd; then
-  sudo yum $YUM_OPTIONS erase openafs-kpasswd
-fi
+for pkg in xorg-x11-drv-void openafs-kpasswd puppet-3.6.2-1.el6sat facter-1.7.6-2.el6sat ruby-shadow-1.4.1-13.el6_4 ruby-augeas-0.4.1-1.el6_4; do
+  if rpm --root "$DEST_ROOT" -q $pkg; then
+    sudo yum $YUM_OPTIONS erase $pkg
+  fi
+done
 

@@ -8,7 +8,6 @@ ROLLING_TAG=HEAD
 [ -z "$VERSION" ] && exit 1
 
 HASH=$(sudo cvmfs_server tag -lx ${CVMFS_REPOSITORY} | grep cernvm-system-${VERSION} | awk '{print $2}' | sed "s/ //")
-sudo cvmfs_server transaction ${CVMFS_REPOSITORY}
-sudo cvmfs_server publish -a ${ROLLING_TAG} -h ${HASH} ${CVMFS_REPOSITORY}
-sudo cvmfs_server lstags ${CVMFS_REPOSITORY}
+sudo cvmfs_server tag -a ${ROLLING_TAG} -h ${HASH} ${CVMFS_REPOSITORY}
+sudo cvmfs_server tag -l ${CVMFS_REPOSITORY}
 
