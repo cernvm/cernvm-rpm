@@ -9,6 +9,7 @@ perl-CPAN
 perl-Crypt-SSLeay
 perl-Date-Manip
 perl-DBD-SQLite
+perl-Git
 perl-IO-Compress-Base
 perl-IO-Compress-Bzip2
 perl-IO-Compress-Zlib

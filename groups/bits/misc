@@ -21,6 +21,11 @@ blas-devel
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
 compat-openldap
+clang
+clang-devel
+clang-analyzer
+cloud-init
+cloud-utils
 cppunit
 cppunit-devel
 ctags		# A C programming language indexing and/or cross-reference tool.
@@ -63,7 +68,7 @@ golang
 golang-godoc
 gperftools
 gpm		# A mouse server for the Linux console, to desktop?
-gpm-devel	
+gpm-devel
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
@@ -103,6 +108,10 @@ libXxf86vm-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
+llvm
+llvm-devel
+llvm-doc
+llvm-static
 lockdev		# A library for locking devices.
 lockdev-devel
 lvm2
@@ -162,7 +171,7 @@ symlinks	# for /usr/bin/symlinks
 sysfsutils	# Utilities for interfacing with sysfs
 syslinux
 sysstat		# sar and iostat
-usbutils	# This package contains utilities for inspecting devices connected to a USB bus (lsusb) 
+usbutils	# This package contains utilities for inspecting devices connected to a USB bus (lsusb)
 tcpdump
 tigervnc-server
 tigervnc-server-module

@@ -1,105 +1,188 @@
 autofs
 automake
 avahi
-bind-utils
-binutils-devel 
+avahi-devel
+avahi-glib
+avahi-glib-devel
+avahi-tools
+bash
+bind-utils # dig and nslookup
+binutils-devel
 boost
 boost-devel
 bridge-utils
+bzip2
 bzip2-devel
-clang
-clang-devel
-cloud-init
-cloud-utils
 cmake
-compat-gcc-34
-compat-gcc-34-c++
-compat-gcc-34-g77
+compat-db47
+compat-gcc-44
+compat-gcc-44-c++
+compat-gcc-44-g77
 compat-glibc
 compat-glibc-headers
 compat-libf2c-34
 compat-libstdc++-33
+compat-libtiff3
 curl
 cvs
-db4
-db4-devel
-db4-utils
+dbus
+dbus-c++
+dbus-c++-devel
 dbus-devel
+dbus-doc
+dbus-glib
 dbus-glib-devel
+dbus-python
+dbus-python-devel
 doxygen
+doxygen-latex
 elfutils	# strip, nm, ld, ...
+elfutils-devel
+elfutils-devel-static
+elfutils-libelf
+elfutils-libelf-devel
+elfutils-libelf-devel-static
+emacs
+emacs-auctex
+emacs-common
+emacs-gettext
+emacs-git
+emacs-gnuplot
+emacs-golang
+emacs-libidn
+emacs-root
+emacs-terminal
+emacs-rpm-spec-mode
 environment-modules
+fontconfig
 fontconfig-devel	# for ROOT
-fuse-devel		# for cvmfs
+fontconfig-devel-doc
+fuse # for cvmfs
+fuse-devel
+fuse-python
 fuse-sshfs
 gcc
+gcc-aarch64-linux-gnu
+gcc-arm-linux-gnu
 gcc-c++
 gcc-gfortran
-gdb		# for ROOT
+gccxml
+gdb		# for ROOT, cvmfs
+gdb-doc
+gdb-gdbserver
 genisoimage
 git
+git-cvs
+git-svn
 glibc-devel
+glibc-headers
 glibc-static
+glibc-utils # mtrace and friends
+gmp
 gmp-devel
 iptables
+iptables-services
+iptstate
+javasqlite
+java-1.7.0-openjdk
+java-1.7.0-openjdk-devel
+java-1.7.0-openjdk-javadoc
+java-1.7.0-openjdk-src
+jzlib
+jzlib-javadoc
+krb5-devel
 krb5-workstation # single sign on ssh, scp, ...
 ksh
 libaio		# asynchronous I/O
 libaio-devel
+libcurl
 libcurl-devel
+libdb4
+libdb4-cxx
+libdb4-cxx-devel
+libdb4-devel
+libdb4-devel-static
+libdb4-doc
+libdb4-java
+libdb4-java-devel
+libdb4-tcl
+libdb4-utils
+libicu
 libicu-devel
+libicu-doc
+libidn
 libidn-devel
+libidn2
+libidn2-devel
 libjpeg-turbo        # turbo flavor required by gtk2
 libjpeg-turbo-devel
+libpng12             # SL6
+libpng12-devel
 libpng
 libpng-devel
+librsync
+librsync-devel
 libstdc++-devel
 libtar
+libtar-devel
 libtiff
 libtiff-devel
+libtiff-tools
+libXfont
 libXfont-devel
+libxml2
+libxml++
 libxml2-devel
-llvm
-llvm-devel
-llvm-doc
+libxml2-python
 logwatch
 lsof
 ltrace		# library tracing
 man-pages
+man-pages-fr
+man-pages-overrides
 mlocate		# locate utility
-mysql-devel
+mariadb
+mariadb-devel
+mysql++
+mysql++-devel
 nano
+ncurses
 ncurses-devel
 nfs-utils
 nscd
 ntp
+ntp-doc
+ntpdate
 dhclient
 openssh-clients
 openssh-server
+openssl098e
 openssl-devel
 openssl-perl
 parted
+parted-devel
 pkgconfig
-readahead	# speed up boot
+readline
 readline-devel
-redhat-rpm-config
+redhat-rpm-config # e.g. rpmsort, some macros
 rootfiles	# /root/.bashrc etc.
-rpmrebuild
 rsync
 samba-client
 screen
 ssmtp
+sqlite
 sqlite-devel
+sqlite-doc
 strace
 subversion
 sudo
 swig			# Connects C/C++/Objective C to some high-level programming languages
+swig-doc
 tcl		# The TCL language
 tcsh		# C Shell
 telnet
 tig
 tmpwatch
-tunctl
 unzip
 usermode	# poweroff, halt, reboot commands
 vim-enhanced
@@ -110,9 +193,17 @@ xml-common	# Common XML catalog and DTD files (small package)
 xorg-x11-proto-devel
 xorg-x11-xauth	# for ssh -X
 xrootd-client
+xrootd-devel
+xrootd-doc
+xrootd-fuse
 xz
+xz-compat-libs
 xz-devel
+xz-java
+xz-java-javadoc
+xz-lzma-compat
 yum
 zip
+zlib
 zlib-devel
 zsh		# Z Shell
