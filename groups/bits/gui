@@ -15,6 +15,11 @@ freeglut
 freeglut-devel
 gamin
 gamin-devel
+geany           # Lightweight text editor / IDE
+geany-devel
+geany-themes
+gimp            # Image manipulation
+gimp-help
 ghostscript-fonts
 glx-utils
 gnome-keyring
@@ -27,6 +32,8 @@ hal
 hal-devel
 hicolor-icon-theme
 libFS
+libICE  # X.Org X11 ICE (Inter-Client Exchange)
+libICE-devel
 libIDL
 libXaw
 libXres
@@ -37,30 +44,59 @@ libbonobo-devel
 libbonoboui-devel
 libcap
 libcroco
+libdrm  # libdrm Direct Rendering Manager
+libdrm-devel
 libexif
+libfontenc  # X.Org X11 libfontenc library
+libfontenc-devel
 libglade2
 libgnome
 libgnomecanvas
 libgnomeui
 libgsf
 libgtop2
+libnotify	# libnotify is an implementation of the freedesktop.org desktop notification specification
+libnotify-devel
 librsvg2
+libSM
+libSM-devel	 #  X.Org X11 SM (Session Management)
 libwnck
+libXcomposite
+libXcomposite-devel
+libXdamage
+libXdamage-devel
 libxkbfile
 libxklavier
+libXScrnSaver
+libXScrnSaver-devel
+libXtst-devel
+libXxf86vm-devel
+mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
+mesa-libGLU-devel
 nfs-utils-lib-devel
 nspr-devel
 pam_pkcs11
-python-devel
+pango		# System for layout and rendering of internationalized text
+pango-devel
+pangomm
+pangomm-devel
+pangomm-doc
 python-imaging
 python-libs
 python-sqlite2
 shared-mime-info
 system-config-date
 system-config-keyboard
+tigervnc
+tigervnc-icons
+tigervnc-server
+tigervnc-server-module
+tk		# Graphical interface for tcl, to desktop?
+tk-devel
 tkcvs  # graphical diff (tkdiff)
 ttmkfdir
 vte
+x11vnc
 xkeyboard-config
 xorg-x11-apps
 xorg-x11-drv-evdev
@@ -75,18 +111,21 @@ xorg-x11-fonts-75dpi
 xorg-x11-fonts-ISO8859-1-75dpi
 xorg-x11-fonts-Type1
 xorg-x11-fonts-misc
+xorg-x11-proto-devel
 xorg-x11-server-Xorg
 xorg-x11-server-devel
 xorg-x11-server-Xvfb
 xorg-x11-server-utils
 xorg-x11-util-macros
 xorg-x11-utils
+xorg-x11-xauth	# for ssh -X
 xorg-x11-xbitmaps
 xorg-x11-xdm
 xorg-x11-xinit
 xorg-x11-xkb-utils
 xorg-x11-xtrans-devel
 xpdf
+xrdp
 xterm
 xulrunner
 xulrunner-devel

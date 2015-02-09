@@ -1,6 +1,15 @@
+acl		# setfacl getfacl
+acpid		# ACPI Event Daemon
+attr
+audit		# /sbin/audi... tools
 autofs
+autoconf
 automake
 avahi
+avahi-compat-howl
+avahi-compat-howl-devel
+avahi-compat-libdns_sd
+avahi-compat-libdns_sd-devel
 avahi-devel
 avahi-glib
 avahi-glib-devel
@@ -11,6 +20,7 @@ binutils-devel
 boost
 boost-devel
 bridge-utils
+btrfs-progs
 bzip2
 bzip2-devel
 cmake
@@ -34,6 +44,7 @@ dbus-glib
 dbus-glib-devel
 dbus-python
 dbus-python-devel
+dosfstools  # FAT tools etc.
 doxygen
 doxygen-latex
 elfutils	# strip, nm, ld, ...
@@ -71,6 +82,9 @@ gdb		# for ROOT, cvmfs
 gdb-doc
 gdb-gdbserver
 genisoimage
+giflib
+giflib-devel
+giflib-utils
 git
 git-cvs
 git-svn
@@ -83,6 +97,7 @@ gmp-devel
 iptables
 iptables-services
 iptstate
+irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
 javasqlite
 java-1.7.0-openjdk
 java-1.7.0-openjdk-devel
@@ -95,6 +110,10 @@ krb5-workstation # single sign on ssh, scp, ...
 ksh
 libaio		# asynchronous I/O
 libaio-devel
+libacl
+libacl-devel
+libattr
+libattr-devel
 libcurl
 libcurl-devel
 libdb4
@@ -128,6 +147,8 @@ libtar-devel
 libtiff
 libtiff-devel
 libtiff-tools
+libuuid
+libuuid-devel
 libXfont
 libXfont-devel
 libxml2
@@ -161,7 +182,11 @@ openssl-devel
 openssl-perl
 parted
 parted-devel
+perl
+perl-devel
 pkgconfig
+python
+python-devel
 readline
 readline-devel
 redhat-rpm-config # e.g. rpmsort, some macros
@@ -173,8 +198,11 @@ ssmtp
 sqlite
 sqlite-devel
 sqlite-doc
+sqlite2
+sqlite2-devel
 strace
 subversion
+subversion-devel
 sudo
 swig			# Connects C/C++/Objective C to some high-level programming languages
 swig-doc
@@ -183,15 +211,16 @@ tcsh		# C Shell
 telnet
 tig
 tmpwatch
+tree
 unzip
+usbutils	# lsusb
 usermode	# poweroff, halt, reboot commands
+uuid
 vim-enhanced
 vim-minimal
 wget
 which
 xml-common	# Common XML catalog and DTD files (small package)
-xorg-x11-proto-devel
-xorg-x11-xauth	# for ssh -X
 xrootd-client
 xrootd-devel
 xrootd-doc
@@ -203,6 +232,7 @@ xz-java
 xz-java-javadoc
 xz-lzma-compat
 yum
+yum-utils
 zip
 zlib
 zlib-devel
