@@ -1,89 +1,110 @@
-icewm # a simple window manager
-GConf2
-ORBit2
-Xaw3d
-a2ps
+ORBit2  # CORBA message broker
+ORBit2-devel
 audiofile
+audiofile-devel
 dbus-x11
-emacs
-emacs-common
 esound-tools
-expat
-expat-devel
+evince
+evince-devel
+evince-dvi
 firefox
-freeglut
+freeglut  # OpenGL Utility Toolkit
 freeglut-devel
-gamin
+freerdp
+freerdp-devel
+freerdp-plugins
+gamin  # file alteration monitor
 gamin-devel
+gamin-python
+GConf2
+GConf2-devel
 geany           # Lightweight text editor / IDE
 geany-devel
 geany-themes
 gimp            # Image manipulation
 gimp-help
+gimp-help-fr
+ghostscript
+ghostscript-devel
+ghostscript-doc
 ghostscript-fonts
 glx-utils
 gnome-keyring
+gnome-keyring-pam
 gnome-system-monitor
-gnome-themes
+gnome-themes-standard
+gnome-user-docs
 gnome-vfs2
-gtk2-engines
+gnome-vfs2-devel
+gtk2-engines  # Theme engines
+gtk2-engines-devel
 gvfs	# for Trash icon
-hal
-hal-devel
+gvfs-devel
 hicolor-icon-theme
-libFS
-libICE  # X.Org X11 ICE (Inter-Client Exchange)
-libICE-devel
-libIDL
-libXaw
-libXres
-libXxf86dga
-libXxf86misc
-libbonobo
+libbonobo  # Some CORBA interface stuff
 libbonobo-devel
+libbonoboui
 libbonoboui-devel
-libcap
-libcroco
+libcroco  # CSS2 parsing
+libcroco-devel
 libdrm  # libdrm Direct Rendering Manager
 libdrm-devel
-libexif
 libfontenc  # X.Org X11 libfontenc library
 libfontenc-devel
-libglade2
+libglade2  # XML user interface
+libglade2-devel
 libgnome
+libgnome-devel
 libgnomecanvas
+libgnomecanvas-devel
 libgnomeui
-libgsf
+libgnomeui-devel
+libgsf  # GNOME structured file library
+libgsf-devel
 libgtop2
+libgtop2-devel
+libICE  # X.Org X11 ICE (Inter-Client Exchange)
+libICE-devel
+libIDL  # Parsing interface definition language
+libIDL-devel
 libnotify	# libnotify is an implementation of the freedesktop.org desktop notification specification
 libnotify-devel
-librsvg2
-libSM
-libSM-devel	 #  X.Org X11 SM (Session Management)
-libwnck
+libSM  # #  X.Org X11 SM (Session Management)
+libSM-devel
+libwnck  # Window Navigator Construction Kit
+libwnck-devel
+libwnck3
+libwnck3-devel
+libXaw  # X Athena Widget Set
+libXaw-devel
 libXcomposite
 libXcomposite-devel
 libXdamage
 libXdamage-devel
 libxkbfile
+libxkbfile-devel
 libxklavier
+libxklavier-devel
+libXres  # X-Resource extension client library
+libXres-devel
 libXScrnSaver
 libXScrnSaver-devel
+libXtst
 libXtst-devel
+libXxf86dga
+libXxf86dga-devel
+libXxf86misc
+libXxf86misc-devel
+libXxf86vm
 libXxf86vm-devel
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
-nfs-utils-lib-devel
-nspr-devel
-pam_pkcs11
+openssh-askpass
 pango		# System for layout and rendering of internationalized text
 pango-devel
 pangomm
 pangomm-devel
 pangomm-doc
-python-imaging
-python-libs
-python-sqlite2
 shared-mime-info
 system-config-date
 system-config-keyboard
@@ -94,21 +115,34 @@ tigervnc-server-module
 tk		# Graphical interface for tcl, to desktop?
 tk-devel
 tkcvs  # graphical diff (tkdiff)
-ttmkfdir
-vte
+ttmkfdir  # Utility to create fonts.scale files for truetype fonts
+vte  # A terminal emulator
+vte-devel
+vte3
+vte3-devel
 x11vnc
 xkeyboard-config
+xkeyboard-config-devel
 xorg-x11-apps
 xorg-x11-drv-evdev
+xorg-x11-drv-evdev-devel
 xorg-x11-drv-fbdev
 xorg-x11-drv-keyboard
 xorg-x11-drv-mouse
+xorg-x11-drv-mouse-devel
 xorg-x11-drv-vesa
 xorg-x11-drv-vmmouse
 xorg-x11-drv-vmware
+xorg-x11-drv-void
 xorg-x11-font-utils
+xorg-x11-fonts-100dpi
 xorg-x11-fonts-75dpi
+xorg-x11-fonts-ISO8859-1-100dpi
 xorg-x11-fonts-ISO8859-1-75dpi
+xorg-x11-fonts-ISO8859-14-100dpi
+xorg-x11-fonts-ISO8859-14-75dpi
+xorg-x11-fonts-ISO8859-15-100dpi
+xorg-x11-fonts-ISO8859-15-75dpi
 xorg-x11-fonts-Type1
 xorg-x11-fonts-misc
 xorg-x11-proto-devel
@@ -120,12 +154,10 @@ xorg-x11-util-macros
 xorg-x11-utils
 xorg-x11-xauth	# for ssh -X
 xorg-x11-xbitmaps
-xorg-x11-xdm
 xorg-x11-xinit
+xorg-x11-xkb-extras
 xorg-x11-xkb-utils
 xorg-x11-xtrans-devel
-xpdf
-xrdp
 xterm
 xulrunner
 xulrunner-devel

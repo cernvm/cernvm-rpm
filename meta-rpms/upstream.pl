@@ -134,7 +134,7 @@
     },
   },
   'extras' => 0,
-  'active' => 0,
+  'active' => 1,
 },
 'openstack' => {
   'baseurl' => {

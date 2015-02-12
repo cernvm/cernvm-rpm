@@ -1,5 +1,9 @@
+a2ps  # Converts text to postscript
 alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
 ansible		# SSH based cluster management
+asciidoc
+asciidoc-doc
+asciidoc-latex
 atk		# Interfaces for accessibility support, to desktop?
 atk-devel
 atkmm
@@ -18,8 +22,11 @@ blas		# The BLAS (Basic Linear Algebra Subprograms) library.
 blas-devel
 blas64
 blas64-devel
+bridge-utils
 byacc		# A public domain Yacc parser generator.
 byaccj  # byacc Java extensions
+c-ares
+c-ares-devel
 compat-openldap
 clang
 clang-devel
@@ -35,6 +42,8 @@ cryptopp
 cryptopp-devel
 cryptopp-doc
 cscope  # C source code tree browsing tool
+CUnit
+CUnit-devel
 cups		# To desktop?
 cups-filters
 cyrus-sasl
@@ -43,10 +52,11 @@ cyrus-sasl-gssapi
 cyrus-sasl-ldap
 cyrus-sasl-plain
 emacs-gnuplot
-emacs-golang
 erlang
 erlang-doc
 erlang-rebar
+expat  # XML parser
+expat-devel
 expect		# contains mkpasswd
 davix
 davix-devel
@@ -93,13 +103,17 @@ gnutls
 gnutls-c++
 gnutls-devel
 gnutls-utils
-golang
-golang-godoc
-golang-vim
 gperftools  # Google malloc and performance analysis
 gperftools-devel
 gpm		# A mouse server for the Linux console
 gpm-devel
+graphviz  # /usr/bin/dot
+graphviz-devel
+graphviz-doc
+graphviz-java
+graphviz-python
+gtest
+gtest-devel
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 h5py  # A Python interface to the HDF5 library
@@ -109,6 +123,7 @@ hdparm		# A utility for displaying and/or setting hard disk parameters.
 hiredis  # Minimalistic C client library for Redis
 hiredis-devel
 htop		# Better top utility
+httpd
 hwloc  # Portable Hardware Locality - portable abstraction of hierarchical architectures
 hwloc-devel
 indent		# A GNU program for formatting C code.
@@ -119,16 +134,27 @@ jflex
 jflex-javadoc
 keyutils	# for /bin/keyctl
 keyutils-libs
-keyutils-devel
+keyutils-libs-devel
 lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
 lapack64
 lapack64-devel
+libcgroup
+libcgroup-devel
+libcgroup-tools
 libdaemon
 libdaemon-devel # Used with avahi
 libdnet  # simplified, portable interface to several low-level networking routines
 libdnet-devel
 libdnet-python
+libev
+libev-devel
+libevent
+libevent-devel
+libevent-doc
+libexif
+libexif-devel
+libexif-doc
 libgcrypt
 libgcrypt-devel
 libgpg-error-devel # This is a library that defines common error values for all GnuPG
@@ -138,6 +164,8 @@ liblinear-doc
 librabbitmq
 librabbitmq-devel
 librabbitmq-tools
+librsvg2
+librsvg2-devel
 libsvm          # Support vector machines
 libsvm-devel
 libsvm-java
@@ -155,8 +183,15 @@ llvm-doc
 llvm-static
 lockdev		# A library for locking devices.
 lockdev-devel
+lua
 lvm2
 lvm2-devel
+lxc
+lxc-devel
+lxc-doc
+lxc-templates
+mc              # Midnight commander, User-friendly text console file manager and visual shell
+mdadm           # Linux software RAID
 mod_ssl		# Ssl module for Apache
 mod_wsgi	# Python CGI module for Apache, needed by cvmfs server
 monit		# Monitoring utility
@@ -172,13 +207,16 @@ net-snmp-devel
 net-snmp-libs
 net-snmp-python
 net-snmp-utils
-mc		# Midnight commander, User-friendly text console file manager and visual shell
-mdadm		# Linux software RAID
+nspr  # Netscape Portable Runtime
+nspr-devel
 newt		# A development library for text mode user interfaces (requires slang)
 newt-devel
+nodejs
 ntfs-3g
 ntfs-3g-devel
 ntfsprogs
+numactl
+numactl-devel
 octave
 octave-devel
 octave-doc
@@ -193,12 +231,13 @@ pam
 pam-devel
 pam_afs_session
 pam_krb5
+pam_pkcs11
 pam_ssh_agent_auth
 patchutils	# That's not patch itself
 php
 php-ldap
 php-mysql
-PyPam
+PyPAM
 python-liblinear
 python-pam
 python-redis
@@ -228,8 +267,13 @@ rcs		# Revision Control System (RCS) file version management tools
 redis		# For CoPilot
 rdate
 rng-tools	# for /sbin/rngd
+root
 rpm-build
 rpm-devel
+ruby
+ruby-devel
+ruby-doc
+rubygems
 scons  # An Open Source software construction tool
 slang  # S-Lang extension language
 slang-devel
@@ -249,6 +293,8 @@ tcpdump
 tmux		# like screen
 tuned		# tuned-adm, set kernel parameters optimal for VM
 tuned-utils
+v8  # JavaScript framework
+v8-devel
 valgrind
 valgrind-devel
 yaws

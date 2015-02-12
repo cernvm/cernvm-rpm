@@ -27,9 +27,10 @@ cmake
 compat-db47
 compat-gcc-44
 compat-gcc-44-c++
-compat-gcc-44-g77
+compat-gcc-44-gfortran
 compat-glibc
 compat-glibc-headers
+compat-libcap1
 compat-libf2c-34
 compat-libstdc++-33
 compat-libtiff3
@@ -59,7 +60,6 @@ emacs-common
 emacs-gettext
 emacs-git
 emacs-gnuplot
-emacs-golang
 emacs-libidn
 emacs-root
 emacs-terminal
@@ -114,18 +114,23 @@ libacl
 libacl-devel
 libattr
 libattr-devel
+libcap
+libcap-devel
+libcap-ng
+libcap-ng-devel
+libcap-ng-python
+libcap-ng-utils
 libcurl
 libcurl-devel
-libdb4
-libdb4-cxx
-libdb4-cxx-devel
-libdb4-devel
-libdb4-devel-static
-libdb4-doc
-libdb4-java
-libdb4-java-devel
-libdb4-tcl
-libdb4-utils
+libdb
+libdb-cxx
+libdb-cxx-devel
+libdb-devel
+libdb-devel-static
+libdb-java
+libdb-java-devel
+libdb-tcl
+libdb-utils
 libicu
 libicu-devel
 libicu-doc
@@ -135,8 +140,9 @@ libidn2
 libidn2-devel
 libjpeg-turbo        # turbo flavor required by gtk2
 libjpeg-turbo-devel
+libmpc  # multi-precision arithmetic
+libmpc-devel
 libpng12             # SL6
-libpng12-devel
 libpng
 libpng-devel
 librsync
@@ -164,6 +170,8 @@ man-pages-overrides
 mlocate		# locate utility
 mariadb
 mariadb-devel
+mpfr
+mpfr-devel
 mysql++
 mysql++-devel
 nano
@@ -182,6 +190,8 @@ openssl-devel
 openssl-perl
 parted
 parted-devel
+pciutils
+pciutils-devel
 perl
 perl-devel
 pkgconfig
@@ -209,6 +219,7 @@ swig-doc
 tcl		# The TCL language
 tcsh		# C Shell
 telnet
+texlive
 tig
 tmpwatch
 tree
