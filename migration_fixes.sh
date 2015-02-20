@@ -5,7 +5,9 @@ YUM_OPTIONS="$2"
 
 sudo package-cleanup $YUM_OPTIONS --oldkernels --count=1
 
-for pkg in java-1.5.0-gcj java_cup sinjdoc gcutil gsutil retry_decorator hiera ruby-rgen rubygem-json; do
+for pkg in java-1.5.0-gcj java_cup sinjdoc gcutil gsutil retry_decorator hiera ruby-rgen rubygem-json \
+  copilot-agent copilot-jobmanager-generic copilot-util perl-Copilot perl-Copilot-Component-Agent \
+  perl-Copilot-Component-KeyManager perl-Copilot-Component-JobManager-Generic perl-Copilot-Component-ContextAgent; do
   if rpm --root "$DEST_ROOT" -q $pkg; then
     sudo yum $YUM_OPTIONS erase $pkg
   fi
