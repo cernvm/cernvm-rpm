@@ -110,8 +110,8 @@
 'cvmfs' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/5/x86_64',
-      'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/5/i386',
+      'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs/EL/5/x86_64',
+      'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs/EL/5/i386',
     },
     'el6' => {
       'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/x86_64',
