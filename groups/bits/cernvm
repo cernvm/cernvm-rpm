@@ -5,7 +5,7 @@ azure-cli
 bootlogd
 cctools
 CERN-CA-certs
-cern-cloudinit-modules
+cern-cloudinit-latest
 cernvm-appliance-agent
 cernvm-config
 cernvm-fork

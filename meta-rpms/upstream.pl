@@ -144,6 +144,15 @@
   'extras' => 0,
   'active' => 1,
 },
+'cloudinit' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'https://cern-cloudinit-modules.web.cern.ch/cern-cloudinit-modules',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'xrootd' => {
   'baseurl' => {
     'el5' => {   
