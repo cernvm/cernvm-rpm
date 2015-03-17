@@ -153,6 +153,15 @@
   'extras' => 0,
   'active' => 1,
 },
+'cernai' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/internal/repos/ai6-stable/x86_64/os',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'xrootd' => {
   'baseurl' => {
     'el5' => {   
