@@ -207,7 +207,7 @@
 'afs' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.11.1/rhel6/x86_64',
+      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.10/rhel6/x86_64',
     },
   },
   'extras' => 0,
