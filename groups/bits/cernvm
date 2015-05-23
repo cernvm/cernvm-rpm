@@ -19,7 +19,6 @@ cernvm-update
 cloud-scheduler
 cvmfs
 cvmfs-devel
-cvmfs-init-scripts
 cvmfs-auto-setup
 cvmfs-server
 cpan2rpm

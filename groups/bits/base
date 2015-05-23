@@ -19,6 +19,7 @@ compat-glibc
 compat-glibc-headers
 compat-libf2c-34
 compat-libstdc++-33
+cronie-anacron  # to prevent cronie-noanacron
 curl
 cvs
 db4

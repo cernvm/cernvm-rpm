@@ -488,7 +488,7 @@ foreach my $repo (keys %all_repos) {
       # Construct Conflicts ILP clause
       for my $candidate (@{$providers{$conflicts}}) {
         if ($candidate eq $pkg_desc->{'key'}) {
-          $ilp_conflicts .= "$candidate = 0\n"
+          # $ilp_conflicts .= "$candidate = 0\n"  // This package must be obsoleting the capability
         } else {
           $ilp_conflicts .= "$candidate + $pkg_desc->{'key'} <= 1\n";
         }
