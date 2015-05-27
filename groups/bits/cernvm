@@ -5,9 +5,10 @@ azure-cli
 bootlogd
 cctools
 CERN-CA-certs
-cern-cloudinit-modules
+cern-cloudinit-latest
 cernvm-appliance-agent
 cernvm-config
+cernvm-fork
 cernvm-gce
 cernvm-online-guest
 cernvm-pam
@@ -18,10 +19,10 @@ cernvm-update
 cloud-scheduler
 cvmfs
 cvmfs-devel
-cvmfs-init-scripts
 cvmfs-auto-setup
 cvmfs-server
 cpan2rpm
+docker-cernvm
 ec2-api-tools
 ec2-ami-tools
 elastiq
