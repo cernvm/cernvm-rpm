@@ -1,7 +1,7 @@
 # chroot installation of the cernvm-meta rpm in cvmfs
 
 include config.mk
-DEST_REPOSITORY = cernvm-devel.cern.ch
+DEST_REPOSITORY = cernvm-testing.cern.ch
 DEST_PATH = /cvm3
 
 DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
