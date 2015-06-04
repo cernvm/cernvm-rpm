@@ -396,13 +396,13 @@ foreach my $repo (keys %all_repos) {
     print DEBUG "Processing ($repo): $pkg_name\n";
 
     # Add this particular package to the list of packages with the same name
-    my $name_arch = $pkg_desc->{'name'} . ' ' . $pkg_desc->{'arch'};
-    if (exists($names2versions{$name_arch})) {
-      my $list = $names2versions{$name_arch};
+    my $name = $pkg_desc->{'name'};
+    if (exists($names2versions{$name})) {
+      my $list = $names2versions{$name};
       push(@$list, $pkg_desc);
-      $names2versions{$name_arch} = $list;
+      $names2versions{$name} = $list;
     } else {
-      $names2versions{$name_arch} = [$pkg_desc];
+      $names2versions{$name} = [$pkg_desc];
     }
 
     # Through all required capabilities (i.e. all dependencies)
@@ -488,7 +488,7 @@ foreach my $repo (keys %all_repos) {
       # Construct Conflicts ILP clause
       for my $candidate (@{$providers{$conflicts}}) {
         if ($candidate eq $pkg_desc->{'key'}) {
-          $ilp_conflicts .= "$candidate = 0\n"
+          # $ilp_conflicts .= "$candidate = 0\n"  // This package must be obsoleting the capability
         } else {
           $ilp_conflicts .= "$candidate + $pkg_desc->{'key'} <= 1\n";
         }
@@ -544,9 +544,8 @@ print "Sorting package versions...\n";
 my $ilp_minimize = "0 dummy1";
 my $ilp_fixed;
 my $ilp_select_version;
-for my $name_arch (keys %names2versions) {
-  my ($name, $trash) = split(' ', $name_arch);
-  my $version_list_ref = $names2versions{$name_arch};
+for my $name (keys %names2versions) {
+  my $version_list_ref = $names2versions{$name};
   my @sorted_list = @$version_list_ref;
   #print Dumper(\@sorted_list);
   @$version_list_ref =

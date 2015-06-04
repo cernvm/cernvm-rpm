@@ -5,6 +5,7 @@ bind-utils
 binutils-devel 
 boost
 boost-devel
+bridge-utils
 bzip2-devel
 clang
 clang-devel
@@ -18,6 +19,7 @@ compat-glibc
 compat-glibc-headers
 compat-libf2c-34
 compat-libstdc++-33
+cronie-anacron  # to prevent cronie-noanacron
 curl
 cvs
 db4
@@ -64,6 +66,7 @@ llvm-doc
 logwatch
 lsof
 ltrace		# library tracing
+man-pages
 mlocate		# locate utility
 mysql-devel
 nano
@@ -97,6 +100,7 @@ tcsh		# C Shell
 telnet
 tig
 tmpwatch
+tunctl
 unzip
 usermode	# poweroff, halt, reboot commands
 vim-enhanced

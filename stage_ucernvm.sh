@@ -7,7 +7,7 @@ VERSION=$1
 ARCH=x86_64
 STRONG_VERSION=${VERSION}.cernvm.${ARCH}
 BASEURL=http://cernvm.cern.ch/releases
-REPOS="cernvm-devel.cern.ch cernvm-testing.cern.ch"
+REPOS="cernvm-testing.cern.ch"
 FILENAME=ucernvm.${STRONG_VERSION}.tar
 URL=${BASEURL}/ucernvm-images.${STRONG_VERSION}/${FILENAME}
 

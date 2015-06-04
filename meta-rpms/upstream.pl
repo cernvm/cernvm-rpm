@@ -77,7 +77,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'slc_os' => {
   'baseurl' => {
@@ -121,6 +121,15 @@
   'extras' => 0,
   'active' => 1,
 },
+'openstack' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/rdo/rdo-x86_64-stable/RPMS.openstack-rdo-icehouse-epel-6',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'cvmfs' => {
   'baseurl' => {
     'el5' => {
@@ -130,6 +139,24 @@
     'el6' => {
       'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/x86_64',
       'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/i386',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
+'cloudinit' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'https://cern-cloudinit-modules.web.cern.ch/cern-cloudinit-modules',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
+'cernai' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/internal/repos/ai6-stable/x86_64/os',
     },
   },
   'extras' => 0,
@@ -180,7 +207,7 @@
 'afs' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.5.2/rhel6/x86_64',
+      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.11/rhel6/x86_64',
     },
   },
   'extras' => 0,

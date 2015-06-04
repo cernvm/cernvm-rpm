@@ -56,7 +56,7 @@ $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TESTGROUP _TESTEXTRA release
 	cat groups/bits/minimal groups/bits/base groups/bits/misc groups/bits/perl groups/bits/python \
 	  groups/bits/batch groups/bits/head groups/bits/copilot groups/bits/hep-oslibs \
-          groups/bits/atlas groups/bits/32bit groups/bits/cernvm | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
+          groups/bits/atlas groups/bits/32bit groups/bits/cernvm groups/bits/containers groups/bits/upstream-dropped | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
 	[ -s _TESTGROUP ] && cat _TESTGROUP > artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 	[ -s _TESTEXTRA ] && cat _TESTEXTRA >> artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 

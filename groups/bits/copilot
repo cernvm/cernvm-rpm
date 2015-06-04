@@ -1,11 +1,8 @@
-copilot-agent
-copilot-jobmanager-generic
-copilot-util
-perl-Copilot
-perl-Copilot-Component-Agent
-perl-Copilot-Component-ContextAgent
-perl-Copilot-Component-JobManager-Generic
-perl-Copilot-Component-KeyManager
+perl-Crypt-CBC
+perl-Crypt-OpenSSL-AES
+perl-Crypt-OpenSSL-Bignum
+perl-Crypt-OpenSSL-RSA
+perl-Crypt-OpenSSL-Random
 perl-Filesys-DiskFree
 perl-XML-SAX-Expat
 perl-XML-SAX-Expat-Incremental

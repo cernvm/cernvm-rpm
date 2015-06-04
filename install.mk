@@ -1,7 +1,7 @@
 # chroot installation of the cernvm-meta rpm in cvmfs
 
 include config.mk
-DEST_REPOSITORY = cernvm-devel.cern.ch
+DEST_REPOSITORY = cernvm-testing.cern.ch
 DEST_PATH = /cvm3
 
 DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
@@ -18,8 +18,8 @@ all: rolling_tag
 	  for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d && sudo ln -s /dev/$$d $(DEST_ROOT)/dev/$$d; done \
 	fi
 	./pre_migration_fixes.sh $(DEST_ROOT) "$(YUM_OPTIONS)"
+	sudo yum $(YUM_OPTIONS) clean all;
 	if rpm --root $(DEST_ROOT) -q cernvm-system >/dev/null 2>&1; then \
-	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) update cernvm-system-$(VERSION); \
 	else \
 	  sudo yum $(YUM_OPTIONS) install cernvm-system-$(VERSION); \
