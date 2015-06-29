@@ -15,6 +15,7 @@ avahi-glib
 avahi-glib-devel
 avahi-tools
 bash
+bc  # calculator
 bind-utils # dig and nslookup
 binutils-devel
 boost

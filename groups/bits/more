@@ -227,6 +227,8 @@ octave-lhapdf
 octave-statistics
 openldap-clients # Client programs for OpenLDAP.
 openldap-devel
+p7zip
+p7zip-plugins  # extract iso images
 pam
 pam-devel
 pam_afs_session
@@ -297,5 +299,7 @@ v8  # JavaScript framework
 v8-devel
 valgrind
 valgrind-devel
+wireshark
+wireshark-devel
 yaws
 yaws-devel
