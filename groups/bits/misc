@@ -105,6 +105,8 @@ openmotif-devel
 pam-devel
 pango		# System for layout and rendering of internationalized text, to desktop?
 patchutils	# That's not patch itself
+php
+php-gd
 php-ldap
 php-mysql
 prelink
@@ -121,6 +123,7 @@ rdate
 rng-utils	# for /sbin/rngd
 rpm-build
 rpm-devel
+rrdtool
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 setarch
