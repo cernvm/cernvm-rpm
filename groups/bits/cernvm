@@ -48,4 +48,5 @@ uriparser
 vaf-client
 vboxguest  # for unity
 VBoxManage
+WALinuxAgent
 vmware-tools-plugins-unity
