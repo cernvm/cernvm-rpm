@@ -74,6 +74,7 @@ intltool
 iperf
 iperf3
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
+jline		# Was once a dependency, not anymore with SL 6.7
 keyutils	# for /bin/keyctl
 lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
@@ -151,6 +152,7 @@ rabbitmq-server # Required for shoal
 rcs		# Revision Control System (RCS) file version management tools
 redis		# For CoPilot
 rdate
+rhino		# was once a dependency, not anymore with SL 6.7
 rng-tools	# for /sbin/rngd
 rpm-build
 rpm-devel

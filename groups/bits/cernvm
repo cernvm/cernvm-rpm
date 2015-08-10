@@ -27,6 +27,8 @@ ec2-api-tools
 ec2-ami-tools
 elastiq
 eos-fuse
+glideinwms-vm-core
+glideinwms-vm-cernvm
 google-cloud-sdk
 nimbus-cloud-client
 openafs-client
@@ -46,4 +48,5 @@ uriparser
 vaf-client
 vboxguest  # for unity
 VBoxManage
+WALinuxAgent
 vmware-tools-plugins-unity
