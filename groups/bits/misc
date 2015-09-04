@@ -71,6 +71,7 @@ htop		# Better top utility
 hwloc
 indent		# A GNU program for formatting C code.
 intltool
+iotop
 iperf
 iperf3
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
