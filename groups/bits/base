@@ -62,7 +62,6 @@ emacs-gettext
 emacs-git
 emacs-gnuplot
 emacs-libidn
-emacs-root
 emacs-terminal
 emacs-rpm-spec-mode
 environment-modules
@@ -99,7 +98,6 @@ iptables
 iptables-services
 iptstate
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
-javasqlite
 java-1.7.0-openjdk
 java-1.7.0-openjdk-devel
 java-1.7.0-openjdk-javadoc

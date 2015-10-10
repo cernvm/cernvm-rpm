@@ -1,5 +1,8 @@
 CERN-CA-certs
+cernvm-config
 cernvm-theme
 cvmfs
-slim
+ec2-ami-tools
+ec2-api-tools
+open-vm-tools
 VBoxManage
