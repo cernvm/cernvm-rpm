@@ -1,6 +1,7 @@
 CERN-CA-certs
 cernvm-config
 cernvm-theme
+cernvm-update
 cvmfs
 ec2-ami-tools
 ec2-api-tools

@@ -97,6 +97,7 @@ libXxf86misc
 libXxf86misc-devel
 libXxf86vm
 libXxf86vm-devel
+lightdm		# Login manager
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
 openssh-askpass
