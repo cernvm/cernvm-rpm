@@ -36,6 +36,7 @@ libbonobo
 libbonobo-devel
 libbonoboui-devel
 libcap
+libcap-devel
 libcroco
 libexif
 libglade2

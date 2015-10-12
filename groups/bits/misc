@@ -111,6 +111,7 @@ lvm2
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
 mod_dnssd	# For cernvm-appliance-agent
+mod_fcgid
 mod_ssl		# For cernvm-appliance-agent
 mod_wsgi	# For cvmfs server
 monit		# Monitoring utility
