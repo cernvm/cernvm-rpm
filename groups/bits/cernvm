@@ -1,9 +1,11 @@
 CERN-CA-certs
 cernvm-config
+cernvm-release
 cernvm-theme
 cernvm-update
 cvmfs
 ec2-ami-tools
 ec2-api-tools
+lxdm
 open-vm-tools
 VBoxManage

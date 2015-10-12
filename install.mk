@@ -22,6 +22,7 @@ all: rolling_tag
 	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) update cernvm-system-$(VERSION); \
 	else \
+	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) install cernvm-system-$(VERSION); \
 	fi
 	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d; done
