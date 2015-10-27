@@ -14,6 +14,7 @@ pyxf86config
 python-boto
 python-lxml    # Prerequisite for cloudscheduler
 python-glanceclient
+python-heatclient
 python-keystoneclient
 python-novaclient
 python-pip      # Installer for packages
