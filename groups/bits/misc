@@ -65,7 +65,7 @@ golang-godoc
 gperftools
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
-gridsite-libs
+gridsite
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
