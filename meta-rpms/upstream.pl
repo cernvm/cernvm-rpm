@@ -204,6 +204,15 @@
   'extras' => 1,
   'active' => 1,
 },
+'condor' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel6'
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'afs' => {
   'baseurl' => {
     'el6' => {

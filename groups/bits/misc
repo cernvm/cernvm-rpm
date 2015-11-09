@@ -20,6 +20,7 @@ blas		# The BLAS (Basic Linear Algebra Subprograms) library.
 blas-devel
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
+canl-c
 compat-openldap
 cppunit
 cppunit-devel
@@ -64,6 +65,7 @@ golang-godoc
 gperftools
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
+gridsite-libs
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
@@ -159,6 +161,7 @@ rng-tools	# for /sbin/rngd
 rpm-build
 rpm-devel
 scons
+setools-console
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 slang		# The shared library for the S-Lang extension language (for newt?)
