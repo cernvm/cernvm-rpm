@@ -181,6 +181,8 @@ tmux		# like screen
 tuned		# tuned-adm, set kernel parameters optimal for VM
 util-linux-ng	# contains setarch
 valgrind
+voms
+voms-devel
 x11vnc
 xrdp
 yaws
