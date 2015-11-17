@@ -2,7 +2,9 @@ perl
 perl-DBI
 perl-URI
 perl-Archive-Zip
-perl-Compress-Zlib
+perl-IO-Zlib
+perl-Compress-Raw-Zlib
+perl-Compress-Raw-Bzip2
 perl-Config-General
 perl-Convert-ASN1
 perl-CPAN
@@ -10,9 +12,6 @@ perl-Crypt-SSLeay
 perl-Date-Manip
 perl-DBD-SQLite
 perl-Git
-perl-IO-Compress-Base
-perl-IO-Compress-Bzip2
-perl-IO-Compress-Zlib
 perl-DBD-MySQL
 perl-Digest-HMAC
 perl-Digest-SHA1
@@ -29,9 +28,12 @@ perl-Net-SSLeay
 perl-Parse-RecDescent
 perl-SGMLSpm
 perl-String-CRC32
+perl-Switch
 perl-TermReadKey
 perl-Test-Exception
 perl-Test-Simple
+perl-Text-Aligner
+perl-Text-Table
 perl-TimeDate
 perl-Tk			# to desktop?
 perl-XML-DOM

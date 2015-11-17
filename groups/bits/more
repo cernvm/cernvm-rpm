@@ -27,6 +27,7 @@ byacc		# A public domain Yacc parser generator.
 byaccj  # byacc Java extensions
 c-ares
 c-ares-devel
+canl-c
 compat-openldap
 clang
 clang-devel
@@ -112,6 +113,7 @@ graphviz-devel
 graphviz-doc
 graphviz-java
 graphviz-python
+gridsite
 gtest
 gtest-devel
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
@@ -190,6 +192,7 @@ lxc
 lxc-devel
 lxc-doc
 lxc-templates
+lynx
 mc              # Midnight commander, User-friendly text console file manager and visual shell
 mdadm           # Linux software RAID
 mod_ssl		# Ssl module for Apache
@@ -299,6 +302,8 @@ v8  # JavaScript framework
 v8-devel
 valgrind
 valgrind-devel
+voms
+voms-devel
 wireshark
 wireshark-devel
 yaws
