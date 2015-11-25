@@ -232,6 +232,7 @@ wget
 which
 xml-common	# Common XML catalog and DTD files (small package)
 xrootd-client
+xrootd-client-devel
 xrootd-devel
 xrootd-doc
 xrootd-fuse
