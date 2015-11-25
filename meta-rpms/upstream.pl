@@ -175,6 +175,9 @@
       'x86_64' => 'http://xrootd.org/binaries/stable/slc/6/x86_64',
       'i386' => 'http://xrootd.org/binaries/stable/slc/6/i386',
     },
+    'el7' => {
+      'x86_64' => 'http://xrootd.org/binaries/stable/slc/7/x86_64',
+    },
   },
   'extras' => 0,
   'active' => 0,  # no SQlite meta data
@@ -218,6 +221,27 @@
   },
   'extras' => 0,
   'active' => 0,
+},
+'condor' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel6'
+    },
+    'el7' => {
+      'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel7'
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
+'cloudinit' => {
+  'baseurl' => {
+    'el7' => {
+      'x86_64' => 'https://cern-cloudinit-modules.web.cern.ch/cern-cloudinit-modules',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
 },
 'devtools' => {
   'baseurl' => {

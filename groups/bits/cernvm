@@ -1,6 +1,7 @@
 amiconfig-cernvm
 amiconfig-hepix
 amiconfig-rpath
+cctools
 CERN-CA-certs
 cernvm-config
 cernvm-online-guest
@@ -8,10 +9,12 @@ cernvm-pam
 cernvm-release
 cernvm-theme
 cernvm-update
+condor-all
 cvmfs
 docker-cernvm
 ec2-ami-tools
 ec2-api-tools
+HEP_OSlibs
 lxdm
 perl-Amazon-EC2
 open-vm-tools
