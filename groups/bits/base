@@ -72,6 +72,10 @@ fuse # for cvmfs
 fuse-devel
 fuse-python
 fuse-sshfs
+ganglia
+ganglia-devel
+ganglia-gmond
+ganglia-gmond-python
 gcc
 gcc-aarch64-linux-gnu
 gcc-arm-linux-gnu

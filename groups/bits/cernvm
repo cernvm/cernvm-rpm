@@ -18,5 +18,6 @@ HEP_OSlibs
 lxdm
 perl-Amazon-EC2
 open-vm-tools
+rpmrebuild
 vboxguest
 VBoxManage
