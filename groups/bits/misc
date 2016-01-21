@@ -181,6 +181,7 @@ tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
 tmux		# like screen
+trickle         # traffic shaping
 tuned		# tuned-adm, set kernel parameters optimal for VM
 util-linux-ng	# contains setarch
 valgrind
