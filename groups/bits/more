@@ -136,6 +136,7 @@ iperf3
 iperf3-devel
 jflex
 jflex-javadoc
+jq
 keyutils	# for /bin/keyctl
 keyutils-libs
 keyutils-libs-devel
@@ -143,6 +144,7 @@ lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
 lapack64
 lapack64-devel
+libatomic
 libcgroup
 libcgroup-devel
 libcgroup-tools
@@ -218,6 +220,7 @@ nspr-devel
 newt		# A development library for text mode user interfaces (requires slang)
 newt-devel
 nodejs
+npm
 ntfs-3g
 ntfs-3g-devel
 ntfsprogs
@@ -241,6 +244,7 @@ pam_afs_session
 pam_krb5
 pam_pkcs11
 pam_ssh_agent_auth
+pandoc
 patchutils	# That's not patch itself
 php
 php-ldap
@@ -299,6 +303,7 @@ syslinux-tftpboot
 sysstat		# sar and iostat
 tcpdump
 tmux		# like screen
+trickle         # traffic shaping
 tuned		# tuned-adm, set kernel parameters optimal for VM
 tuned-utils
 v8  # JavaScript framework

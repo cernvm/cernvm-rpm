@@ -3,6 +3,7 @@ amiconfig-hepix
 amiconfig-rpath
 cctools
 CERN-CA-certs
+cern-cloudinit-modules
 cernvm-config
 cernvm-online-guest
 cernvm-pam
@@ -14,6 +15,9 @@ cvmfs
 docker-cernvm
 ec2-ami-tools
 ec2-api-tools
+eos-client
+eos-fuse
+google-cloud-sdk
 HEP_OSlibs
 lxdm
 perl-Amazon-EC2
