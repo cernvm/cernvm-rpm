@@ -185,6 +185,7 @@ trickle         # traffic shaping
 tuned		# tuned-adm, set kernel parameters optimal for VM
 util-linux-ng	# contains setarch
 valgrind
+valgrind-devel
 voms
 voms-devel
 x11vnc
