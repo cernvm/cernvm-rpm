@@ -71,6 +71,7 @@ gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
 htop		# Better top utility
 hwloc
+iftop
 indent		# A GNU program for formatting C code.
 intltool
 iotop
