@@ -129,6 +129,7 @@ htop		# Better top utility
 httpd
 hwloc  # Portable Hardware Locality - portable abstraction of hierarchical architectures
 hwloc-devel
+iftop
 indent		# A GNU program for formatting C code.
 intltool
 iotop
@@ -249,6 +250,7 @@ patchutils	# That's not patch itself
 php
 php-ldap
 php-mysql
+pm-utils
 PyPAM
 python-liblinear
 python-pam

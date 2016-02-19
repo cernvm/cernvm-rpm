@@ -38,6 +38,7 @@ gnome-vfs2
 gnome-vfs2-devel
 gtk2-engines  # Theme engines
 gtk2-engines-devel
+gv
 gvfs	# for Trash icon
 gvfs-devel
 hicolor-icon-theme
@@ -122,6 +123,7 @@ vte-devel
 vte3
 vte3-devel
 x11vnc
+Xaw3d
 xkeyboard-config
 xkeyboard-config-devel
 xorg-x11-apps

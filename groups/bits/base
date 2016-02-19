@@ -108,6 +108,9 @@ java-1.7.0-openjdk-javadoc
 java-1.7.0-openjdk-src
 jzlib
 jzlib-javadoc
+kbd
+kbd-misc
+kbd-legacy
 krb5-devel
 krb5-workstation # single sign on ssh, scp, ...
 ksh
