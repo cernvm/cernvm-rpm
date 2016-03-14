@@ -4,6 +4,9 @@ ansible		# SSH based cluster management
 asciidoc
 asciidoc-doc
 asciidoc-latex
+aspell
+aspell-en
+aspell-devel
 atk		# Interfaces for accessibility support, to desktop?
 atk-devel
 atkmm
