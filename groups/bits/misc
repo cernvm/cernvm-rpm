@@ -1,6 +1,9 @@
 acl		# setfacl getfacl
 alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
 ansible		# SSH based cluster management
+aspell
+aspell-en
+aspell-devel
 atk		# Interfaces for accessibility support, to desktop?
 atk-devel
 attr
@@ -21,6 +24,7 @@ blas-devel
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
 c-ares
+c-ares19
 canl-c
 compat-openldap
 cppunit
@@ -58,6 +62,7 @@ glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
 gfalFS
 glusterfs
+gnuchess
 gnupg2
 gnuplot
 gnutls
@@ -149,6 +154,8 @@ pango		# System for layout and rendering of internationalized text, to desktop?
 patchutils	# That's not patch itself
 php-ldap
 php-mysql
+plotutils
+plotutils-devel
 prelink
 protobuf
 protobuf-devel
