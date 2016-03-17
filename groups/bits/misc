@@ -121,6 +121,7 @@ links
 lockdev		# A library for locking devices.
 lockdev-devel
 lvm2
+lynx            # Can be removed in favor of links?
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
 mod_dnssd	# For cernvm-appliance-agent
