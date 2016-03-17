@@ -117,6 +117,7 @@ libXxf86vm-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
+links
 lockdev		# A library for locking devices.
 lockdev-devel
 lvm2
