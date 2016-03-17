@@ -187,6 +187,7 @@ libutempter-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
+links
 llvm
 llvm-devel
 llvm-doc
