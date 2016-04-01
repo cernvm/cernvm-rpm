@@ -55,7 +55,6 @@ ghc
 giflib
 giflib-devel
 gimp            # Image manipulation
-gitk
 gitstats
 glib		# glib2 already present
 glib-devel
