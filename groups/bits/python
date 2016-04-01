@@ -11,7 +11,7 @@ python-ldap
 python-numeric
 python-setuptools
 pyxf86config
-python-boto
+python2-boto
 python-lxml    # Prerequisite for cloudscheduler
 python-glanceclient
 python-heatclient
