@@ -24,6 +24,7 @@ geany-themes
 gimp            # Image manipulation
 gimp-help
 gimp-help-fr
+gitk
 ghostscript
 ghostscript-devel
 ghostscript-doc
