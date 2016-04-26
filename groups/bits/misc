@@ -1,6 +1,9 @@
 acl		# setfacl getfacl
 alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
 ansible		# SSH based cluster management
+aspell
+aspell-en
+aspell-devel
 atk		# Interfaces for accessibility support, to desktop?
 atk-devel
 attr
@@ -20,6 +23,9 @@ blas		# The BLAS (Basic Linear Algebra Subprograms) library.
 blas-devel
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
+c-ares
+c-ares19
+canl-c
 compat-openldap
 cppunit
 cppunit-devel
@@ -56,6 +62,7 @@ glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
 gfalFS
 glusterfs
+gnuchess
 gnupg2
 gnuplot
 gnutls
@@ -64,20 +71,26 @@ golang-godoc
 gperftools
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
+gridsite
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
 htop		# Better top utility
+http-parser
 hwloc
+iftop
 indent		# A GNU program for formatting C code.
 intltool
+iotop
 iperf
 iperf3
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
 jline		# Was once a dependency, not anymore with SL 6.7
+jq
 keyutils	# for /bin/keyctl
 lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
+libatomic
 libattr-devel
 libdaemon-devel # Used with avahi
 libdnet-devel
@@ -104,12 +117,15 @@ libXxf86vm-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
+links
 lockdev		# A library for locking devices.
 lockdev-devel
 lvm2
+lynx            # Can be removed in favor of links?
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
 mod_dnssd	# For cernvm-appliance-agent
+mod_fcgid
 mod_ssl		# For cernvm-appliance-agent
 mod_wsgi	# For cvmfs server
 monit		# Monitoring utility
@@ -132,6 +148,7 @@ openldap-clients # Client programs for OpenLDAP.
 openmotif22
 openmotif
 openmotif-devel
+pandoc
 p7zip
 p7zip-plugins
 pam-devel
@@ -139,6 +156,8 @@ pango		# System for layout and rendering of internationalized text, to desktop?
 patchutils	# That's not patch itself
 php-ldap
 php-mysql
+plotutils
+plotutils-devel
 prelink
 protobuf
 protobuf-devel
@@ -157,6 +176,7 @@ rng-tools	# for /sbin/rngd
 rpm-build
 rpm-devel
 scons
+setools-console
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 slang		# The shared library for the S-Lang extension language (for newt?)
@@ -173,9 +193,14 @@ tigervnc-server-module
 tree
 tk		# Graphical interface for tcl, to desktop?
 tmux		# like screen
+trickle         # traffic shaping
 tuned		# tuned-adm, set kernel parameters optimal for VM
 util-linux-ng	# contains setarch
 valgrind
+valgrind-devel
+v8
+voms
+voms-devel
 x11vnc
 xrdp
 yaws
