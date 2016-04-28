@@ -106,6 +106,7 @@ libSM-devel	# X.Org X11 libSM development package
 libsvm          # Support vector machines
 libsvm-devel
 libutempter-devel # A privileged helper for utmp/wtmp updates
+libvpx
 libXcomposite
 libXcomposite-devel
 libXdamage
