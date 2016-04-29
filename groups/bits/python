@@ -1,6 +1,7 @@
 epydoc
 python
 python-iniparse
+m2crypto
 mx		# A collection of Python software tools.
 numpy
 pygobject2-doc
