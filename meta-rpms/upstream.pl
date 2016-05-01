@@ -204,10 +204,19 @@
   'extras' => 1,
   'active' => 1,
 },
+'condor' => {
+  'baseurl' => {
+    'el6' => {
+      'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel6'
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'afs' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.11/rhel6/x86_64',
+      'x86_64' => 'http://www.openafs.org/dl/openafs/1.6.17/rhel6/x86_64',
     },
   },
   'extras' => 0,
