@@ -124,7 +124,7 @@
 'openstack' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/rdo/rdo-x86_64-stable/RPMS.openstack-rdo-icehouse-epel-6',
+      'x86_64' => 'http://linuxsoft.cern.ch/internal/repos/iaas6-icehouse-stable/x86_64/os',
     },
   },
   'extras' => 0,
@@ -234,7 +234,7 @@
 'shoal' => {
   'baseurl' => {
     'el6' => {
-      'x86_64' => 'http://shoal.heprc.uvic.ca/repo/prod/sl/6X/x86_64',
+      'x86_64' => 'http://shoal.heprc.uvic.ca/repo/sl6x/prod',
     },
   },
   'extras' => 0,
