@@ -60,6 +60,8 @@ keyutils	# for /bin/keyctl
 lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
 libattr-devel
+libcap
+libcap-devel
 libdaemon-devel # Used with avahi
 libdnet-devel
 libdrm-devel	# libdrm Direct Rendering Manager development package
@@ -137,6 +139,8 @@ usbutils	# This package contains utilities for inspecting devices connected to a
 tcpdump
 tree
 tk		# Graphical interface for tcl, to desktop?
+vlagrind
+valgrind-devel
 vnc-server
 x11vnc
 xrdp
