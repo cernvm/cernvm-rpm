@@ -12,6 +12,7 @@ cernvm-theme
 cernvm-update
 condor-all
 cvmfs
+cvmfs-server
 docker-cernvm
 ec2-ami-tools
 ec2-api-tools

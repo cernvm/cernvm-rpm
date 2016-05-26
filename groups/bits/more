@@ -31,6 +31,7 @@ byaccj  # byacc Java extensions
 c-ares
 c-ares-devel
 canl-c
+ccache
 compat-openldap
 clang
 clang-devel
