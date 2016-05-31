@@ -240,6 +240,8 @@ octave-image
 octave-io
 octave-lhapdf
 octave-statistics
+openal-soft
+openal-soft-devel
 openldap-clients # Client programs for OpenLDAP.
 openldap-devel
 p7zip
