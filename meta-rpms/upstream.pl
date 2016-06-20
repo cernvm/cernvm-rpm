@@ -3,7 +3,8 @@
 'sl' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/SL',
+      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/5x/x86_64/SL',
+      #'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/SL',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/SL',
     },
     'el6' => {
@@ -17,7 +18,8 @@
 'fastbugs' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/fastbugs',
+      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/5x/x86_64/updates/fastbugs', 
+      #'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/fastbugs',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/fastbugs',
     },
     'el6' => {
@@ -31,7 +33,8 @@
 'security' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/security',
+      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/5x/x86_64/updates/security',
+      #'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/updates/security',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/security',
     },
     'el6' => {

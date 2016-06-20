@@ -47,6 +47,7 @@ gnuplot
 gnutls
 gpm		# A mouse server for the Linux console, to desktop?
 gpm-devel	
+gridsite-libs
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
@@ -139,7 +140,7 @@ usbutils	# This package contains utilities for inspecting devices connected to a
 tcpdump
 tree
 tk		# Graphical interface for tcl, to desktop?
-vlagrind
+valgrind
 valgrind-devel
 vnc-server
 x11vnc
