@@ -14,6 +14,8 @@ atkmm-devel
 atkmm-doc
 apachetop  # A top-like display of Apache logs
 atop  # An advanced interactive monitor to view the load on system and process level
+audit-libs
+audit-libs-devel
 authconfig	# Command line tool for setting up authentication from network services, e.g. smartcard auth
 beecrypt	# An open source cryptography library
 beecrypt-apidocs
@@ -68,6 +70,8 @@ davix-devel
 davix-doc
 diffstat	# A utility which provides statistics based on the output of diff.
 distcc
+libdwarf
+libdwarf-devel
 euca2ools
 facter  # Command and ruby library for gathering system information, used with puppet
 fipscheck  # A library for integrity verification of FIPS validated modules
@@ -183,6 +187,8 @@ libsvm-java
 libsvm-python
 libsysstat
 libsysstat-devel
+libunwind
+libunwind-devel
 libutempter  # # A privileged helper for utmp/wtmp updates
 libutempter-devel
 libxslt		# Library providing the Gnome XSLT engine
@@ -254,6 +260,7 @@ pam_pkcs11
 pam_ssh_agent_auth
 pandoc
 patchutils	# That's not patch itself
+perf
 php
 php-ldap
 php-mysql
@@ -296,11 +303,10 @@ ruby-devel
 ruby-doc
 rubygems
 scons  # An Open Source software construction tool
-slang  # S-Lang extension language
-slang-devel
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
-slang		# The shared library for the S-Lang extension language (for newt?)
+slang  # S-Lang extension language
+slang-devel
 sssd
 sssd-tools
 symlinks	# for /usr/bin/symlinks

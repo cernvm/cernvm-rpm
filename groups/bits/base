@@ -17,6 +17,7 @@ avahi-tools
 bash
 bc  # calculator
 bind-utils # dig and nslookup
+binutils
 binutils-devel
 boost
 boost-devel
@@ -106,6 +107,11 @@ java-1.7.0-openjdk
 java-1.7.0-openjdk-devel
 java-1.7.0-openjdk-javadoc
 java-1.7.0-openjdk-src
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
+java-1.8.0-openjdk-headless
+java-1.8.0-openjdk-javadoc
+java-1.8.0-openjdk-src
 jzlib
 jzlib-javadoc
 kbd
@@ -173,6 +179,7 @@ ltrace		# library tracing
 man-pages
 man-pages-fr
 man-pages-overrides
+maven
 mlocate		# locate utility
 mariadb
 mariadb-devel
