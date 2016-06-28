@@ -316,6 +316,8 @@ syslinux-devel
 syslinux-extlinux
 syslinux-tftpboot
 sysstat		# sar and iostat
+tbb
+tbb-devel
 tcpdump
 tmux		# like screen
 trickle         # traffic shaping
@@ -329,5 +331,9 @@ voms
 voms-devel
 wireshark
 wireshark-devel
+xmlto
+xmlto-tex
+xmlto-xhtml
+xmltoman
 yaws
 yaws-devel

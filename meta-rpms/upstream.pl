@@ -19,6 +19,15 @@
   'extras' => 0,
   'active' => 1,
 },
+'sldbg' => {
+  'baseurl' => {
+    'el7' => {
+      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/7x/archive/debuginfo',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
+},
 'fastbugs' => {
   'baseurl' => {
     'el5' => {
