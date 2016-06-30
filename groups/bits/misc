@@ -45,6 +45,7 @@ diffstat	# A utility which provides statistics based on the output of diff.
 distcc
 dosfstools
 ejabberd	# For CoPilot
+enchant         # spell checking library
 euca2ools
 fipscheck-devel # A library for integrity verification of FIPS validated modules
 flex		# A tool for creating scanners (text pattern recognizers).
