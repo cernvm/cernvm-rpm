@@ -15,14 +15,13 @@ gcc-base-debuginfo
 gcc-debuginfo
 gcc-libraries-debuginfo
 giflib-debuginfo
-glib-debuginfo
 glib2-debuginfo
 glibc-debuginfo
 glibmm24-debuginfo
 gmp-debuginfo
 gnutls-debuginfo
 gtk2-debuginfo
-gzib-debuginfo
+gzip-debuginfo
 httpd-debuginfo
 icu-debuginfo
 java-1.6.0-openjdk-debuginfo
@@ -33,7 +32,6 @@ libaio-debuginfo
 libcap-debuginfo
 libcap-ng-debuginfo
 libdb-debuginfo
-libev-debuginfo
 libevdev-debuginfo
 libevent-debuginfo
 libICE-debuginfo

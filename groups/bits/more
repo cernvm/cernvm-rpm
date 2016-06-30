@@ -59,6 +59,9 @@ cyrus-sasl-gssapi
 cyrus-sasl-ldap
 cyrus-sasl-plain
 emacs-gnuplot
+enchant
+enchant-aspell
+enchant-devel
 erlang
 erlang-doc
 erlang-rebar
