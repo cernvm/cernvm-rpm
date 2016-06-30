@@ -46,6 +46,8 @@ distcc
 dosfstools
 ejabberd	# For CoPilot
 enchant         # spell checking library
+enchant-aspell
+enchant-devel
 euca2ools
 fipscheck-devel # A library for integrity verification of FIPS validated modules
 flex		# A tool for creating scanners (text pattern recognizers).
