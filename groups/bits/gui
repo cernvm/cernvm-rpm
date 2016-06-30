@@ -9,6 +9,7 @@ emacs
 emacs-common
 esound-tools
 evince
+evince-dvi
 expat
 expat-devel
 firefox
