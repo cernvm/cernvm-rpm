@@ -8,6 +8,7 @@ dbus-x11
 emacs
 emacs-common
 esound-tools
+evince
 expat
 expat-devel
 firefox
