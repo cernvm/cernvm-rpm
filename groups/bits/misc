@@ -43,6 +43,7 @@ devtoolset-2-toolchain  # New compilers
 devtoolset-2-valgrind
 diffstat	# A utility which provides statistics based on the output of diff.
 distcc
+dos2unix
 dosfstools
 ejabberd	# For CoPilot
 enchant         # spell checking library
