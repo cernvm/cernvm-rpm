@@ -73,6 +73,7 @@ davix-devel
 davix-doc
 diffstat	# A utility which provides statistics based on the output of diff.
 distcc
+dos2unix
 libdwarf
 libdwarf-devel
 euca2ools
