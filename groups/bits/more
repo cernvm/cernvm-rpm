@@ -335,6 +335,9 @@ voms
 voms-devel
 wireshark
 wireshark-devel
+xerces-c
+xerces-c-devel
+xerces-c-doc
 xmlto
 xmlto-tex
 xmlto-xhtml

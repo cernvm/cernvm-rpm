@@ -108,6 +108,9 @@ pango-devel
 pangomm
 pangomm-devel
 pangomm-doc
+qt
+qt-devel
+qt-doc
 shared-mime-info
 system-config-date
 system-config-keyboard
