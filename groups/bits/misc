@@ -207,6 +207,9 @@ v8
 voms
 voms-devel
 x11vnc
+xerces-c
+xerces-c-devel
+xerces-c-doc
 xrdp
 yaws
 yaws-devel

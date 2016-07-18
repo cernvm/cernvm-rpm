@@ -59,6 +59,9 @@ python-devel
 python-imaging
 python-libs
 python-sqlite2
+qt
+qt-devel
+qt-doc
 shared-mime-info
 system-config-date
 system-config-keyboard
