@@ -2,7 +2,7 @@
 
 include config.mk
 
-PLATFORM = x86_64
+PLATFORM = aarch64
 SL_UPSTREAM = 7
 EDITION = system
 
@@ -38,6 +38,12 @@ hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
 #############################
 #  Yum Repository Metadata  #
 #############################
+
+repo-dirs:
+	echo "Creating $(OS_RPM_DIR)"
+	mkdir -p $(OS_RPM_DIR)
+	echo "Creating $(META_RPM_DIR)"
+	mkdir -p $(META_RPM_DIR)
 
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
@@ -87,7 +93,7 @@ artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/ups
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)
 	mv artifacts/repodata-$(STRONG_PLATFORM)~ artifacts/repodata-$(STRONG_PLATFORM)
 
-artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh
+artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh repo-dirs
 	cut -d" " -f2 artifacts/requires-$(STRONG_VERSION) | meta-rpms/create-sourcelist.sh > artifacts/Makefile.rpms-$(STRONG_VERSION)
 
 artifacts/pkgilp-$(STRONG_VERSION): artifacts/packages-$(STRONG_VERSION) meta-rpms/resolve.pl meta-rpms/upstream.pl artifacts/repodata-$(STRONG_PLATFORM)
