@@ -3,7 +3,7 @@ mono-addins-devel
 mono-core
 mono-data
 mono-data-oracle
-mono-data-postgres
+mono-data-postgresql
 mono-data-sqlite
 mono-devel
 mono-extras
