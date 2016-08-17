@@ -25,6 +25,7 @@ bridge-utils
 btrfs-progs
 bzip2
 bzip2-devel
+cloud-init
 cmake
 curl
 cvs
