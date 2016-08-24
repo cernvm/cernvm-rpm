@@ -19,6 +19,8 @@ META_RPM_NAME = cernvm-$(EDITION)-$(VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
 META_RPM_HOTFIX_NAME = cernvm-$(EDITION)-$(HOTFIX_VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
 META_RPM = $(META_RPM_DIR)/$(META_RPM_NAME)
 META_RPM_HOTFIX = $(META_RPM_DIR)/$(META_RPM_HOTFIX_NAME)
+# Mirror CentOS repo until underscore/naming issue has been resolved
+#CENTOS_RPM_DIR = $(CERNVM_REPO_BASE)/base/Packages
 
 all: $(META_RPM)
 	$(MAKE) repos
@@ -48,9 +50,11 @@ repo-dirs:
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
 $(OS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(OS_RPM_DIR)/*.rpm)
+	echo "OS Update"
 	createrepo -d --update $(OS_RPM_DIR) --workers=12
 
 $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
+	echo "Meta"
 	createrepo --no-database $(META_RPM_DIR) --workers=12
 
 ################################
@@ -83,7 +87,18 @@ artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 #######################################################################
 #  Complete, strongly versioned package list including upstream URLs  #
 #######################################################################
+#$(CENTOS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(CENTOS_RPM_DIR)/*.rpm)
+#	# Make sure that the right repo is chosen (irrespective of host repo, anyway only working with centos7 right now)
+#	if [ ! -a mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_.repo ]; then \
+#	  sudo yum-config-manager --add-repo=http://mirror.centos.org/altarch/$(SL_UPSTREAM)/os/$(PLATFORM)/ \
+#	fi
+#	reposync -p $(CERNVM_REPO_BASE) -r mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_
+#	for f in $(cat rm_packages.txt); do \
+#	  rm "$(CENTOS_RPM_DIR)/$f" \
+#	done
+#	createrepo -d $(CENTOS_RPM_DIR) --workers=12
 
+#artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata $(CENTOS_RPM_DIR)/repodata/repomd.xml
 artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)~
 	mkdir artifacts/repodata-$(STRONG_PLATFORM)~

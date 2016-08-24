@@ -2,7 +2,7 @@
 
 cat << EOF
 RPMS_DIR = .
-CURL = curl
+CURL = wget
 CURLFLAGS =
 
 all: all-rpms
@@ -16,7 +16,7 @@ do
     RPMS="$RPMS \$(RPMS_DIR)/$rpm"
     cat << EOF
 \$(RPMS_DIR)/$rpm:
-	\$(CURL) \$(CURLFLAGS) -o \$(RPMS_DIR)/${rpm}~ -s $url
+	\$(CURL) \$(CURLFLAGS) -O \$(RPMS_DIR)/${rpm}~ $url
 	rpm -K --nosignature \$(RPMS_DIR)/${rpm}~
 	mv \$(RPMS_DIR)/${rpm}~ \$(RPMS_DIR)/$rpm
 EOF

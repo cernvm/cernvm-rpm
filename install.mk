@@ -5,7 +5,7 @@ DEST_REPOSITORY = cernvm-aarch64.cern.ch
 DEST_PATH = cvm4-aarch64
 
 DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
-YUM_OPTIONS = -y --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta --enablerepo=cernvm-os --enablerepo=cernvm-extras --disableexcludes=all --installroot $(DEST_ROOT)
+YUM_OPTIONS = --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta --enablerepo=cernvm-os --enablerepo=cernvm-extras --disableexcludes=all --installroot $(DEST_ROOT)
 
 DEVICES = stdout stderr random urandom
 

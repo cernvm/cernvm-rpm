@@ -5,4 +5,3 @@ cernvm-config
 cernvm-release
 cvmfs
 cvmfs-server
-jq

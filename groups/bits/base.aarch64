@@ -25,7 +25,6 @@ bridge-utils
 btrfs-progs
 bzip2
 bzip2-devel
-cloud-init
 cmake
 curl
 cvs
@@ -39,6 +38,7 @@ dbus-python-devel
 dosfstools  # FAT tools etc.
 doxygen
 doxygen-latex
+e2fsprogs
 elfutils	# strip, nm, ld, ...
 elfutils-devel
 elfutils-devel-static
