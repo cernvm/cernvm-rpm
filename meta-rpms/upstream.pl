@@ -3,8 +3,8 @@
 'sl' => {
   'baseurl' => {
     'el7' => {
-      'aarch64' => 'http://mirror.centos.org/altarch/7/os/aarch64',
-      #'aarch64' => 'http://localhost/data/yum/base/Packages',
+      #'aarch64' => 'http://mirror.centos.org/altarch/7/os/aarch64',
+      'aarch64' => 'http://localhost/data/yum/cernvm/mirror.centos.org_altarch_7_os_aarch64_/Packages',
     }
   },
   'extras' => 0,
@@ -19,15 +19,6 @@
   'extras' => 0,
   'active' => 1,
 },
-#'slupdates' => {
-#  'baseurl' => {
-#    'el7' => {
-#      'aarch64' => 'http://mirror.centos.org/altarch/7/updates/aarch64',
-#    },
-#  },
-#  'extras' => 0,
-#  'active' => 1,
-#},
 'slextras' => {
   'baseurl' => {
     'el7' => {

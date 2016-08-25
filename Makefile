@@ -20,7 +20,9 @@ META_RPM_HOTFIX_NAME = cernvm-$(EDITION)-$(HOTFIX_VERSION)-1.el$(SL_UPSTREAM).$(
 META_RPM = $(META_RPM_DIR)/$(META_RPM_NAME)
 META_RPM_HOTFIX = $(META_RPM_DIR)/$(META_RPM_HOTFIX_NAME)
 # Mirror CentOS repo until underscore/naming issue has been resolved
-#CENTOS_RPM_DIR = $(CERNVM_REPO_BASE)/base/Packages
+CENTOS_URL = mirror.centos.org/altarch/$(SL_UPSTREAM)/os/$(PLATFORM)
+CENTOS_REPO = mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_
+CENTOS_RPM_DIR = $(CERNVM_REPO_BASE)/$(CENTOS_REPO)/Packages
 
 all: $(META_RPM)
 	$(MAKE) repos
@@ -87,19 +89,16 @@ artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 #######################################################################
 #  Complete, strongly versioned package list including upstream URLs  #
 #######################################################################
-#$(CENTOS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(CENTOS_RPM_DIR)/*.rpm)
-#	# Make sure that the right repo is chosen (irrespective of host repo, anyway only working with centos7 right now)
-#	if [ ! -a mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_.repo ]; then \
-#	  sudo yum-config-manager --add-repo=http://mirror.centos.org/altarch/$(SL_UPSTREAM)/os/$(PLATFORM)/ \
-#	fi
-#	reposync -p $(CERNVM_REPO_BASE) -r mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_
-#	for f in $(cat rm_packages.txt); do \
-#	  rm "$(CENTOS_RPM_DIR)/$f" \
-#	done
-#	createrepo -d $(CENTOS_RPM_DIR) --workers=12
+$(CENTOS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(CENTOS_RPM_DIR)/*.rpm)
+	# Make sure that the right repo is chosen (irrespective of host repo, anyway only working with centos7 right now)
+	if [ ! -a /etc/yum.repos.d/$(CENTOS_REPO).repo ]; then \
+	  sudo yum-config-manager --add-repo=http://$(CENTOS_URL)/; \
+	fi
+	reposync -p $(CERNVM_REPO_BASE) -r $(CENTOS_REPO) -n
+	createrepo -d $(CENTOS_RPM_DIR) --workers=12
+	sudo rm /etc/yum.repos.d/$(CENTOS_REPO).repo
 
-#artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata $(CENTOS_RPM_DIR)/repodata/repomd.xml
-artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata
+artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata $(CENTOS_RPM_DIR)/repodata/repomd.xml
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)~
 	mkdir artifacts/repodata-$(STRONG_PLATFORM)~
 	[ -d artifacts/repodata-$(STRONG_PLATFORM) ] && cp --preserve artifacts/repodata-$(STRONG_PLATFORM)/* artifacts/repodata-$(STRONG_PLATFORM)~ || true

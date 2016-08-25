@@ -28,6 +28,8 @@ all: rolling_tag
 	else \
 	  echo "Install"; \
 	  sudo yum $(YUM_OPTIONS) clean all; \
+	  sudo yum $(YUM_OPTIONS) install bash; \
+	  ./set_repos.sh; \
 	  sudo yum $(YUM_OPTIONS) install cernvm-system-$(VERSION); \
 	fi
 	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d; done
