@@ -2,7 +2,7 @@
 
 include config.mk
 
-PLATFORM = x86_64
+PLATFORM = aarch64
 SL_UPSTREAM = 7
 EDITION = system
 
@@ -19,6 +19,10 @@ META_RPM_NAME = cernvm-$(EDITION)-$(VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
 META_RPM_HOTFIX_NAME = cernvm-$(EDITION)-$(HOTFIX_VERSION)-1.el$(SL_UPSTREAM).$(PLATFORM).rpm
 META_RPM = $(META_RPM_DIR)/$(META_RPM_NAME)
 META_RPM_HOTFIX = $(META_RPM_DIR)/$(META_RPM_HOTFIX_NAME)
+# Mirror CentOS repo until underscore/naming issue has been resolved
+CENTOS_URL = mirror.centos.org/altarch/$(SL_UPSTREAM)/os/$(PLATFORM)
+CENTOS_REPO = mirror.centos.org_altarch_$(SL_UPSTREAM)_os_$(PLATFORM)_
+CENTOS_RPM_DIR = $(CERNVM_REPO_BASE)/$(CENTOS_REPO)/Packages
 
 all: $(META_RPM)
 	$(MAKE) repos
@@ -39,12 +43,20 @@ hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
 #  Yum Repository Metadata  #
 #############################
 
+repo-dirs:
+	echo "Creating $(OS_RPM_DIR)"
+	mkdir -p $(OS_RPM_DIR)
+	echo "Creating $(META_RPM_DIR)"
+	mkdir -p $(META_RPM_DIR)
+
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
 $(OS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(OS_RPM_DIR)/*.rpm)
+	echo "OS Update"
 	createrepo -d --update $(OS_RPM_DIR) --workers=12
 
 $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
+	echo "Meta"
 	createrepo --no-database $(META_RPM_DIR) --workers=12
 
 ################################
@@ -77,8 +89,16 @@ artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 #######################################################################
 #  Complete, strongly versioned package list including upstream URLs  #
 #######################################################################
+$(CENTOS_RPM_DIR)/repodata/repomd.xml: $(wildcard $(CENTOS_RPM_DIR)/*.rpm)
+	# Make sure that the right repo is chosen (irrespective of host repo, anyway only working with centos7 right now)
+	if [ ! -a /etc/yum.repos.d/$(CENTOS_REPO).repo ]; then \
+	  sudo yum-config-manager --add-repo=http://$(CENTOS_URL)/; \
+	fi
+	reposync -p $(CERNVM_REPO_BASE) -r $(CENTOS_REPO) -n
+	createrepo -d $(CENTOS_RPM_DIR) --workers=12
+	sudo rm /etc/yum.repos.d/$(CENTOS_REPO).repo
 
-artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata
+artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/upstream.pl release buildno _refetch_repometadata $(CENTOS_RPM_DIR)/repodata/repomd.xml
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)~
 	mkdir artifacts/repodata-$(STRONG_PLATFORM)~
 	[ -d artifacts/repodata-$(STRONG_PLATFORM) ] && cp --preserve artifacts/repodata-$(STRONG_PLATFORM)/* artifacts/repodata-$(STRONG_PLATFORM)~ || true
@@ -87,7 +107,7 @@ artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/ups
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)
 	mv artifacts/repodata-$(STRONG_PLATFORM)~ artifacts/repodata-$(STRONG_PLATFORM)
 
-artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh
+artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh repo-dirs
 	cut -d" " -f2 artifacts/requires-$(STRONG_VERSION) | meta-rpms/create-sourcelist.sh > artifacts/Makefile.rpms-$(STRONG_VERSION)
 
 artifacts/pkgilp-$(STRONG_VERSION): artifacts/packages-$(STRONG_VERSION) meta-rpms/resolve.pl meta-rpms/upstream.pl artifacts/repodata-$(STRONG_PLATFORM)
