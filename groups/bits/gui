@@ -112,6 +112,7 @@ qt
 qt-devel
 qt-doc
 shared-mime-info
+spice-vdagent
 system-config-date
 system-config-keyboard
 tigervnc
@@ -137,6 +138,7 @@ xorg-x11-drv-fbdev
 xorg-x11-drv-keyboard
 xorg-x11-drv-mouse
 xorg-x11-drv-mouse-devel
+xorg-x11-drv-qxl
 xorg-x11-drv-vesa
 xorg-x11-drv-vmmouse
 xorg-x11-drv-vmware
