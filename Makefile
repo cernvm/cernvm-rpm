@@ -2,7 +2,7 @@
 
 include config.mk
 
-PLATFORM = x86_64
+PLATFORM = i686
 #COMPAT_PLATFORM not used currently
 COMPAT_PLATFORM = i686
 SL_UPSTREAM = 6
@@ -40,6 +40,11 @@ hotfix: artifacts/cernvm-$(STRONG_HOTFIX_VERSION).spec
 #############################
 #  Yum Repository Metadata  #
 #############################
+repo-dirs:
+	echo "Creating $(OS_RPM_DIR)"
+	mkdir -p $(OS_RPM_DIR)
+	echo "Creating $(META_RPM_DIR)"
+	mkdir -p $(META_RPM_DIR)
 
 repos: $(OS_RPM_DIR)/repodata/repomd.xml $(META_RPM_DIR)/repodata/repomd.xml
 
@@ -54,16 +59,14 @@ $(META_RPM_DIR)/repodata/repomd.xml: $(wildcard $(META_RPM_DIR)/*.rpm)
 ################################
 
 artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TESTGROUP _TESTEXTRA release
-	cat groups/bits/minimal groups/bits/base groups/bits/misc groups/bits/perl groups/bits/python \
-	  groups/bits/batch groups/bits/head groups/bits/copilot groups/bits/hep-oslibs \
-          groups/bits/atlas groups/bits/32bit groups/bits/cernvm groups/bits/containers groups/bits/upstream-dropped \
+	cat groups/bits/minimal groups/bits/base groups/bits/batch groups/bits/cernvm \
 	  | sort -u > artifacts/packages-basic-$(VERSION)-$(PLATFORM)
 	[ -s _TESTGROUP ] && cat _TESTGROUP > artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 	[ -s _TESTEXTRA ] && cat _TESTEXTRA >> artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 
 artifacts/packages-system-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) artifacts/packages-basic-$(VERSION)-$(PLATFORM)
 	#cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
-	cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) groups/bits/gui groups/bits/xfce | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
+	cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
 
 artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript
 	cat groups/bits/postscript > artifacts/postscript-$(STRONG_VERSION)
@@ -82,7 +85,7 @@ artifacts/repodata-$(STRONG_PLATFORM): meta-rpms/fetch-upstream.pl meta-rpms/ups
 	rm -rf artifacts/repodata-$(STRONG_PLATFORM)
 	mv artifacts/repodata-$(STRONG_PLATFORM)~ artifacts/repodata-$(STRONG_PLATFORM)
 
-artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh
+artifacts/Makefile.rpms-$(STRONG_VERSION): artifacts/requires-$(STRONG_VERSION) meta-rpms/create-sourcelist.sh repo-dirs
 	cut -d" " -f2 artifacts/requires-$(STRONG_VERSION) | meta-rpms/create-sourcelist.sh > artifacts/Makefile.rpms-$(STRONG_VERSION)
 
 artifacts/pkgilp-$(STRONG_VERSION): artifacts/packages-$(STRONG_VERSION) meta-rpms/resolve.pl meta-rpms/upstream.pl artifacts/repodata-$(STRONG_PLATFORM)

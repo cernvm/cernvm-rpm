@@ -15,10 +15,7 @@ python-setuptools
 pyxf86config
 python2-boto
 python-lxml    # Prerequisite for cloudscheduler
-python-glanceclient
-python-heatclient
 python-keystoneclient
-python-novaclient
 python-pip      # Installer for packages
 python-sphinx   # Create reStructuredText documentation (read the docs...)
 python-suds     # Prerequisite for cloudscheduler

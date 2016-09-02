@@ -3,11 +3,3 @@ perl-Crypt-OpenSSL-AES
 perl-Crypt-OpenSSL-Bignum
 perl-Crypt-OpenSSL-RSA
 perl-Crypt-OpenSSL-Random
-perl-Filesys-DiskFree
-perl-XML-SAX-Expat
-perl-XML-SAX-Expat-Incremental
-perl-POE-Component-Logger
-perl-POE-Component-Jabber
-perl-POE-Component-SSLify
-perl-POE-Filter-XML
-perl-Redis

@@ -21,7 +21,6 @@ beecrypt	# An open source cryptography library
 bison		# A GNU general-purpose parser generator.
 blas		# The BLAS (Basic Linear Algebra Subprograms) library.
 blas-devel
-btrfs-progs
 byacc		# A public domain Yacc parser generator.
 c-ares
 c-ares19
@@ -36,7 +35,6 @@ cryptopp-devel
 cscope
 cups		# To desktop?
 cyrus-sasl-plain
-erlang-rebar
 expect		# contains mkpasswd
 davix
 devtoolset-2-toolchain  # New compilers
@@ -45,7 +43,6 @@ diffstat	# A utility which provides statistics based on the output of diff.
 distcc
 dos2unix
 dosfstools
-ejabberd	# For CoPilot
 enchant         # spell checking library
 enchant-aspell
 enchant-devel
@@ -65,7 +62,6 @@ glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
 gfalFS
-glusterfs
 gnuchess
 gnupg2
 gnuplot
@@ -169,7 +165,6 @@ protobuf-devel
 psacct		# Utilities for monitoring process activities.
 psutils		# This archive contains some utilities for manipulating PostScript documents.
 puppet
-qemu-img
 quota		# System administration tools for monitoring users' disk usage
 R
 rabbitmq-server # Required for shoal
@@ -211,6 +206,4 @@ xerces-c
 xerces-c-devel
 xerces-c-doc
 xrdp
-yaws
-yaws-devel
 yum-utils

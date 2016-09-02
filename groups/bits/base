@@ -10,7 +10,6 @@ bzip2-devel
 clang
 clang-devel
 cloud-init
-cloud-utils
 cmake
 compat-gcc-34
 compat-gcc-34-c++
@@ -30,6 +29,7 @@ dbus-glib-devel
 doxygen
 elfutils	# strip, nm, ld, ...
 environment-modules
+epel-release
 fontconfig-devel	# for ROOT
 fuse-devel		# for cvmfs
 fuse-sshfs
@@ -42,6 +42,7 @@ git
 glibc-devel
 glibc-static
 gmp-devel
+hal
 iptables
 krb5-workstation # single sign on ssh, scp, ...
 ksh
@@ -70,6 +71,7 @@ man-pages
 mlocate		# locate utility
 mysql-devel
 nano
+ncurses
 ncurses-devel
 nfs-utils
 nscd
