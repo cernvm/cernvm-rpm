@@ -1,0 +1,264 @@
+acl		# setfacl getfacl
+acpid		# ACPI Event Daemon
+attr
+audit		# /sbin/audi... tools
+autofs
+autoconf
+automake
+avahi
+avahi-compat-howl
+avahi-compat-howl-devel
+avahi-compat-libdns_sd
+avahi-compat-libdns_sd-devel
+avahi-devel
+avahi-glib
+avahi-glib-devel
+avahi-tools
+bash
+bc  # calculator
+bind-utils # dig and nslookup
+binutils
+binutils-devel
+boost
+boost-devel
+bridge-utils
+btrfs-progs
+bzip2
+bzip2-devel
+cmake
+#compat-db47
+#compat-gcc-44
+#compat-gcc-44-c++
+#compat-gcc-44-gfortran
+#compat-glibc
+#compat-glibc-headers
+#compat-libcap1
+#compat-libf2c-34
+#compat-libstdc++-33
+#compat-libtiff3
+curl
+cvs
+dbus
+#dbus-c++
+#dbus-c++-devel
+dbus-devel
+dbus-doc
+dbus-glib
+dbus-glib-devel
+dbus-python
+dbus-python-devel
+dosfstools  # FAT tools etc.
+doxygen
+doxygen-latex
+elfutils	# strip, nm, ld, ...
+elfutils-devel
+elfutils-devel-static
+elfutils-libelf
+elfutils-libelf-devel
+elfutils-libelf-devel-static
+emacs
+emacs-auctex
+emacs-common
+emacs-gettext
+emacs-git
+emacs-gnuplot
+emacs-libidn
+emacs-terminal
+#emacs-rpm-spec-mode
+environment-modules
+fontconfig
+fontconfig-devel	# for ROOT
+fontconfig-devel-doc
+fuse # for cvmfs
+fuse-devel
+#fuse-python
+#fuse-sshfs
+#ganglia
+#ganglia-devel
+#ganglia-gmond
+#ganglia-gmond-python
+gcc
+#gcc-aarch64-linux-gnu
+#gcc-arm-linux-gnu
+gcc-c++
+gcc-gfortran
+#gccxml
+gdb		# for ROOT, cvmfs
+gdb-doc
+gdb-gdbserver
+genisoimage
+giflib
+giflib-devel
+giflib-utils
+git
+git-cvs
+git-svn
+glibc-devel
+glibc-headers
+glibc-static
+glibc-utils # mtrace and friends
+gmp
+gmp-devel
+iptables
+iptables-services
+iptstate
+irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
+java-1.7.0-openjdk
+java-1.7.0-openjdk-devel
+java-1.7.0-openjdk-javadoc
+java-1.7.0-openjdk-src
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
+java-1.8.0-openjdk-headless
+java-1.8.0-openjdk-javadoc
+java-1.8.0-openjdk-src
+jzlib
+jzlib-javadoc
+kbd
+kbd-misc
+kbd-legacy
+krb5-devel
+krb5-workstation # single sign on ssh, scp, ...
+ksh
+libaio		# asynchronous I/O
+libaio-devel
+libacl
+libacl-devel
+libattr
+libattr-devel
+libcap
+libcap-devel
+libcap-ng
+libcap-ng-devel
+libcap-ng-python
+libcap-ng-utils
+libcurl
+libcurl-devel
+libdb
+libdb-cxx
+libdb-cxx-devel
+libdb-devel
+libdb-devel-static
+libdb-java
+libdb-java-devel
+libdb-tcl
+libdb-utils
+libicu
+libicu-devel
+libicu-doc
+libidn
+libidn-devel
+#libidn2
+#libidn2-devel
+libjpeg-turbo        # turbo flavor required by gtk2
+libjpeg-turbo-devel
+libmpc  # multi-precision arithmetic
+libmpc-devel
+libpng12             # SL6
+libpng
+libpng-devel
+#librsync
+#librsync-devel
+libstdc++-devel
+libtar
+libtar-devel
+libtiff
+libtiff-devel
+libtiff-tools
+libuuid
+libuuid-devel
+libXfont
+libXfont-devel
+libxml2
+#libxml++
+libxml2-devel
+libxml2-python
+logwatch
+lsof
+ltrace		# library tracing
+man-pages
+man-pages-fr
+man-pages-overrides
+maven
+mlocate		# locate utility
+mariadb
+mariadb-devel
+mpfr
+mpfr-devel
+#mysql++
+#mysql++-devel
+nano
+ncurses
+ncurses-devel
+nfs-utils
+nscd
+ntp
+ntp-doc
+ntpdate
+dhclient
+openssh-clients
+openssh-server
+#compat-libstdcopenssl098e
+openssl-devel
+openssl-perl
+parted
+parted-devel
+pciutils
+pciutils-devel
+perl
+perl-devel
+pkgconfig
+python
+python-devel
+readline
+readline-devel
+redhat-rpm-config # e.g. rpmsort, some macros
+rootfiles	# /root/.bashrc etc.
+rsync
+samba-client
+screen
+#ssmtp
+sqlite
+sqlite-devel
+sqlite-doc
+#sqlite2
+#sqlite2-devel
+strace
+subversion
+subversion-devel
+sudo
+swig			# Connects C/C++/Objective C to some high-level programming languages
+swig-doc
+tcl		# The TCL language
+tcsh		# C Shell
+telnet
+texlive
+#tig
+tmpwatch
+tree
+unzip
+usbutils	# lsusb
+usermode	# poweroff, halt, reboot commands
+uuid
+vim-enhanced
+vim-minimal
+wget
+which
+xml-common	# Common XML catalog and DTD files (small package)
+#xrootd-client
+#xrootd-client-devel
+#xrootd-devel
+#xrootd-doc
+#xrootd-fuse
+xz
+xz-compat-libs
+xz-devel
+xz-java
+xz-java-javadoc
+xz-lzma-compat
+yum
+yum-utils
+zip
+zlib
+zlib-devel
+zsh		# Z Shell

@@ -1,0 +1,9 @@
+cloud-init
+libX11-devel
+libXpm-devel
+libXft-devel
+libXext-devel
+net-tools
+rsyslog
+valgrind
+valgrind-devel

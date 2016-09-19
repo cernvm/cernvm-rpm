@@ -1,0 +1,346 @@
+a2ps  # Converts text to postscript
+alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
+ansible		# SSH based cluster management
+asciidoc
+asciidoc-doc
+asciidoc-latex
+aspell
+aspell-en
+aspell-devel
+atk		# Interfaces for accessibility support, to desktop?
+atk-devel
+atkmm
+atkmm-devel
+atkmm-doc
+apachetop  # A top-like display of Apache logs
+atop  # An advanced interactive monitor to view the load on system and process level
+audit-libs
+audit-libs-devel
+authconfig	# Command line tool for setting up authentication from network services, e.g. smartcard auth
+beecrypt	# An open source cryptography library
+beecrypt-apidocs
+beecrypt-devel
+beecrypt-python
+bison		# A GNU general-purpose parser generator.
+bison-devel
+blas		# The BLAS (Basic Linear Algebra Subprograms) library.
+blas-devel
+blas64
+blas64-devel
+bridge-utils
+byacc		# A public domain Yacc parser generator.
+byaccj  # byacc Java extensions
+c-ares
+c-ares-devel
+canl-c
+ccache
+compat-openldap
+clang
+clang-devel
+clang-analyzer
+cloud-init
+cloud-utils
+cppunit
+cppunit-devel
+cppunit-doc
+ctags		# A C programming language indexing and/or cross-reference tool.
+createrepo
+cryptopp
+cryptopp-devel
+cryptopp-doc
+cscope  # C source code tree browsing tool
+CUnit
+CUnit-devel
+cups		# To desktop?
+cups-filters
+cyrus-sasl
+cyrus-sasl-devel
+cyrus-sasl-gssapi
+cyrus-sasl-ldap
+cyrus-sasl-plain
+emacs-gnuplot
+enchant
+enchant-aspell
+enchant-devel
+erlang
+erlang-doc
+erlang-rebar
+expat  # XML parser
+expat-devel
+expect		# contains mkpasswd
+davix
+davix-devel
+davix-doc
+diffstat	# A utility which provides statistics based on the output of diff.
+distcc
+dos2unix
+libdwarf
+libdwarf-devel
+euca2ools
+facter  # Command and ruby library for gathering system information, used with puppet
+fipscheck  # A library for integrity verification of FIPS validated modules
+fipscheck-devel
+flex		# A tool for creating scanners (text pattern recognizers).
+flex-devel
+flex-doc
+gd		# A graphics library for quick creation of PNG or JPEG images
+gd-devel
+ghc
+gitstats
+glib
+glib-devel
+glib2
+glib2-devel
+glib2-doc
+glibmm24
+glibmm24-devel
+glibmm24-doc
+glpk  # Linear program solver
+glpk-devel
+glpk-doc
+glpk-utils
+gdbm  # A GNU set of database routines which use extensible hashing.
+gdbm-devel
+gfal2-all
+gfalFS
+glusterfs
+glusterfs-api
+glusterfs-api-devel
+glusterfs-devel
+glusterfs-fuse
+gnupg2
+gnuplot
+gnuplot-doc
+gnuplot-latex
+gnutls
+gnutls-c++
+gnutls-devel
+gnutls-utils
+gperftools  # Google malloc and performance analysis
+gperftools-devel
+gpm		# A mouse server for the Linux console
+gpm-devel
+graphviz  # /usr/bin/dot
+graphviz-devel
+graphviz-doc
+graphviz-java
+graphviz-python
+gridsite
+gridsite-devel
+gtest
+gtest-devel
+gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
+gtk2-devel
+h5py  # A Python interface to the HDF5 library
+hdf5  # library for HDF5 data format
+hdf5-devel
+hdparm		# A utility for displaying and/or setting hard disk parameters.
+hiredis  # Minimalistic C client library for Redis
+hiredis-devel
+htop		# Better top utility
+httpd
+hwloc  # Portable Hardware Locality - portable abstraction of hierarchical architectures
+hwloc-devel
+iftop
+indent		# A GNU program for formatting C code.
+intltool
+iotop
+iperf3
+iperf3-devel
+jflex
+jflex-javadoc
+jq
+keyutils	# for /bin/keyctl
+keyutils-libs
+keyutils-libs-devel
+lapack		# The LAPACK libraries for numerical linear algebra
+lapack-devel
+lapack64
+lapack64-devel
+libatomic
+libcgroup
+libcgroup-devel
+libcgroup-tools
+libdaemon
+libdaemon-devel # Used with avahi
+libdnet  # simplified, portable interface to several low-level networking routines
+libdnet-devel
+libdnet-python
+libev
+libev-devel
+libevent
+libevent-devel
+libevent-doc
+libexif
+libexif-devel
+libexif-doc
+libgcrypt
+libgcrypt-devel
+libgpg-error-devel # This is a library that defines common error values for all GnuPG
+liblinear  # Machine learning, linear classification
+liblinear-devel
+liblinear-doc
+librabbitmq
+librabbitmq-devel
+librabbitmq-tools
+librsvg2
+librsvg2-devel
+libsvm          # Support vector machines
+libsvm-devel
+libsvm-java
+libsvm-python
+libsysstat
+libsysstat-devel
+libunwind
+libunwind-devel
+libutempter  # # A privileged helper for utmp/wtmp updates
+libutempter-devel
+libxslt		# Library providing the Gnome XSLT engine
+libxslt-devel
+libxslt-python
+links
+llvm
+llvm-devel
+llvm-doc
+llvm-static
+lockdev		# A library for locking devices.
+lockdev-devel
+lua
+lvm2
+lvm2-devel
+lxc
+lxc-devel
+lxc-doc
+lxc-templates
+lynx
+mc              # Midnight commander, User-friendly text console file manager and visual shell
+mdadm           # Linux software RAID
+mod_fcgid
+mod_ssl		# Ssl module for Apache
+mod_wsgi	# Python CGI module for Apache, needed by cvmfs server
+monit		# Monitoring utility
+mpich
+mpich-devel
+mpich-doc
+netpbm		# A library for handling different graphics file formats
+netpbm-devel
+netpbm-doc
+netpbm-progs
+net-snmp	# A collection of SNMP protocol tools and libraries.
+net-snmp-devel
+net-snmp-libs
+net-snmp-python
+net-snmp-utils
+nspr  # Netscape Portable Runtime
+nspr-devel
+newt		# A development library for text mode user interfaces (requires slang)
+newt-devel
+nodejs
+npm
+ntfs-3g
+ntfs-3g-devel
+ntfsprogs
+numactl
+numactl-devel
+octave
+octave-devel
+octave-doc
+octave-general
+octave-image
+octave-io
+octave-lhapdf
+octave-statistics
+openal-soft
+openal-soft-devel
+openldap-clients # Client programs for OpenLDAP.
+openldap-devel
+p7zip
+p7zip-plugins  # extract iso images
+pam
+pam-devel
+pam_afs_session
+pam_krb5
+pam_pkcs11
+pam_ssh_agent_auth
+pandoc
+patchutils	# That's not patch itself
+perf
+php
+php-ldap
+php-mysql
+pm-utils
+PyPAM
+python-liblinear
+python-pam
+python-redis
+prelink
+protobuf
+protobuf-compiler
+protobuf-c
+protobuf-c-devel
+protobuf-devel
+protobuf-emacs
+protobuf-java
+protobuf-javadoc
+protobuf-python
+protobuf-vim
+psacct		# Utilities for monitoring process activities.
+psutils		# This archive contains some utilities for manipulating PostScript documents.
+puppet
+qemu-img
+qemu-system-arm
+quota		# System administration tools for monitoring users' disk usage
+R
+R-devel
+R-java
+R-java-devel
+rabbitmq-server # Required for shoal
+rcs		# Revision Control System (RCS) file version management tools
+redis		# For CoPilot
+rdate
+rng-tools	# for /sbin/rngd
+root
+rpm-build
+rpm-devel
+ruby
+ruby-devel
+ruby-doc
+rubygems
+scons  # An Open Source software construction tool
+setuptool	# A text mode system configuration tool.
+sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
+slang  # S-Lang extension language
+slang-devel
+sssd
+sssd-tools
+symlinks	# for /usr/bin/symlinks
+sysfsutils	# Utilities for interfacing with sysfs
+syslinux
+syslinux-devel
+syslinux-extlinux
+syslinux-tftpboot
+sysstat		# sar and iostat
+tbb
+tbb-devel
+tcpdump
+tmux		# like screen
+trickle         # traffic shaping
+tuned		# tuned-adm, set kernel parameters optimal for VM
+tuned-utils
+v8  # JavaScript framework
+v8-devel
+valgrind
+valgrind-devel
+voms
+voms-devel
+wireshark
+wireshark-devel
+xerces-c
+xerces-c-devel
+xerces-c-doc
+xmlto
+xmlto-tex
+xmlto-xhtml
+xmltoman
+yaws
+yaws-devel

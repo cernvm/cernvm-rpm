@@ -1,0 +1,8 @@
+PyYAML
+python
+python-boto
+python-cheetah
+python-configobj
+python-jsonpatch
+python-prettytable
+python-requests
