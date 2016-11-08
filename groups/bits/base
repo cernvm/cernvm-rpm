@@ -36,6 +36,7 @@ compat-libcap1
 compat-libf2c-34
 compat-libstdc++-33
 compat-libtiff3
+cronie-noanacron
 curl
 cvs
 dbus

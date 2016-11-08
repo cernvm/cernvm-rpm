@@ -406,7 +406,7 @@ foreach my $repo (keys %all_repos) {
     print DEBUG "Processing ($repo): $pkg_name\n";
 
     # Add this particular package to the list of packages with the same name
-    my $name_arch = $pkg_desc->{'name'} . ' ' . $pkg_desc->{'arch'};
+    my $name_arch = $pkg_desc->{'name'} . ' ' . 'XARCH'; # . $pkg_desc->{'arch'};
     if (exists($names2versions{$name_arch})) {
       my $list = $names2versions{$name_arch};
       push(@$list, $pkg_desc);

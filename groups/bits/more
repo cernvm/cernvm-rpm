@@ -138,6 +138,8 @@ hdparm		# A utility for displaying and/or setting hard disk parameters.
 hiredis  # Minimalistic C client library for Redis
 hiredis-devel
 htop		# Better top utility
+http-parser
+http-parser-devel
 httpd
 hwloc  # Portable Hardware Locality - portable abstraction of hierarchical architectures
 hwloc-devel
@@ -195,9 +197,13 @@ libunwind
 libunwind-devel
 libutempter  # # A privileged helper for utmp/wtmp updates
 libutempter-devel
+libuv
+libuv-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
+libyui
+libyui-devel
 links
 llvm
 llvm-devel
@@ -236,6 +242,7 @@ nspr-devel
 newt		# A development library for text mode user interfaces (requires slang)
 newt-devel
 nodejs
+nodejs-devel
 npm
 ntfs-3g
 ntfs-3g-devel

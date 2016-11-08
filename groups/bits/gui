@@ -100,6 +100,7 @@ libXxf86misc
 libXxf86misc-devel
 libXxf86vm
 libXxf86vm-devel
+libyui-gtk
 mesa-libGLU	# Library on top of libGL, high-level routines for spheres, collision detection, ...
 mesa-libGLU-devel
 openssh-askpass
@@ -167,6 +168,7 @@ xorg-x11-xinit
 xorg-x11-xkb-extras
 xorg-x11-xkb-utils
 xorg-x11-xtrans-devel
+xrdp
 xterm
 xulrunner
 xulrunner-devel
