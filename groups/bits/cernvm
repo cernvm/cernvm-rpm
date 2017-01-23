@@ -27,5 +27,6 @@ lxdm
 perl-Amazon-EC2
 open-vm-tools
 rpmrebuild
+singularity
 vboxguest
 VBoxManage

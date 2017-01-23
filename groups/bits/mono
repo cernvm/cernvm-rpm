@@ -3,7 +3,6 @@ mono-addins-devel
 mono-core
 mono-data
 mono-data-oracle
-mono-data-postgresql
 mono-data-sqlite
 mono-devel
 mono-extras
@@ -11,8 +10,6 @@ mono-icon-theme
 mono-locale-extras
 mono-mvc
 mono-mvc-devel
-mono-nunit
-mono-nunit-devel
 mono-wcf
 mono-web
 mono-web-devel

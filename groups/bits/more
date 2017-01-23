@@ -259,6 +259,7 @@ octave-lhapdf
 octave-statistics
 openal-soft
 openal-soft-devel
+openblas
 openldap-clients # Client programs for OpenLDAP.
 openldap-devel
 p7zip
