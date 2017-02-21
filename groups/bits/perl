@@ -7,6 +7,7 @@ perl-Compress-Raw-Zlib
 perl-Compress-Raw-Bzip2
 perl-Config-General
 perl-Convert-ASN1
+perl-Curses-UI
 perl-CPAN
 perl-Crypt-SSLeay
 perl-Date-Manip

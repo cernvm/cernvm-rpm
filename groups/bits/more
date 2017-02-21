@@ -1,6 +1,7 @@
 a2ps  # Converts text to postscript
 alsa-lib	# The Advanced Linux Sound Architecture (ALSA) library, to desktop?
 ansible		# SSH based cluster management
+ant
 asciidoc
 asciidoc-doc
 asciidoc-latex
@@ -199,6 +200,8 @@ libutempter  # # A privileged helper for utmp/wtmp updates
 libutempter-devel
 libuv
 libuv-devel
+libxshmfence
+libxshmfence-devel
 libxslt		# Library providing the Gnome XSLT engine
 libxslt-devel
 libxslt-python
@@ -225,9 +228,9 @@ mod_fcgid
 mod_ssl		# Ssl module for Apache
 mod_wsgi	# Python CGI module for Apache, needed by cvmfs server
 monit		# Monitoring utility
-mpich
-mpich-devel
-mpich-doc
+mpich-3.0
+mpich-3.0-devel
+mpich-3.0-doc
 netpbm		# A library for handling different graphics file formats
 netpbm-devel
 netpbm-doc
@@ -299,6 +302,8 @@ qemu-img
 qemu-system-arm
 quota		# System administration tools for monitoring users' disk usage
 R
+R-Rcpp
+R-Rcpp-devel
 R-devel
 R-java
 R-java-devel
