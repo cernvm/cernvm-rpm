@@ -1,7 +1,14 @@
+blas-i686  # JADE
 bzip2-libs-i686
+compat-libgfortran-41-i686  # JADE
 libxml2-i686
 ncurses-libs-i686
+lapack-i686  # JADE
 libpng-i686
+libgfortran-i686  # JADE
+libgfortran-static-i686  # JADE
+libquadmath-i686  # JADE
+libquadmath-static-i686  # JADE
 mesa-libglapi-i686
 mesa-libGL-i686
 mesa-libGLU-i686

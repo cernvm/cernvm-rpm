@@ -34,6 +34,7 @@ compat-glibc
 compat-glibc-headers
 compat-libcap1
 compat-libf2c-34
+compat-libgfortran-41
 compat-libstdc++-33
 compat-libtiff3
 compat-poppler022
@@ -146,6 +147,8 @@ libdb-java
 libdb-java-devel
 libdb-tcl
 libdb-utils
+libgfortran
+libgfortran-static
 libicu
 libicu-devel
 libicu-doc
@@ -160,6 +163,9 @@ libmpc-devel
 libpng12             # SL6
 libpng
 libpng-devel
+libquadmath
+libquadmath-devel
+libquadmath-static
 librsync
 librsync-devel
 libstdc++-devel
