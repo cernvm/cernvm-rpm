@@ -62,7 +62,7 @@ artifacts/packages-basic-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) _TEST
 	[ -s _TESTEXTRA ] && cat _TESTEXTRA >> artifacts/packages-basic-$(VERSION)-$(PLATFORM) || true
 
 artifacts/packages-system-$(VERSION)-$(PLATFORM): $(wildcard groups/bits/*) artifacts/packages-basic-$(VERSION)-$(PLATFORM)
-	#cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
+	# cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
 	cat artifacts/packages-basic-$(VERSION)-$(PLATFORM) groups/bits/gui groups/bits/xfce | sort -u > artifacts/packages-system-$(VERSION)-$(PLATFORM)
 
 artifacts/postscript-$(STRONG_VERSION): groups/bits/postscript

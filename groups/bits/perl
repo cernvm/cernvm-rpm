@@ -7,6 +7,7 @@ perl-Config-General
 perl-Convert-ASN1
 perl-CPAN
 perl-Crypt-SSLeay
+perl-Curses-UI
 perl-Date-Manip
 perl-DBD-SQLite
 perl-IO-Compress-Base

@@ -23,4 +23,5 @@ python-pip      # Installer for packages
 python-sphinx   # Create reStructuredText documentation (read the docs...)
 python-suds     # Prerequisite for cloudscheduler
 python-urlgrabber
+python-webob
 scipy

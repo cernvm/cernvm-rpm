@@ -21,6 +21,8 @@ beecrypt	# An open source cryptography library
 bison		# A GNU general-purpose parser generator.
 blas		# The BLAS (Basic Linear Algebra Subprograms) library.
 blas-devel
+boost148-system
+boost148-thread
 btrfs-progs
 byacc		# A public domain Yacc parser generator.
 c-ares
@@ -149,6 +151,7 @@ ntfs-3g
 ntfsprogs
 octave
 octave-devel
+openblas
 openldap-clients # Client programs for OpenLDAP.
 openmotif22
 openmotif
