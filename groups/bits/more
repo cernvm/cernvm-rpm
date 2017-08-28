@@ -340,6 +340,7 @@ tmux		# like screen
 trickle         # traffic shaping
 tuned		# tuned-adm, set kernel parameters optimal for VM
 tuned-utils
+usbmuxd
 v8  # JavaScript framework
 v8-devel
 valgrind

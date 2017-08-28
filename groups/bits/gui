@@ -82,6 +82,8 @@ libXaw  # X Athena Widget Set
 libXaw-devel
 libXcomposite
 libXcomposite-devel
+libXevie
+libXevie-devel
 libXdamage
 libXdamage-devel
 libxkbfile
@@ -128,6 +130,8 @@ vte  # A terminal emulator
 vte-devel
 vte3
 vte3-devel
+webkitgtk3
+webkitgtk3-devel
 x11vnc
 Xaw3d
 xkeyboard-config

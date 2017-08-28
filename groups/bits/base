@@ -226,6 +226,7 @@ rootfiles	# /root/.bashrc etc.
 rsync
 samba-client
 screen
+selinux-policy-devel  # to build cvmfs package
 ssmtp
 sqlite
 sqlite-devel
