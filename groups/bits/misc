@@ -66,6 +66,7 @@ glib		# glib2 already present
 glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
+gfal2-plugin-http
 gfalFS
 glusterfs
 gnuchess
@@ -80,17 +81,21 @@ gpm-devel
 gridsite
 gtk2		# The GIMP ToolKit (GTK+), a library for creating GUIs for X, to desktop?
 gtk2-devel
+gtkmm24
+gtkmm24-devel
 hdparm		# A utility for displaying and/or setting hard disk parameters.
 htop		# Better top utility
 http-parser
 hwloc
 iftop
 indent		# A GNU program for formatting C code.
+inotify-tools
 intltool
 iotop
 iperf
 iperf3
 irqbalance	# irqbalance is a daemon that evenly distributes IRQ load across multiple CPUs for enhanced performance.
+jemalloc
 jline		# Was once a dependency, not anymore with SL 6.7
 jq
 keyutils	# for /bin/keyctl
@@ -107,10 +112,14 @@ libgpg-error-devel # This is a library that defines common error values for all 
 libICE-devel	# X.Org X11 libICE development package
 liblinear
 liblinear-devel # Machine learning
+libmspack
+libmspack-devel
 libnotify	# libnotify is an implementation of the freedesktop.org desktop notification specification, to desktop?
 libSM-devel	# X.Org X11 libSM development package
 libsvm          # Support vector machines
 libsvm-devel
+libudev
+libudev-devel
 libutempter-devel # A privileged helper for utmp/wtmp updates
 libvpx
 libXcomposite
@@ -167,6 +176,7 @@ php-mysql
 plotutils
 plotutils-devel
 prelink
+procps-devel
 protobuf
 protobuf-devel
 psacct		# Utilities for monitoring process activities.

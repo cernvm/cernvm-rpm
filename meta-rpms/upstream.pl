@@ -21,8 +21,8 @@
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/fastbugs',
     },
     'el6' => {
-      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/6x/x86_64/updates/fastbugs',
-      #'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/fastbugs',
+      #'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/6x/x86_64/updates/fastbugs',
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/fastbugs',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/updates/fastbugs',
     },
   },
@@ -36,8 +36,8 @@
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/5x/i386/updates/security',
     },
     'el6' => {
-      'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/6x/x86_64/updates/security',
-      #'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/security',
+      #'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/6x/x86_64/updates/security',
+      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/6x/x86_64/updates/security',
       'i386' => 'http://ftp.scientificlinux.org/linux/scientific/6x/i386/updates/security',
     },
   },
@@ -139,8 +139,8 @@
       'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/5/i386',
     },
     'el6' => {
-      'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/x86_64',
-      'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/6/i386',
+      'x86_64' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs/EL/6/x86_64',
+      'i386' => 'http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs/EL/6/i386',
     },
   },
   'extras' => 0,

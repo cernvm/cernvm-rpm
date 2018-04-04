@@ -47,7 +47,8 @@ shoal-client
 slim
 uriparser
 vaf-client
-vboxguest  # for unity
+vboxguest
+vboxguest52
 VBoxManage
 WALinuxAgent
 vmware-tools-plugins-unity
