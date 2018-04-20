@@ -41,6 +41,8 @@ clang-devel
 clang-analyzer
 cloud-init
 cloud-utils
+compat-xrootd-client-libs
+compat-xrootd-libs
 cppunit
 cppunit-devel
 cppunit-doc
@@ -58,6 +60,7 @@ cyrus-sasl
 cyrus-sasl-devel
 cyrus-sasl-gssapi
 cyrus-sasl-ldap
+cyrus-sasl-md5
 cyrus-sasl-plain
 emacs-gnuplot
 enchant
@@ -103,6 +106,7 @@ glpk-utils
 gdbm  # A GNU set of database routines which use extensible hashing.
 gdbm-devel
 gfal2-all
+gfal2-plugin-http
 gfalFS
 glusterfs
 glusterfs-api
@@ -117,6 +121,8 @@ gnutls
 gnutls-c++
 gnutls-devel
 gnutls-utils
+golang
+golang-docs
 gperftools  # Google malloc and performance analysis
 gperftools-devel
 gpm		# A mouse server for the Linux console
@@ -200,6 +206,7 @@ libutempter  # # A privileged helper for utmp/wtmp updates
 libutempter-devel
 libuv
 libuv-devel
+libverto-tevent
 libxshmfence
 libxshmfence-devel
 libxslt		# Library providing the Gnome XSLT engine
@@ -240,6 +247,7 @@ net-snmp-devel
 net-snmp-libs
 net-snmp-python
 net-snmp-utils
+nginx
 nspr  # Netscape Portable Runtime
 nspr-devel
 newt		# A development library for text mode user interfaces (requires slang)
@@ -298,6 +306,7 @@ protobuf-vim
 psacct		# Utilities for monitoring process activities.
 psutils		# This archive contains some utilities for manipulating PostScript documents.
 puppet
+python2-scons  # An Open Source software construction tool
 qemu-img
 qemu-system-arm
 quota		# System administration tools for monitoring users' disk usage
@@ -319,11 +328,11 @@ ruby
 ruby-devel
 ruby-doc
 rubygems
-scons  # An Open Source software construction tool
 setuptool	# A text mode system configuration tool.
 sharutils	# The GNU shar utilities for packaging and unpackaging shell archives
 slang  # S-Lang extension language
 slang-devel
+squashfs-tools
 sssd
 sssd-tools
 symlinks	# for /usr/bin/symlinks

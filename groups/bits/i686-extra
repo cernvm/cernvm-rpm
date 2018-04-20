@@ -1,3 +1,4 @@
+glibc-devel-i686
 blas-i686  # JADE
 bzip2-libs-i686
 compat-libgfortran-41-i686  # JADE

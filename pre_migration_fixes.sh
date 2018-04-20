@@ -11,9 +11,9 @@ YUM_OPTIONS="$2"
 #  fi
 #done
 
-#for pkg in mono-nunit mono-nunit-devel mono-data-postgresql; do
-#  if rpm --root "$DEST_ROOT" -q $pkg; then
-#    sudo yum $YUM_OPTIONS erase $pkg
-#  fi
-#done
+for pkg in singularity singularity-runtime singularity-devel; do
+  if rpm --root "$DEST_ROOT" -q $pkg; then
+    sudo yum $YUM_OPTIONS erase $pkg
+  fi
+done
 

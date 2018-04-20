@@ -207,9 +207,12 @@
       'x86_64' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-x86_64',
       'i386' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-i386',
     },
+    'el7' => {
+      'x86_64' => 'http://storage-ci.web.cern.ch/storage-ci/eos/citrine/tag/el-7/x86_64',
+    },
   },
   'extras' => 0,
-  'active' => 0, # no SQlite meta data
+  'active' => 1, # no SQlite meta data
 },
 'cvmextras' => {
   'baseurl' => {
