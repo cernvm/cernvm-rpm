@@ -8,6 +8,8 @@ DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-sl7.cern.ch}
 touch _refetch_repometadata
 make
 make -f install.mk DEST_REPOSITORY="$DEST_REPOSITORY"
+make -f install.mk DEST_REPOSITORY="$DEST_REPOSITORY" check
+make -f install.mk DEST_REPOSITORY="$DEST_REPOSITORY" rolling_tag
 make -f archive.mk
 
 buildno=$(cat buildno)

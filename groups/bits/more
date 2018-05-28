@@ -18,10 +18,6 @@ atop  # An advanced interactive monitor to view the load on system and process l
 audit-libs
 audit-libs-devel
 authconfig	# Command line tool for setting up authentication from network services, e.g. smartcard auth
-beecrypt	# An open source cryptography library
-beecrypt-apidocs
-beecrypt-devel
-beecrypt-python
 bison		# A GNU general-purpose parser generator.
 bison-devel
 blas		# The BLAS (Basic Linear Algebra Subprograms) library.
@@ -51,6 +47,7 @@ createrepo
 cryptopp
 cryptopp-devel
 cryptopp-doc
+cryptsetup
 cscope  # C source code tree browsing tool
 CUnit
 CUnit-devel
@@ -107,6 +104,9 @@ gdbm  # A GNU set of database routines which use extensible hashing.
 gdbm-devel
 gfal2-all
 gfal2-plugin-http
+gfal2-plugin-mock
+gfal2-python
+gfal2-python-doc
 gfalFS
 glusterfs
 glusterfs-api
@@ -191,7 +191,6 @@ liblinear-devel
 liblinear-doc
 librabbitmq
 librabbitmq-devel
-librabbitmq-tools
 librsvg2
 librsvg2-devel
 libsvm          # Support vector machines
