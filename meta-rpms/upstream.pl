@@ -116,7 +116,7 @@
       'i386' => 'http://linuxsoft.cern.ch/epel/5/i386',
     },
     'el6' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/epel/6/x86_64',
+      'x86_64' => 'http://cvm-storage00/yum/cernvm/mirror/6/x86_64/epel',
       'i386' => 'http://linuxsoft.cern.ch/epel/6/i386',
     },
   },
@@ -181,12 +181,12 @@
 'eos' => {
   'baseurl' => {
     'el5' => {
-      'x86_64' => 'http://eos.cern.ch/rpms/eos-0.2/slc-5-x86_64',
-      'i386' => 'http://eos.cern.ch/rpms/eos-0.2/slc-5-i386',
+      'x86_64' => 'http://eos.cern.ch/rpms/eos-beryll/slc-5-x86_64',
+      'i386' => 'http://eos.cern.ch/rpms/eos-beryll/slc-5-i386',
     },
     'el6' => {
-      'x86_64' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-x86_64',
-      'i386' => 'http://eos.cern.ch/rpms/eos-0.2/slc-6-i386',
+      'x86_64' => 'http://eos.cern.ch/rpms/eos-beryll/slc-6-x86_64',
+      'i386' => 'http://eos.cern.ch/rpms/eos-beryll/slc-6-i386',
     },
   },
   'extras' => 0,

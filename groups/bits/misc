@@ -66,7 +66,11 @@ glib		# glib2 already present
 glib-devel
 glpk-utils
 gdbm-devel	# A GNU set of database routines which use extensible hashing.
+gfal2-all
 gfal2-plugin-http
+gfal2-plugin-mock
+gfal2-python
+gfal2-python-doc
 gfalFS
 glusterfs
 gnuchess

@@ -17,5 +17,5 @@ for repo in $REPOS; do
   sudo cp $FILENAME /cvmfs/$repo/update-packs/kernel/
   sudo sh -c "echo version=${STRONG_VERSION} > /cvmfs/$repo/update-packs/kernel/latest"
   sudo sh -c "echo update-pack=${FILENAME} >> /cvmfs/$repo/update-packs/kernel/latest"
-  sudo cvmfs_server publish $repo
+  sudo cvmfs_server publish -a 'ucernvm-update-${VERSION}' $repo
 done

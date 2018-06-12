@@ -9,7 +9,7 @@ YUM_OPTIONS = -y --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta --enabler
 
 DEVICES = stdout stderr random urandom
 
-all: rolling_tag
+all: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
 	
 /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION): meta-rpms/verify-metarpm.sh
 	echo "chroot install of cernvm-system-$(VERSION)"
@@ -29,7 +29,9 @@ all: rolling_tag
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
 	sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs/$(DEST_PATH)
 	sudo cvmfs_server publish -a cernvm-system-$(VERSION) $(DEST_REPOSITORY)
+	
+check:
 	sudo cvmfs_server check -c $(DEST_REPOSITORY)
 
-rolling_tag: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
+rolling_tag: | /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
 	./set_rolling_tag.sh $(DEST_REPOSITORY) $(VERSION)		
