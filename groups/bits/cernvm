@@ -2,6 +2,8 @@ amiconfig-rpath
 amiconfig-cernvm
 amiconfig-hepix
 cernvm-config
+cernvm-patches
 cernvm-release
+cernvm-update
 cvmfs
-cvmfs-server
+vboxguest

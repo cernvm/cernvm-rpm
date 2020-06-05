@@ -36,15 +36,6 @@
   'extras' => 0,
   'active' => 1,
 },
-'oslibs' => {
-  'baseurl' => {
-    'el6' => {
-      'i686' => 'http://linuxsoft.cern.ch/wlcg/sl6/i386',
-    },
-  },
-  'extras' => 0,
-  'active' => 1,
-},
 'rhcommon' => {
   'baseurl' => {
     'el6' => {
@@ -108,15 +99,6 @@
   'extras' => 0,
   'active' => 1,
 },
-'cernai' => {
-  'baseurl' => {
-    'el6' => {
-      'i686' => 'http://linuxsoft.cern.ch/internal/repos/ai6-stable/i386/os',
-    },
-  },
-  'extras' => 0,
-  'active' => 1,
-},
 'xrootd' => {
   'baseurl' => {
     'el6' => {
@@ -148,24 +130,6 @@
   'baseurl' => {
     'el6' => {
       'i686' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel6'
-    },
-  },
-  'extras' => 0,
-  'active' => 1,
-},
-'afs' => {
-  'baseurl' => {
-    'el6' => {
-      'i686' => 'http://www.openafs.org/dl/openafs/1.6.11/rhel6/i386',
-    },
-  },
-  'extras' => 0,
-  'active' => 1,
-},
-'devtools' => {
-  'baseurl' => {
-    'el6' => {
-      'i686' => 'http://ftp.scientificlinux.org/linux/scientific/6x/external_products/devtoolset/i386/2',
     },
   },
   'extras' => 0,
