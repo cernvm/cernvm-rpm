@@ -4,6 +4,9 @@ set -e
 RENEGADE_PATH=../renegade
 DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-sl7.cern.ch}
 
+#reposync --delete --newest-only --repoid=epel --download_path=/data/yum/cernvm/mirror/7/x86_64
+#createrepo --database --update --workers=6 /data/yum/cernvm/mirror/7/x86_64/epel
+
 #make -C "$RENEGADE_PATH"
 touch _refetch_repometadata
 make

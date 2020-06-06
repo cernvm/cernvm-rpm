@@ -102,16 +102,15 @@ glpk-doc
 glpk-utils
 gdbm  # A GNU set of database routines which use extensible hashing.
 gdbm-devel
-gfal2-all
+gfal2-plugin-file
 gfal2-plugin-http
 gfal2-plugin-mock
+gfal2-plugin-sftp
+gfal2-plugin-xrootd
 gfal2-python
 gfal2-python-doc
 gfalFS
-glusterfs
 glusterfs-api
-glusterfs-api-devel
-glusterfs-devel
 glusterfs-fuse
 gnupg2
 gnuplot
@@ -166,6 +165,7 @@ lapack		# The LAPACK libraries for numerical linear algebra
 lapack-devel
 lapack64
 lapack64-devel
+lhapdf
 libatomic
 libcgroup
 libcgroup-devel
@@ -265,13 +265,13 @@ octave-doc
 octave-general
 octave-image
 octave-io
-octave-lhapdf
 octave-statistics
 openal-soft
 openal-soft-devel
 openblas
 openldap-clients # Client programs for OpenLDAP.
 openldap-devel
+openvpn
 p7zip
 p7zip-plugins  # extract iso images
 pam
@@ -290,7 +290,6 @@ pm-utils
 PyPAM
 python-liblinear
 python-pam
-python-redis
 prelink
 protobuf
 protobuf-compiler

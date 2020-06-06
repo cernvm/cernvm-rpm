@@ -39,7 +39,7 @@ compat-libstdc++-33
 compat-libtiff3
 compat-poppler022
 compat-poppler022-glib
-cronie-noanacron
+cronie-anacron
 curl
 cvs
 dbus

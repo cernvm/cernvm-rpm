@@ -145,7 +145,7 @@
       'i386' => 'http://linuxsoft.cern.ch/epel/6/i386',
     },
     'el7' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/epel/7/x86_64',
+      'x86_64' => 'http://cvm-storage00/yum/cernvm/mirror/7/x86_64/epel',
     },
   },
   'extras' => 0,
@@ -212,7 +212,16 @@
     },
   },
   'extras' => 0,
-  'active' => 1, # no SQlite meta data
+  'active' => 1,
+},
+'eosdep' => {
+  'baseurl' => {
+    'el7' => {
+      'x86_64' => 'http://storage-ci.web.cern.ch/storage-ci/eos/citrine-depend/el-7/x86_64',
+    },
+  },
+  'extras' => 0,
+  'active' => 1,
 },
 'cvmextras' => {
   'baseurl' => {
@@ -246,7 +255,7 @@
       'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel6'
     },
     'el7' => {
-      'x86_64' => 'http://research.cs.wisc.edu/htcondor/yum/stable/rhel7'
+      'x86_64' => 'https://research.cs.wisc.edu/htcondor/yum/stable/8.8/rhel7'
     },
   },
   'extras' => 0,

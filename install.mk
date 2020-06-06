@@ -30,7 +30,7 @@ all: /cvmfs/$(DEST_REPOSITORY)$(DEST_PATH)/.installed_cernvm-system-$(VERSION)
 	  sudo yum $(YUM_OPTIONS) clean all; \
 	  sudo yum $(YUM_OPTIONS) install cernvm-system-$(VERSION); \
 	fi
-	for d in $(DEVICES); do sudo rm -f $(DEST_ROOT)/dev/$$d; done
+	sudo rm -f $(DEST_ROOT)/dev/*
 	./migration_fixes.sh $(DEST_ROOT) "$(YUM_OPTIONS)"
 	meta-rpms/verify-metarpm.sh $(DEST_ROOT) $(VERSION)
 	sudo update-packs/mk_update_pack.sh $(DEST_ROOT) /cvmfs/$(DEST_REPOSITORY)/update-packs/$(DEST_PATH)

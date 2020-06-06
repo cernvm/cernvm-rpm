@@ -1,13 +1,6 @@
 cfitsio
 cfitsio-devel
 cfitsio-docs
-dcap
-dcap-devel
-dcap-libs
-dcap-tunnel-gsi
-dcap-tunnel-krb
-dcap-tunnel-ssl
-dcap-tunnel-telnet
 fcgi
 fcgi-devel
 ftgl
@@ -31,7 +24,6 @@ motif
 motif-devel
 postgresql-libs
 ps2eps
-uberftp
 udt
 udt-devel
 unuran

@@ -11,6 +11,8 @@ pygobject2-doc
 pygtk2 		# to desktop?
 pygtk2-devel
 Pyrex		# A compiler/language for writing Python extension modules.
+python36
+python36-libs
 python-enchant
 python-ldap
 python-numeric

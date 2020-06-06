@@ -12,7 +12,6 @@ freeglut  # OpenGL Utility Toolkit
 freeglut-devel
 freerdp
 freerdp-devel
-freerdp-plugins
 gamin  # file alteration monitor
 gamin-devel
 gamin-python
@@ -26,7 +25,6 @@ gimp-help
 gimp-help-fr
 gitk
 ghostscript
-ghostscript-devel
 ghostscript-doc
 ghostscript-fonts
 glx-utils
@@ -62,6 +60,7 @@ libgnomecanvas
 libgnomecanvas-devel
 libgnomeui
 libgnomeui-devel
+libgs-devel
 libgsf  # GNOME structured file library
 libgsf-devel
 libgtop2
@@ -172,6 +171,7 @@ xorg-x11-xinit
 xorg-x11-xkb-extras
 xorg-x11-xkb-utils
 xorg-x11-xtrans-devel
+xorgxrdp
 xrdp
 xterm
 xulrunner

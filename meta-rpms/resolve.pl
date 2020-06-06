@@ -403,6 +403,7 @@ foreach my $repo (keys %all_repos) {
     next if !check_arch $pkg_desc->{'arch'};
     my $pkg_name = "$pkg_desc->{'name'}-$pkg_desc->{'epoch'}:" .
       "$pkg_desc->{'version'}-$pkg_desc->{'release'} ($pkg_desc->{'arch'})";
+    my $pkg_shorthand = $pkg_desc->{'name'};
     print DEBUG "Processing ($repo): $pkg_name\n";
 
     # Add this particular package to the list of packages with the same name
@@ -480,6 +481,9 @@ foreach my $repo (keys %all_repos) {
       my $conflicts = make_capabilities_key @$row_conflicts[0],
         @$row_conflicts[1], @$row_conflicts[2], @$row_conflicts[3], @$row_conflicts[4];
       print DEBUG "  Conflicts: $conflicts\n";
+      # HACK FOR containerd.io
+      next if ($pkg_shorthand eq "containerd.io");
+      next if ($pkg_shorthand eq "docker-ce");
 
       if (exists $providers{$conflicts}) {
         my $cached_list = $providers{$conflicts};
@@ -514,6 +518,9 @@ foreach my $repo (keys %all_repos) {
       my $obsoletes = make_capabilities_key @$row_obsoletes[0],
         @$row_obsoletes[1], @$row_obsoletes[2], @$row_obsoletes[3], @$row_obsoletes[4];
       print DEBUG "  Obsoletes: $obsoletes\n";
+      # HACK FOR containerd.io
+      next if ($pkg_shorthand eq "docker-ce");
+      next if ($pkg_shorthand eq "containerd.io");
 
       if (exists $providers{$obsoletes}) {
         my $cached_list = $providers{$obsoletes};
