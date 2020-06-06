@@ -51,6 +51,7 @@ foreach my $repo (keys %repo_config) {
     chomp $primary;
     $primary =~ s|^[^/]*/([a-z0-9\.\-]*).*|$1|;
 
+    print "Fetching timestamp of $url/repodata/$primary\n";
     system("curl -I -R -o timestamp $url/repodata/$primary 2>/dev/null");
     if ( (! -e "$repodata_dir/$repo.sqlite") || ((stat('timestamp'))[9] > (stat("$repodata_dir/$repo.sqlite"))[9]) ) {
       print "Downloading $url/repodata/$primary\n";
