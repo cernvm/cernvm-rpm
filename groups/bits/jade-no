@@ -1,0 +1,5 @@
+globus-*
+gssdp
+gstreamer
+gupnp
+xrootd-server(-libs)
