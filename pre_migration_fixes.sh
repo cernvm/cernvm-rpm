@@ -17,11 +17,11 @@ YUM_OPTIONS="$2"
 #  fi
 #done
 
-for pkg in xorgxrdp xrdp-selinux python36 python36-libs docker-cernvm python34-libs python34 python-redis eos-client eos-fuse; do
-  if rpm --root "$DEST_ROOT" -q $pkg; then
-    sudo yum $YUM_OPTIONS erase $pkg
-  fi
-done
+#for pkg in glibc-langpack-si; do
+#  if rpm --root "$DEST_ROOT" -q $pkg; then
+#    sudo yum $YUM_OPTIONS erase $pkg
+#  fi
+#done
 
 #for pkg in \
 #  globus-gass-transfer \

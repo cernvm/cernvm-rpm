@@ -1,8 +1,8 @@
 # chroot installation of the cernvm-meta rpm in cvmfs
 
 include config.mk
-DEST_REPOSITORY = cernvm-sl7.cern.ch
-DEST_PATH = /cvm4
+DEST_REPOSITORY = cernvm-el8.cern.ch
+DEST_PATH = /cvm5
 
 DEST_ROOT = /cvmfs/$(DEST_REPOSITORY)/$(DEST_PATH)
 YUM_OPTIONS = -y --nogpgcheck --disablerepo=* --enablerepo=cernvm-meta --enablerepo=cernvm-os --enablerepo=cernvm-extras --disableexcludes=all --installroot $(DEST_ROOT)

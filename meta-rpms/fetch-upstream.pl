@@ -24,7 +24,7 @@ sub main::VERSION_MESSAGE {
 }
 
 my $basedir = dirname(__FILE__);
-my %repo_config = do "$basedir/upstream.pl";
+my %repo_config = do "./$basedir/upstream.pl";
 
 # Option parsing
 $Getopt::Std::STANDARD_HELP_VERSION = 1;

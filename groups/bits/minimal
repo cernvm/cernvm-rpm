@@ -1,4 +1,3 @@
-kernel
 basesystem
-redhat-lsb
-sl-release
+systemd
+glibc-langpack-en

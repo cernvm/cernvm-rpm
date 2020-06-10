@@ -3,7 +3,7 @@
 include config.mk
 
 PLATFORM = x86_64
-SL_UPSTREAM = 7
+SL_UPSTREAM = 8
 EDITION = system
 
 TOP = $(shell pwd)

@@ -3,7 +3,7 @@
 DEST_ROOT="$1"
 YUM_OPTIONS="$2"
 
-sudo package-cleanup $YUM_OPTIONS --oldkernels --count=1
+sudo package-cleanup $YUM_OPTIONS --cleandupes || true
 
 #for pkg in eos-xrootd eos-client; do
 #  if rpm --root "$DEST_ROOT" -q $pkg; then

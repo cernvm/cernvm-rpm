@@ -2,7 +2,7 @@
 set -e
 
 RENEGADE_PATH=../renegade
-DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-sl7.cern.ch}
+DEST_REPOSITORY=${DEST_REPOSITORY:=cernvm-el8.cern.ch}
 
 #make -C "$RENEGADE_PATH"
 touch _refetch_repometadata

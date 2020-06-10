@@ -1,11 +1,20 @@
 # Definition of upstream repositories
 
-'sl' => {
+'base' => {
   'baseurl' => {
-    'el7' => {
-      'x86_64' => 'http://ftp.scientificlinux.org/linux/scientific/7x/x86_64/os',
+    'el8' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/centos/8/BaseOS/x86_64/os',
       #'x86_64' => 'http://anorien.csc.warwick.ac.uk/mirrors/scientific/7x/x86_64/os',
     }
+  },
+  'extras' => 0,
+  'active' => 1,
+},
+'apps' => {
+  'baseurl' => {
+    'el8' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/centos/8/AppStream/x86_64/os',
+    },
   },
   'extras' => 0,
   'active' => 1,
@@ -17,7 +26,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'fastbugs' => {
   'baseurl' => {
@@ -27,7 +36,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'security' => {
   'baseurl' => {
@@ -37,16 +46,16 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'oslibs' => {
   'baseurl' => {
-    'el7' => {
-      'x86_64' => 'http://linuxsoft.cern.ch/wlcg/centos7/x86_64',
+    'el8' => {
+      'x86_64' => 'http://linuxsoft.cern.ch/wlcg/centos8/x86_64',
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'epel' => {
   'baseurl' => {
@@ -55,7 +64,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'cvmfs' => {
   'baseurl' => {
@@ -64,7 +73,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'eos' => {
   'baseurl' => {
@@ -74,7 +83,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'eosdep' => {
   'baseurl' => {
@@ -84,12 +93,12 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'cvmextras' => {
   'baseurl' => {
-    'el7' => {
-      'x86_64' => 'file:///data/yum/cernvm/extras/7/x86_64',
+    'el8' => {
+      'x86_64' => 'file:///data/yum/cernvm/extras/8/x86_64',
     }
   },
   'extras' => 1,
@@ -102,5 +111,5 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
