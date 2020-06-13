@@ -153,7 +153,7 @@
     },
   },
   'extras' => 0,
-  'active' => 1,
+  'active' => 0,
 },
 'cernai' => {
   'baseurl' => {
